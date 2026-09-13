@@ -18,6 +18,7 @@
   --warn: #8a5a12;
   --shadow: 0 1px 2px rgba(34,31,27,.05), 0 14px 32px -20px rgba(34,31,27,.35);
   --display: "Marcellus", Georgia, serif;
+  --wordmark: "Cormorant", "Cormorant Garamond", Didot, Georgia, serif;
   --body: "Karla", system-ui, -apple-system, "Segoe UI", sans-serif;
   --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
 }
@@ -55,12 +56,28 @@ a { color: inherit; }
 
 .wrap { max-width: 1200px; margin: 0 auto; padding: 0 22px; }
 
-/* The mark sits with the wordmark, not above it — the header is 56px and a
-   stacked lockup would halve the type. Hidden on the narrowest screens, where
-   the name alone is the better use of the width. */
-/* Nudged down: `.brand` aligns on the baseline and an image's baseline is its
-   bottom edge, which left the mark riding high against the cap height. */
-.brand .logo { flex: none; display: block; position: relative; top: 4px; }
+/*
+ * The drop is 100 x 279 — very tall, very narrow. It carries as a background
+ * rather than an <img> for one reason: the artwork is a silver gradient, which
+ * vanishes on bone and reads on black, so the light and dark themes need
+ * different files and only CSS can choose between them.
+ */
+.brand .logo {
+  flex: none;
+  display: block;
+  position: relative;
+  top: 5px;
+  width: 13px;
+  height: 36px;
+  background: url("/brand/mark.svg") center / contain no-repeat;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .brand .logo {
+    background-image: url("/brand/mark-reversed.svg");
+  }
+}
+:root[data-theme="dark"] .brand .logo { background-image: url("/brand/mark-reversed.svg"); }
+
 /* The line under the name is a qualifier, not a headline — it must never wrap
    into a three-line stack beside a one-line wordmark. */
 .brand .sub { white-space: nowrap; }
@@ -100,8 +117,11 @@ header.site .wrap {
   gap: 20px; padding-block: 18px;
 }
 .brand { display: flex; align-items: baseline; gap: 10px; text-decoration: none; }
+/* Set as the logo sets it: Cormorant caps, tracked wide. The artwork runs
+   about 0.17em between letters and the header holds that. */
 .brand .mark {
-  font-family: var(--display); font-size: 25px; letter-spacing: .04em; color: var(--ink);
+  font-family: var(--wordmark); font-size: 24px; font-weight: 500;
+  letter-spacing: .17em; text-transform: uppercase; color: var(--ink);
 }
 .brand .sub {
   font-family: var(--mono); font-size: 9.5px; letter-spacing: .22em;

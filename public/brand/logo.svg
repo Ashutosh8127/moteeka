@@ -1,26 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 252 56" role="img" aria-label="Moteeka">
-  <!--
-    Mark plus wordmark, for anywhere the site's own CSS cannot reach: an
-    invoice, a WhatsApp display picture, a marketplace listing.
-
-    The wordmark is live text in Marcellus with a real serif fallback rather
-    than outlined paths, so it stays selectable and editable. On a machine
-    without the font it sets in Georgia, which is close enough that only you
-    would notice.
-  -->
-  <defs>
-    <radialGradient id="moteeka-pearl-lockup" cx="34%" cy="28%" r="80%">
-      <stop offset="0%" stop-color="#fff" stop-opacity=".5"/>
-      <stop offset="48%" stop-color="#fff" stop-opacity=".06"/>
-      <stop offset="100%" stop-color="#000" stop-opacity=".18"/>
-    </radialGradient>
-  </defs>
-  <g transform="translate(0 4)">
-    <path d="M8 31 Q26 27 41 17" fill="none" stroke="#221f1b" stroke-width="1.2" stroke-linecap="round" opacity=".35"/>
-    <circle cx="9" cy="31" r="3.6" fill="#221f1b"/><circle cx="9" cy="31" r="3.6" fill="url(#moteeka-pearl-lockup)"/>
-    <circle cx="21.5" cy="28" r="5.6" fill="#221f1b"/><circle cx="21.5" cy="28" r="5.6" fill="url(#moteeka-pearl-lockup)"/>
-    <circle cx="38" cy="19" r="8.4" fill="#221f1b"/><circle cx="38" cy="19" r="8.4" fill="url(#moteeka-pearl-lockup)"/>
-  </g>
-  <text x="60" y="38" font-family="Marcellus, Georgia, 'Times New Roman', serif"
-    font-size="31" letter-spacing="1.4" fill="#221f1b">Moteeka</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 359 164" role="img" aria-label="Moteeka">
+  <defs><linearGradient id="ink" x1="0" y1="0" x2="0.25" y2="1"><stop offset="0" stop-color="#8a6a24"/><stop offset=".18" stop-color="#5d564d"/><stop offset=".55" stop-color="#33302b"/><stop offset="1" stop-color="#221f1b"/></linearGradient></defs>
+  <svg x="0" y="0" width="58.7" height="163.76" viewBox="0 0 100 279" overflow="visible"><path fill="url(#ink)" fill-rule="evenodd" d="M56.44 0.00L56.44 0.99L55.45 1.98L54.95 4.94L51.49 12.84L50.99 15.31L50.00 16.79L48.51 21.23L48.51 22.72L47.52 24.69L47.52 26.17L45.54 32.59L45.05 37.04L44.55 37.53L44.55 40.00L44.06 40.49L44.06 42.96L43.07 46.42L43.07 50.37L42.57 50.86L42.57 57.78L42.08 58.27L42.08 79.01L42.57 79.50L42.57 87.40L43.07 87.90L43.56 98.27L44.06 98.76L44.55 107.16L45.05 107.65L45.05 111.11L45.54 111.60L45.54 115.06L46.04 115.55L47.03 125.43L44.06 125.92L43.07 126.91L43.07 130.86L42.57 131.35L42.57 133.33L41.58 135.80L40.59 141.72L37.62 150.61L36.14 153.08L34.65 157.52L27.72 170.86L6.93 201.97L3.47 209.37L1.49 215.30L0.99 219.25L0.50 219.74L0.50 222.21L0.00 222.71L0.00 235.05L0.50 235.55L0.50 238.01L0.99 238.51L1.49 242.46L3.96 249.37L8.91 257.77L14.36 264.19L18.32 267.64L28.22 274.06L32.67 276.04L39.60 278.01L47.03 279.00L52.48 279.00L60.89 278.01L70.79 274.56L74.75 272.58L82.18 267.15L90.10 258.75L91.09 256.28L94.06 252.33L98.51 240.98L99.01 237.52L99.50 237.03L99.50 234.06L100.00 233.57L100.00 220.73L99.50 220.24L99.50 217.27L99.01 216.78L99.01 214.81L98.02 212.34L97.03 206.41L90.59 188.63L89.11 186.16L88.61 184.19L87.62 183.20L86.14 178.26L82.18 170.86L82.18 169.87L78.22 161.47L78.22 160.49L73.76 151.10L71.78 144.68L68.81 138.76L67.82 134.32L64.36 126.41L63.37 122.46L62.38 120.98L61.39 116.04L59.41 111.11L59.41 109.62L58.42 108.14L57.92 104.69L56.93 103.21L55.94 97.28L52.97 86.91L52.97 84.44L51.98 81.97L50.99 73.58L50.50 73.08L50.00 62.71L49.50 62.22L49.50 56.29L49.01 55.80L49.01 43.45L49.50 42.96L49.50 37.04L50.00 36.54L50.50 26.67L50.99 26.17L51.49 21.23L51.98 20.74L52.48 16.30L54.46 9.88L54.46 8.39L55.45 6.91L55.94 3.95L56.93 1.98L56.44 0.99L56.93 0.49L56.44 0.00Z M44.55 125.92L45.05 126.41L45.05 130.36L45.54 130.86L45.54 134.32L46.04 134.81L46.04 137.77L46.53 138.27L46.53 142.71L47.03 143.20L47.03 147.65L47.52 148.14L46.53 161.47L45.05 165.92L44.55 170.86L42.57 176.78L42.08 180.24L41.09 182.21L41.09 183.70L38.61 190.12L38.61 191.60L36.63 196.53L36.63 198.02L35.64 199.50L33.66 206.41L32.67 207.89L32.18 210.85L31.19 212.34L28.22 221.72L26.73 224.19L26.24 227.64L30.20 233.08L31.19 235.55L35.64 241.47L38.12 246.41L43.07 253.32L45.05 257.27L47.52 260.24L50.00 264.68L50.50 264.68L60.40 247.89L71.78 230.61L74.26 227.64L74.26 226.16L71.78 220.73L70.79 216.78L69.80 215.30L68.32 209.87L67.33 208.39L66.83 205.42L65.84 203.94L61.88 192.09L61.88 190.61L56.44 173.82L54.46 164.44L53.47 162.46L52.97 158.02L50.99 151.10L50.99 149.13L50.50 148.64L50.50 146.66L49.50 144.19L48.02 132.83L47.52 132.34L47.52 129.38L46.53 125.92Z"/></svg>
+  <text x="78.01534050179211" y="104.88" font-family="Cormorant, 'Cormorant Garamond', Didot, Georgia, serif" font-size="46" font-weight="400" letter-spacing="7.82" fill="#221f1b" textLength="272.32" lengthAdjust="spacing">MOTEEKA</text>
 </svg>
