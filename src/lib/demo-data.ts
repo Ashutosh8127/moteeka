@@ -43,10 +43,24 @@ function look(): { reviews: number; days: number } {
 
 const found = look();
 
+/*
+ * A deployment can declare itself a demo, and on a serverless host it has to.
+ *
+ * look() reads data/reviews.json and data/analytics/, both of which are
+ * gitignored and so never reach the deployed bundle — meaning `present` was
+ * always false in production however the shop was seeded, and the simulated
+ * viewer count could never turn on where it is actually needed. Seeding puts
+ * the reviews in Firestore; this says out loud that the numbers on this
+ * deployment are not real, which is what the banner is drawn from.
+ */
+const declared = process.env.ALLOW_DEMO_DATA === '1';
+
 export const demoData = {
-  present: found.reviews > 0 || found.days > 0,
+  present: declared || found.reviews > 0 || found.days > 0,
   reviews: found.reviews,
   days: found.days,
+  /** True when nothing local was found and the deployment simply said so. */
+  declared,
 };
 
 /**
@@ -66,7 +80,10 @@ export function refuseDemoDataInProduction(): void {
   if (process.env.NODE_ENV !== 'production') return;
 
   if (process.env.ALLOW_DEMO_DATA === '1') {
-    console.warn(`\n  FABRICATED DATA IS LIVE — ${demoData.reviews} review(s), ${demoData.days} day(s) of traffic.`);
+    const what = demoData.reviews || demoData.days
+      ? `${demoData.reviews} review(s), ${demoData.days} day(s) of traffic`
+      : 'simulated viewer counts, and whatever seeded ratings are in the database';
+    console.warn(`\n  FABRICATED DATA IS LIVE — ${what}.`);
     console.warn(`  Running anyway because ALLOW_DEMO_DATA=1. Every page carries the banner.`);
     console.warn(`  Before a real customer can order: npm run demo -- --clear, and unset this.\n`);
     return;
