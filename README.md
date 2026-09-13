@@ -957,6 +957,24 @@ What is still missing, because they are your decisions and not facts about the
 code: **terms of sale, and a returns and refunds policy** with your own window
 and who pays return shipping.
 
+## Where the function runs
+
+`vercel.json` pins `regions` to **`bom1`** (Mumbai). This is not a preference —
+it has to match the Firestore location, which is `asia-south1`, also Mumbai.
+
+Vercel defaults new projects to `iad1`, Washington DC. With that default a
+request from India arrived at the `bom1` edge, crossed to a function in
+Virginia, queried a database back in Mumbai, and returned the same way: every
+Firestore round trip going around the planet twice. A single product read
+measured **7.9s cold and 1.3s warm**. The header `x-vercel-id: bom1::iad1::…`
+is what gives it away — the first code is the edge that took the request, the
+second is where the function actually ran. They should match.
+
+Hobby allows one region, Pro five. If the database ever moves, move this with
+it. And note `vercel.json` is schema-validated: an unknown key — a `"_comment"`,
+say — fails the deployment before the build starts, and the previous
+deployment keeps serving, so the symptom is a push that appears to do nothing.
+
 ## Orders, stock and the Firestore driver
 
 ### The two things that had to be fixed first
