@@ -1,0 +1,115 @@
+{
+  "id": "p-rhodium-plated-bridal-necklace",
+  "slug": "emerald-water-drop-set",
+  "title": "Emerald Water-Drop Set",
+  "category": "necklaces",
+  "tagline": "Pear-cut cubic zirconia, claw-set",
+  "description": "Water drop jewellery set, pear-cut cubic zirconia, held in claw settings. Rhodium and silver plate over brass, three colourways.",
+  "material": "Copper Alloy",
+  "finish": "Rhodium Plated, Silver Plated",
+  "details": {
+    "Jewelry Sets Type": "Bridal Jewellery Sets",
+    "Jewelry Main Material": "Brass",
+    "Diamond shape": "Pear Cut",
+    "Main Stone": "Cubic zirconia",
+    "Jewelry Type": "Jewellery Sets",
+    "Shape / pattern": "Water Drop",
+    "Style": "Trendy",
+    "Inlay technology": "Claw Setting"
+  },
+  "images": [
+    {
+      "path": "emerald-water-drop-set/01.webp",
+      "alt": "Emerald Water-Drop Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "emerald-water-drop-set/02.webp",
+      "alt": "Emerald Water-Drop Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "emerald-water-drop-set/03.webp",
+      "alt": "Emerald Water-Drop Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "emerald-water-drop-set/04.webp",
+      "alt": "Emerald Water-Drop Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "emerald-water-drop-set/05.webp",
+      "alt": "Emerald Water-Drop Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "emerald-water-drop-set/06.webp",
+      "alt": "Emerald Water-Drop Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "sku": "EME-WAT-WHITET",
+      "label": "White T0821 Bai",
+      "price": 342900,
+      "stock": 10,
+      "swatch": "emerald-water-drop-set/swatch/white-t0821-bai.webp"
+    },
+    {
+      "sku": "EME-WAT-BLUET0",
+      "label": "Blue T0821 Lan",
+      "price": 342900,
+      "stock": 10,
+      "swatch": "emerald-water-drop-set/swatch/blue-t0821-lan.webp"
+    },
+    {
+      "sku": "EME-WAT-GREENT",
+      "label": "Green T0821 LVVV",
+      "price": 342900,
+      "stock": 10,
+      "swatch": "emerald-water-drop-set/swatch/green-t0821-lvvv.webp"
+    }
+  ],
+  "tags": [
+    "necklaces",
+    "jewellery set",
+    "cubic zirconia",
+    "water drop",
+    "modern",
+    "rhodium-plated",
+    "silver-plated",
+    "wedding",
+    "engagement",
+    "anniversary"
+  ],
+  "featured": false,
+  "status": "active",
+  "createdAt": "2026-09-12T20:14:39.458Z",
+  "updatedAt": "2026-09-12T21:22:55.176Z"
+}

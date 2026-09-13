@@ -1,0 +1,127 @@
+{
+  "id": "p-gold-plated-broad-bridal-bangle",
+  "slug": "broad-bridal-bangle",
+  "title": "Gold-Plated Broad Bridal Bangle",
+  "category": "bangles",
+  "tagline": "A broad domed bangle in five jaali patterns, opens on a hinge",
+  "description": "A wide, domed bangle with an openable hinge, so it goes on over the knuckle instead of being forced past it. Five patterns to choose from: pierced jaali with star motifs, fine beaded jaali, a scalloped edge with floral panels, a rounded cable link, and a beaded ball row. Gold-plated over alloy, light enough to stack four or six on an arm for a wedding without the weight of real gold.",
+  "material": "Zinc alloy",
+  "finish": "24K gold plating",
+  "details": {
+    "Jewelry Type": "Bracelets, Bangles",
+    "Bracelets or Bangles Type": "Bangles",
+    "Jewelry Main Material": "Alloy",
+    "Plating": "24K Gold Plated",
+    "Occasion": "Wedding",
+    "Shape / pattern": "Broad domed band",
+    "Style": "Trendy",
+    "Closure": "Openable hinge",
+    "Sold as": "One piece"
+  },
+  "images": [
+    {
+      "path": "broad-bridal-bangle/01.webp",
+      "alt": "Gold-Plated Broad Bridal Bangle",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "broad-bridal-bangle/02.webp",
+      "alt": "Gold-Plated Broad Bridal Bangle",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "broad-bridal-bangle/03.webp",
+      "alt": "Gold-Plated Broad Bridal Bangle",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "broad-bridal-bangle/04.webp",
+      "alt": "Gold-Plated Broad Bridal Bangle",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "broad-bridal-bangle/05.webp",
+      "alt": "Gold-Plated Broad Bridal Bangle",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "broad-bridal-bangle/06.webp",
+      "alt": "Gold-Plated Broad Bridal Bangle",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "sku": "BAN-GOL-BEAD",
+      "label": "Beaded Ball",
+      "price": 107900,
+      "stock": 20,
+      "swatch": "broad-bridal-bangle/swatch/beaded-ball.webp"
+    },
+    {
+      "sku": "BAN-GOL-FINE",
+      "label": "Fine Jaali",
+      "price": 107900,
+      "stock": 20,
+      "swatch": "broad-bridal-bangle/swatch/fine-jaali.webp"
+    },
+    {
+      "sku": "BAN-GOL-CABL",
+      "label": "Cable Link",
+      "price": 107900,
+      "stock": 20,
+      "swatch": "broad-bridal-bangle/swatch/cable-link.webp"
+    },
+    {
+      "sku": "BAN-GOL-SCAL",
+      "label": "Scalloped Phool",
+      "price": 107900,
+      "stock": 20,
+      "swatch": "broad-bridal-bangle/swatch/scalloped-phool.webp"
+    },
+    {
+      "sku": "BAN-GOL-STAR",
+      "label": "Star Jaali",
+      "price": 107900,
+      "stock": 20,
+      "swatch": "broad-bridal-bangle/swatch/star-jaali.webp"
+    }
+  ],
+  "tags": [
+    "bangles",
+    "kada",
+    "bridal",
+    "wedding",
+    "gold plated",
+    "stackable",
+    "openable"
+  ],
+  "featured": true,
+  "status": "active",
+  "createdAt": "2026-09-12T16:12:32.010Z",
+  "updatedAt": "2026-09-12T21:22:55.174Z"
+}

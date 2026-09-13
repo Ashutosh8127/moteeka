@@ -1,0 +1,112 @@
+{
+  "id": "p-gold-plated-bridal-ring",
+  "slug": "gold-plated-bridal-ring",
+  "title": "Gold-Plated Bridal Ring",
+  "category": "rings",
+  "tagline": "Round-cut cubic zirconia, claw-set",
+  "description": "A geometric ring in round-cut cubic zirconia, held in claw settings. Brass under gold and rhodium plate, four options.",
+  "material": "Brass",
+  "finish": "White Gold Plated",
+  "details": {
+    "Main Stone": "Cubic zirconia",
+    "Jewelry Type": "Rings",
+    "Rings Type": "Engagement Bands or Rings",
+    "Shape / pattern": "Geometric",
+    "Style": "Trendy",
+    "Inlay technology": "Claw Setting",
+    "Stone Shape": "Round",
+    "Application": "Wedding"
+  },
+  "images": [
+    {
+      "path": "gold-plated-bridal-ring/01.webp",
+      "alt": "Gold-Plated Bridal Ring",
+      "widths": [
+        160,
+        400
+      ]
+    },
+    {
+      "path": "gold-plated-bridal-ring/02.webp",
+      "alt": "Gold-Plated Bridal Ring",
+      "widths": [
+        160,
+        400
+      ]
+    },
+    {
+      "path": "gold-plated-bridal-ring/03.webp",
+      "alt": "Gold-Plated Bridal Ring",
+      "widths": [
+        160,
+        400
+      ]
+    },
+    {
+      "path": "gold-plated-bridal-ring/04.webp",
+      "alt": "Gold-Plated Bridal Ring",
+      "widths": [
+        160,
+        400
+      ]
+    },
+    {
+      "path": "gold-plated-bridal-ring/05.webp",
+      "alt": "Gold-Plated Bridal Ring",
+      "widths": [
+        160,
+        400
+      ]
+    },
+    {
+      "path": "gold-plated-bridal-ring/06.webp",
+      "alt": "Gold-Plated Bridal Ring",
+      "widths": [
+        160,
+        400
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "sku": "RIN-GOL-6",
+      "label": "Size 6",
+      "price": 147900,
+      "stock": 10
+    },
+    {
+      "sku": "RIN-GOL-9",
+      "label": "Size 9",
+      "price": 147900,
+      "stock": 10
+    },
+    {
+      "sku": "RIN-GOL-8",
+      "label": "Size 8",
+      "price": 147900,
+      "stock": 10
+    },
+    {
+      "sku": "RIN-GOL-7",
+      "label": "Size 7",
+      "price": 147900,
+      "stock": 10
+    }
+  ],
+  "tags": [
+    "rings",
+    "ring",
+    "cubic zirconia",
+    "geometric",
+    "modern",
+    "gold-plated",
+    "rhodium-plated",
+    "wedding",
+    "engagement",
+    "anniversary"
+  ],
+  "featured": false,
+  "status": "active",
+  "createdAt": "2026-09-12T20:12:28.072Z",
+  "updatedAt": "2026-09-12T21:22:55.179Z"
+}

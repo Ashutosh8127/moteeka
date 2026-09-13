@@ -1,0 +1,101 @@
+{
+  "id": "p-rhodium-plated-bridal-bridal-earrings",
+  "slug": "white-water-drop-set",
+  "title": "White CZ Water-Drop Set",
+  "category": "necklaces",
+  "tagline": "Pear-cut cubic zirconia, claw-set",
+  "description": "A waterdrop jewellery set, pear-cut cubic zirconia, held in claw settings. Plated rhodium and silver over a brass body.",
+  "material": "Copper Alloy",
+  "finish": "Rhodium Plated, Silver Plated",
+  "details": {
+    "Jewelry Sets Type": "Bridal Jewellery Sets",
+    "Jewelry Main Material": "Brass",
+    "Diamond shape": "Pear Cut",
+    "Main Stone": "Cubic zirconia",
+    "Jewelry Type": "Jewellery Sets",
+    "Shape / pattern": "WaterDrop",
+    "Style": "Trendy",
+    "Inlay technology": "Claw Setting"
+  },
+  "images": [
+    {
+      "path": "white-water-drop-set/01.webp",
+      "alt": "Rhodium-Plated Bridal Bridal Earrings",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "white-water-drop-set/02.webp",
+      "alt": "Rhodium-Plated Bridal Bridal Earrings",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "white-water-drop-set/03.webp",
+      "alt": "Rhodium-Plated Bridal Bridal Earrings",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "white-water-drop-set/04.webp",
+      "alt": "Rhodium-Plated Bridal Bridal Earrings",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "white-water-drop-set/05.webp",
+      "alt": "Rhodium-Plated Bridal Bridal Earrings",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "white-water-drop-set/06.webp",
+      "alt": "Rhodium-Plated Bridal Bridal Earrings",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "sku": "WHI-WAT-WHITET",
+      "label": "White T0945",
+      "price": 325900,
+      "stock": 10,
+      "swatch": "white-water-drop-set/swatch/white-t0945.webp"
+    }
+  ],
+  "tags": [
+    "necklaces",
+    "jewellery set",
+    "cubic zirconia",
+    "waterdrop",
+    "modern",
+    "rhodium-plated",
+    "silver-plated",
+    "wedding",
+    "engagement",
+    "anniversary"
+  ],
+  "featured": false,
+  "status": "active",
+  "createdAt": "2026-09-12T20:14:25.203Z",
+  "updatedAt": "2026-09-12T21:22:55.190Z"
+}

@@ -1,0 +1,120 @@
+{
+  "id": "p-bridal-jewellery-set-2",
+  "slug": "rhinestone-collar-set",
+  "title": "Rhinestone Collar Set",
+  "category": "necklaces",
+  "tagline": "Rhinestones, necklace and earrings",
+  "description": "A matching set — necklace and earrings in rhinestones. Alloy, five colourways to pick from.",
+  "material": "Other",
+  "finish": "",
+  "details": {
+    "Jewelry Sets Type": "Necklace and Earring Sets",
+    "Jewelry Main Material": "Alloy",
+    "Main Stone": "Rhinestone",
+    "Jewelry Type": "Jewellery Sets",
+    "Style": "Classic"
+  },
+  "images": [
+    {
+      "path": "rhinestone-collar-set/01.webp",
+      "alt": "Rhinestone Collar Set",
+      "widths": [
+        160,
+        400,
+        800,
+        1200
+      ]
+    },
+    {
+      "path": "rhinestone-collar-set/02.webp",
+      "alt": "Rhinestone Collar Set",
+      "widths": [
+        160,
+        400
+      ]
+    },
+    {
+      "path": "rhinestone-collar-set/03.webp",
+      "alt": "Rhinestone Collar Set",
+      "widths": [
+        160,
+        400
+      ]
+    },
+    {
+      "path": "rhinestone-collar-set/04.webp",
+      "alt": "Rhinestone Collar Set",
+      "widths": [
+        160,
+        400
+      ]
+    },
+    {
+      "path": "rhinestone-collar-set/05.webp",
+      "alt": "Rhinestone Collar Set",
+      "widths": [
+        160,
+        400
+      ]
+    },
+    {
+      "path": "rhinestone-collar-set/06.webp",
+      "alt": "Rhinestone Collar Set",
+      "widths": [
+        160,
+        400
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "sku": "RHI-COL-SECOND",
+      "label": "second row Silver",
+      "price": 121900,
+      "stock": 10,
+      "swatch": "rhinestone-collar-set/swatch/second-row-silver.webp"
+    },
+    {
+      "sku": "RHI-COL-THREER",
+      "label": "three rows Silver",
+      "price": 138900,
+      "stock": 10,
+      "swatch": "rhinestone-collar-set/swatch/three-rows-silver.webp"
+    },
+    {
+      "sku": "RHI-COL-FIVERO",
+      "label": "five row Silver",
+      "price": 166900,
+      "stock": 10,
+      "swatch": "rhinestone-collar-set/swatch/five-row-silver.webp"
+    },
+    {
+      "sku": "RHI-COL-AROWSI",
+      "label": "a row Silver",
+      "price": 110900,
+      "stock": 10,
+      "swatch": "rhinestone-collar-set/swatch/a-row-silver.webp"
+    },
+    {
+      "sku": "RHI-COL-FOURRO",
+      "label": "Four rows Silver",
+      "price": 155900,
+      "stock": 10,
+      "swatch": "rhinestone-collar-set/swatch/four-rows-silver.webp"
+    }
+  ],
+  "tags": [
+    "necklaces",
+    "jewellery set",
+    "rhinestones",
+    "classic",
+    "wedding",
+    "engagement",
+    "anniversary",
+    "party"
+  ],
+  "featured": false,
+  "status": "active",
+  "createdAt": "2026-09-12T21:05:21.193Z",
+  "updatedAt": "2026-09-13T09:17:16.788Z"
+}

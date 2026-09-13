@@ -1,0 +1,102 @@
+{
+  "id": "p-gold-plated-necklace",
+  "slug": "gold-plated-heart-anklet",
+  "title": "Gold-Plated Heart Anklet",
+  "category": "anklets",
+  "tagline": "Oval-cut cubic zirconia, channel-set",
+  "description": "Heart anklet, oval-cut cubic zirconia, set into channels. Finished in gold and silver plate, in two colourways. Made for anniversaries. 20.5/21+10cm.",
+  "material": "Rhinestone",
+  "finish": "Silver Plated, Gold Plated",
+  "details": {
+    "Diamond shape": "Oval Cut",
+    "Main Stone": "Cubic zirconia",
+    "Occasion": "Anniversary",
+    "Shape / pattern": "Heart",
+    "Style": "Individuality",
+    "Inlay technology": "Channel setting",
+    "Color": "Gold Colour,Silver Colour",
+    "Size": "20.5/21+10cm",
+    "Usage": "Daily Life",
+    "Type": "Charm anklets"
+  },
+  "images": [
+    {
+      "path": "gold-plated-heart-anklet/01.webp",
+      "alt": "Gold-Plated Heart Anklet",
+      "widths": [
+        160,
+        400
+      ]
+    },
+    {
+      "path": "gold-plated-heart-anklet/02.webp",
+      "alt": "Gold-Plated Heart Anklet",
+      "widths": [
+        160,
+        400
+      ]
+    },
+    {
+      "path": "gold-plated-heart-anklet/03.webp",
+      "alt": "Gold-Plated Heart Anklet",
+      "widths": [
+        160,
+        400
+      ]
+    },
+    {
+      "path": "gold-plated-heart-anklet/04.webp",
+      "alt": "Gold-Plated Heart Anklet",
+      "widths": [
+        160,
+        400
+      ]
+    },
+    {
+      "path": "gold-plated-heart-anklet/05.webp",
+      "alt": "Gold-Plated Heart Anklet",
+      "widths": [
+        160,
+        400
+      ]
+    },
+    {
+      "path": "gold-plated-heart-anklet/06.webp",
+      "alt": "Gold-Plated Heart Anklet",
+      "widths": [
+        160,
+        400
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "sku": "GOL-PLA-GOLD",
+      "label": "Gold",
+      "price": 79900,
+      "stock": 10,
+      "swatch": "gold-plated-heart-anklet/swatch/gold.webp"
+    },
+    {
+      "sku": "GOL-PLA-SILVER",
+      "label": "Silver",
+      "price": 79900,
+      "stock": 10,
+      "swatch": "gold-plated-heart-anklet/swatch/silver.webp"
+    }
+  ],
+  "tags": [
+    "anklets",
+    "necklace",
+    "cubic zirconia",
+    "heart",
+    "gold-plated",
+    "silver-plated",
+    "anniversary",
+    "everyday"
+  ],
+  "featured": false,
+  "status": "active",
+  "createdAt": "2026-09-12T20:11:24.085Z",
+  "updatedAt": "2026-09-13T09:20:13.154Z"
+}

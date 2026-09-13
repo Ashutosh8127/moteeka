@@ -1,0 +1,99 @@
+{
+  "id": "p-rhodium-plated-adjustable-piece",
+  "slug": "rhodium-plated-adjustable-ring",
+  "title": "Rhodium-Plated Adjustable Ring",
+  "category": "rings",
+  "tagline": "Cubic zirconia, claw-set",
+  "description": "A geometric ring, cubic zirconia, held in claw settings. Plated rhodium and silver over a brass body. Adjustable, so it fits most.",
+  "material": "Brass",
+  "finish": "Rhodium Plated, Silver Plated",
+  "details": {
+    "Main Stone": "Cubic zirconia",
+    "Jewelry Type": "Rings",
+    "Rings Type": "Wedding Bands or Rings",
+    "Shape / pattern": "Geometric",
+    "Style": "Trendy",
+    "Inlay technology": "Claw Setting"
+  },
+  "images": [
+    {
+      "path": "rhodium-plated-adjustable-ring/01.webp",
+      "alt": "Rhodium-Plated Adjustable Ring",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "rhodium-plated-adjustable-ring/02.webp",
+      "alt": "Rhodium-Plated Adjustable Ring",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "rhodium-plated-adjustable-ring/03.webp",
+      "alt": "Rhodium-Plated Adjustable Ring",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "rhodium-plated-adjustable-ring/04.webp",
+      "alt": "Rhodium-Plated Adjustable Ring",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "rhodium-plated-adjustable-ring/05.webp",
+      "alt": "Rhodium-Plated Adjustable Ring",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "rhodium-plated-adjustable-ring/06.webp",
+      "alt": "Rhodium-Plated Adjustable Ring",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "sku": "RHO-PLA-SILVER",
+      "label": "Silver J0224 / Adjustable Size (one size fits all)",
+      "price": 124900,
+      "stock": 10,
+      "swatch": "rhodium-plated-adjustable-ring/swatch/silver-j0224.webp"
+    }
+  ],
+  "tags": [
+    "rings",
+    "ring",
+    "cubic zirconia",
+    "geometric",
+    "modern",
+    "rhodium-plated",
+    "silver-plated",
+    "wedding",
+    "engagement",
+    "anniversary"
+  ],
+  "featured": false,
+  "status": "active",
+  "createdAt": "2026-09-12T20:12:13.192Z",
+  "updatedAt": "2026-09-12T21:22:55.186Z"
+}

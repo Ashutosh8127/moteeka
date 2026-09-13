@@ -1,0 +1,158 @@
+{
+  "id": "p-gold-plated-wedding-kada",
+  "slug": "wedding-kada",
+  "title": "Gold-Plated Wedding Kada",
+  "category": "bangles",
+  "tagline": "A broad openable kada in nine wedding patterns",
+  "description": "A broad kada that opens on a hinge, so it goes on over the knuckle instead of being forced past it. Nine patterns, each cast and plated the same way: sunburst rosettes, ribbed barrels, a wavy leaf jaali, a beaded centre boss, bamboo panels, a broad fan jaali, diamond quilting, faceted nuggets and open daisies. Gold-plated over alloy and light for its width, so four or six stack on an arm for a wedding without the weight of real gold.",
+  "material": "Zinc alloy",
+  "finish": "24K gold plating",
+  "details": {
+    "Jewelry Main Material": "Alloy",
+    "Bracelets or Bangles Type": "Bangles",
+    "Jewelry Type": "Bracelets, Bangles",
+    "Occasion": "Wedding",
+    "Shape / pattern": "Geometric",
+    "Style": "Trendy"
+  },
+  "images": [
+    {
+      "path": "wedding-kada/01.webp",
+      "alt": "Gold-Plated Wedding Kada",
+      "widths": [
+        160,
+        400,
+        800,
+        1200
+      ]
+    },
+    {
+      "path": "wedding-kada/02.webp",
+      "alt": "Gold-Plated Wedding Kada",
+      "widths": [
+        160,
+        400,
+        800,
+        1200
+      ]
+    },
+    {
+      "path": "wedding-kada/03.webp",
+      "alt": "Gold-Plated Wedding Kada",
+      "widths": [
+        160,
+        400,
+        800,
+        1200
+      ]
+    },
+    {
+      "path": "wedding-kada/04.webp",
+      "alt": "Gold-Plated Wedding Kada",
+      "widths": [
+        160,
+        400,
+        800,
+        1200
+      ]
+    },
+    {
+      "path": "wedding-kada/05.webp",
+      "alt": "Gold-Plated Wedding Kada",
+      "widths": [
+        160,
+        400,
+        800,
+        1200
+      ]
+    },
+    {
+      "path": "wedding-kada/06.webp",
+      "alt": "Gold-Plated Wedding Kada",
+      "widths": [
+        160,
+        400,
+        800,
+        1200
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "sku": "BAN-GOL-DAISYJ",
+      "label": "Daisy Jaali",
+      "price": 107900,
+      "stock": 20,
+      "swatch": "wedding-kada/swatch/daisy-jaali.webp"
+    },
+    {
+      "sku": "BAN-GOL-FANJAA",
+      "label": "Fan Jaali",
+      "price": 107900,
+      "stock": 20,
+      "swatch": "wedding-kada/swatch/fan-jaali.webp"
+    },
+    {
+      "sku": "BAN-GOL-BAMBOO",
+      "label": "Bamboo Panel",
+      "price": 107900,
+      "stock": 20,
+      "swatch": "wedding-kada/swatch/bamboo-panel.webp"
+    },
+    {
+      "sku": "BAN-GOL-RIBBED",
+      "label": "Ribbed Barrel",
+      "price": 107900,
+      "stock": 20,
+      "swatch": "wedding-kada/swatch/ribbed-barrel.webp"
+    },
+    {
+      "sku": "BAN-GOL-FACETE",
+      "label": "Faceted Nugget",
+      "price": 107900,
+      "stock": 20,
+      "swatch": "wedding-kada/swatch/faceted-nugget.webp"
+    },
+    {
+      "sku": "BAN-GOL-DIAMON",
+      "label": "Diamond Quilt",
+      "price": 107900,
+      "stock": 20,
+      "swatch": "wedding-kada/swatch/diamond-quilt.webp"
+    },
+    {
+      "sku": "BAN-GOL-BEADED",
+      "label": "Beaded Boss",
+      "price": 107900,
+      "stock": 20,
+      "swatch": "wedding-kada/swatch/beaded-boss.webp"
+    },
+    {
+      "sku": "BAN-GOL-WAVYLE",
+      "label": "Wavy Leaf Jaali",
+      "price": 107900,
+      "stock": 20,
+      "swatch": "wedding-kada/swatch/wavy-leaf-jaali.webp"
+    },
+    {
+      "sku": "BAN-GOL-SUNBUR",
+      "label": "Sunburst Phool",
+      "price": 107900,
+      "stock": 20,
+      "swatch": "wedding-kada/swatch/sunburst-phool.webp"
+    }
+  ],
+  "tags": [
+    "bangles",
+    "kada",
+    "bridal",
+    "wedding",
+    "gold plated",
+    "stackable",
+    "openable"
+  ],
+  "featured": false,
+  "status": "active",
+  "createdAt": "2026-09-12T16:26:23.571Z",
+  "updatedAt": "2026-09-12T21:22:55.190Z"
+}

@@ -1,0 +1,98 @@
+{
+  "id": "p-rhodium-plated-long-bridal-earrings",
+  "slug": "long-zirconia-drops",
+  "title": "Long Zirconia Drop Earrings",
+  "category": "earrings",
+  "tagline": "Pear-cut cubic zirconia, micro-set",
+  "description": "A pair of geometric earrings, pear-cut cubic zirconia, micro-set. Plated rhodium over a brass body. Made for weddings.",
+  "material": "Copper Alloy",
+  "finish": "Rhodium Plated",
+  "details": {
+    "Jewelry Main Material": "Brass",
+    "Diamond shape": "Pear Cut",
+    "Earrings Type": "Drop Earrings",
+    "Main Stone": "Cubic zirconia",
+    "Jewelry Type": "Earrings",
+    "Occasion": "Wedding",
+    "Shape / pattern": "Geometric",
+    "Style": "Trendy",
+    "Inlay technology": "Micro insert"
+  },
+  "images": [
+    {
+      "path": "long-zirconia-drops/01.webp",
+      "alt": "Rhodium-Plated Long Bridal Earrings",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "long-zirconia-drops/02.webp",
+      "alt": "Rhodium-Plated Long Bridal Earrings",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "long-zirconia-drops/03.webp",
+      "alt": "Rhodium-Plated Long Bridal Earrings",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "long-zirconia-drops/04.webp",
+      "alt": "Rhodium-Plated Long Bridal Earrings",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "long-zirconia-drops/05.webp",
+      "alt": "Rhodium-Plated Long Bridal Earrings",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "long-zirconia-drops/06.webp",
+      "alt": "Rhodium-Plated Long Bridal Earrings",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "sku": "LON-ZIR-WHITEE",
+      "label": "White E1169",
+      "price": 186900,
+      "stock": 10,
+      "swatch": "long-zirconia-drops/swatch/white-e1169.webp"
+    }
+  ],
+  "tags": [
+    "earrings",
+    "cubic zirconia",
+    "geometric",
+    "modern",
+    "rhodium-plated",
+    "wedding"
+  ],
+  "featured": false,
+  "status": "active",
+  "createdAt": "2026-09-12T20:10:00.958Z",
+  "updatedAt": "2026-09-12T21:22:55.184Z"
+}

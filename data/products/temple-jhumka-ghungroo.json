@@ -1,0 +1,131 @@
+{
+  "id": "p-oxidised-bridal-jhumka",
+  "slug": "temple-jhumka-ghungroo",
+  "title": "Temple Jhumka with Ghungroo",
+  "category": "jhumka",
+  "tagline": "One bell, six tops — parrot, paisley, lotus, peacock",
+  "description": "The classic oxidised jhumka: a domed bell fringed with ghungroo, hung from a carved top you choose. Six tops in the same finish — a parrot in profile, a paisley teardrop, a round floral disc, a spiked sunburst, a lotus, and a peacock. Plated alloy with an antique-silver oxidised finish, so the recesses stay dark and the raised work catches light.",
+  "material": "Alloy",
+  "finish": "Antique silver, oxidised",
+  "details": {
+    "Earrings Type": "Stud Earrings",
+    "Jewelry Type": "Earrings",
+    "Shape": "Bells",
+    "Style": "Jhumka",
+    "Religious Type": "Indian",
+    "Inlay technology": "Claw Setting"
+  },
+  "images": [
+    {
+      "path": "temple-jhumka-ghungroo/01.webp",
+      "alt": "Oxidised Bridal Jhumka",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "temple-jhumka-ghungroo/02.webp",
+      "alt": "Oxidised Bridal Jhumka",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "temple-jhumka-ghungroo/03.webp",
+      "alt": "Oxidised Bridal Jhumka",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "temple-jhumka-ghungroo/04.webp",
+      "alt": "Oxidised Bridal Jhumka",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "temple-jhumka-ghungroo/05.webp",
+      "alt": "Oxidised Bridal Jhumka",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "temple-jhumka-ghungroo/06.webp",
+      "alt": "Oxidised Bridal Jhumka",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "sku": "TEM-JHU-PARROT",
+      "label": "Parrot Top",
+      "price": 71900,
+      "stock": 10,
+      "swatch": "temple-jhumka-ghungroo/swatch/parrot-top.webp"
+    },
+    {
+      "sku": "TEM-JHU-CARVED",
+      "label": "Carved Disc",
+      "price": 71900,
+      "stock": 10,
+      "swatch": "temple-jhumka-ghungroo/swatch/carved-disc.webp"
+    },
+    {
+      "sku": "TEM-JHU-PAISLE",
+      "label": "Paisley Top",
+      "price": 71900,
+      "stock": 10,
+      "swatch": "temple-jhumka-ghungroo/swatch/paisley-top.webp"
+    },
+    {
+      "sku": "TEM-JHU-LOTUST",
+      "label": "Lotus Top",
+      "price": 71900,
+      "stock": 10,
+      "swatch": "temple-jhumka-ghungroo/swatch/lotus-top.webp"
+    },
+    {
+      "sku": "TEM-JHU-SUNBUR",
+      "label": "Sunburst Top",
+      "price": 71900,
+      "stock": 10,
+      "swatch": "temple-jhumka-ghungroo/swatch/sunburst-top.webp"
+    },
+    {
+      "sku": "TEM-JHU-PEACOC",
+      "label": "Peacock Top",
+      "price": 71900,
+      "stock": 10,
+      "swatch": "temple-jhumka-ghungroo/swatch/peacock-top.webp"
+    }
+  ],
+  "tags": [
+    "jhumka",
+    "earrings",
+    "oxidised",
+    "temple",
+    "ghungroo",
+    "bridal",
+    "ethnic"
+  ],
+  "featured": false,
+  "status": "active",
+  "createdAt": "2026-09-12T19:22:28.017Z",
+  "updatedAt": "2026-09-12T21:22:55.190Z"
+}

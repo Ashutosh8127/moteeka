@@ -1,0 +1,137 @@
+// The database this ships to. Every field mirrors src/types.ts, so the Postgres
+// repository is a translation of the JSON one rather than a redesign.
+//
+//   npx prisma migrate dev --name init
+//   then write src/repo/prisma-repo.ts implementing Repo, and set REPO_DRIVER=postgres
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum ProductStatus {
+  draft
+  active
+  archived
+}
+
+enum OrderStatus {
+  pending
+  paid
+  shipped
+  cancelled
+}
+
+model Category {
+  slug        String    @id
+  name        String
+  description String    @default("")
+  sortOrder   Int       @map("sort_order")
+  products    Product[]
+
+  @@map("categories")
+}
+
+model Product {
+  id           String        @id @default(uuid())
+  slug         String        @unique
+  title        String
+  categorySlug String        @map("category_slug")
+  category     Category      @relation(fields: [categorySlug], references: [slug])
+  tagline      String        @default("")
+  description  String        @default("")
+  material     String        @default("")
+  finish       String        @default("")
+  // Free-text spec table; it varies per piece and does not deserve a column each.
+  details      Json          @default("{}")
+  tags         String[]
+  featured     Boolean       @default(false)
+  status       ProductStatus @default(draft)
+  sourceUrl    String?       @map("source_url")
+  supplier     String?
+  createdAt    DateTime      @default(now()) @map("created_at")
+  updatedAt    DateTime      @updatedAt @map("updated_at")
+
+  images   ProductImage[]
+  variants Variant[]
+
+  @@index([categorySlug])
+  @@index([status])
+  @@map("products")
+}
+
+model ProductImage {
+  id          String  @id @default(uuid())
+  productId   String  @map("product_id")
+  product     Product @relation(fields: [productId], references: [id], onDelete: Cascade)
+  path        String
+  alt         String  @default("")
+  placeholder Boolean @default(false)
+  position    Int     @default(0)
+
+  @@index([productId])
+  @@map("product_images")
+}
+
+model Variant {
+  sku         String  @id
+  productId   String  @map("product_id")
+  product     Product @relation(fields: [productId], references: [id], onDelete: Cascade)
+  label       String
+  // Paise, as an integer. Never a float — discounts and cart sums drift.
+  price       Int
+  compareAt   Int?    @map("compare_at")
+  stock       Int     @default(0)
+  weightGrams Int?    @map("weight_grams")
+
+  orderLines OrderLine[]
+
+  @@index([productId])
+  @@map("variants")
+}
+
+model Order {
+  id        String      @id @default(uuid())
+  reference String      @unique
+  subtotal  Int
+  shipping  Int
+  taxRate   Float       @map("tax_rate")
+  tax       Int
+  total     Int
+  status    OrderStatus @default(pending)
+
+  customerName  String @map("customer_name")
+  customerEmail String @map("customer_email")
+  customerPhone String @map("customer_phone")
+
+  addressLine1 String  @map("address_line1")
+  addressLine2 String? @map("address_line2")
+  city         String
+  state        String
+  pincode      String
+
+  createdAt DateTime    @default(now()) @map("created_at")
+  lines     OrderLine[]
+
+  @@map("orders")
+}
+
+model OrderLine {
+  id           String  @id @default(uuid())
+  orderId      String  @map("order_id")
+  order        Order   @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  sku          String
+  variant      Variant @relation(fields: [sku], references: [sku])
+  title        String
+  variantLabel String  @map("variant_label")
+  // Captured at purchase time; the catalogue price will move afterwards.
+  unitPrice    Int     @map("unit_price")
+  quantity     Int
+
+  @@index([orderId])
+  @@map("order_lines")
+}

@@ -1,0 +1,101 @@
+{
+  "id": "p-silver-plated-tassel-bracelet",
+  "slug": "silver-plated-tassel-jewellery-set",
+  "title": "Silver-Plated Tassel Jewellery Set",
+  "category": "necklaces",
+  "tagline": "Pear-cut cubic zirconia, claw-set",
+  "description": "A tassel jewellery set, pear-cut cubic zirconia, held in claw settings. Plated silver over a brass body.",
+  "material": "Copper Alloy",
+  "finish": "Silver Plated",
+  "details": {
+    "Jewelry Sets Type": "Bridal Jewellery Sets",
+    "Jewelry Main Material": "Brass",
+    "Diamond shape": "Pear Cut",
+    "Main Stone": "Cubic zirconia",
+    "Jewelry Type": "Jewellery Sets",
+    "Shape / pattern": "Tassel",
+    "Style": "Trendy",
+    "Inlay technology": "Claw Setting"
+  },
+  "images": [
+    {
+      "path": "silver-plated-tassel-jewellery-set/01.webp",
+      "alt": "Silver-Plated Tassel Jewellery Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "silver-plated-tassel-jewellery-set/02.webp",
+      "alt": "Silver-Plated Tassel Jewellery Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "silver-plated-tassel-jewellery-set/03.webp",
+      "alt": "Silver-Plated Tassel Jewellery Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "silver-plated-tassel-jewellery-set/04.webp",
+      "alt": "Silver-Plated Tassel Jewellery Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "silver-plated-tassel-jewellery-set/05.webp",
+      "alt": "Silver-Plated Tassel Jewellery Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "silver-plated-tassel-jewellery-set/06.webp",
+      "alt": "Silver-Plated Tassel Jewellery Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "sku": "SIL-PLA-WHITET",
+      "label": "White T0844 / Adjustable Size",
+      "price": 986900,
+      "stock": 10,
+      "swatch": "silver-plated-tassel-jewellery-set/swatch/white-t0844.webp"
+    }
+  ],
+  "tags": [
+    "necklaces",
+    "jewellery set",
+    "cubic zirconia",
+    "tassel",
+    "modern",
+    "silver-plated",
+    "wedding",
+    "engagement",
+    "anniversary",
+    "party"
+  ],
+  "featured": false,
+  "status": "active",
+  "createdAt": "2026-09-12T20:14:59.601Z",
+  "updatedAt": "2026-09-12T21:22:55.189Z"
+}

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- An order page is private to whoever holds the reference; keep it out of search. -->
+<meta name="robots" content="noindex, nofollow">
+<title>Track your order — Moteeka</title>
+<link rel="icon" href="/brand/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/brand/favicon.png" sizes="any">
+<link rel="apple-touch-icon" href="/brand/apple-touch-icon.png">
+<meta name="theme-color" content="#221f1b">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Karla:wght@400;500;700&family=Marcellus&display=swap">
+<link rel="stylesheet" href="/assets/css/site.css">
+<script src="/config.js"></script>
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="/">
+      <img class="logo" src="/brand/mark.svg" alt="" width="30" height="30">
+      <span class="mark">Moteeka</span><span class="sub">Silver &amp; Gold-Plated</span></a>
+    <nav class="cats"><a href="/">All pieces</a></nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="track">
+    <h1>Your order</h1>
+    <form id="find">
+      <label>Order reference<input name="ref" required placeholder="OXJ-260913-A4F2" spellcheck="false"
+        autocapitalize="characters" aria-describedby="ref-help"></label>
+      <button class="btn" type="submit">Find it</button>
+    </form>
+    <p class="muted-note" id="ref-help">It was shown when you ordered and looks like
+    <span class="mono">OXJ-260913-A4F2</span>. Bookmark this page — it is the only way back to
+    your order, because there are no accounts on this site.</p>
+    <p class="err" id="error" role="alert" hidden></p>
+    <div id="result" hidden></div>
+  </section>
+</main>
+
+<footer class="site"><div class="wrap" id="footer"></div></footer>
+<script type="module" src="/assets/js/order.js"></script>
+<script type="module" src="/assets/js/footer.js"></script>
+</body>
+</html>

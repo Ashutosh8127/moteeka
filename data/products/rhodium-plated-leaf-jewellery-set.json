@@ -1,0 +1,101 @@
+{
+  "id": "p-rhodium-plated-geometric-earrings",
+  "slug": "rhodium-plated-leaf-jewellery-set",
+  "title": "Rhodium-Plated Leaf Jewellery Set",
+  "category": "necklaces",
+  "tagline": "Princess-cut cubic zirconia, claw-set",
+  "description": "A square jewellery set, princess-cut cubic zirconia, held in claw settings. Plated rhodium over a brass body.",
+  "material": "Copper Alloy",
+  "finish": "Rhodium Plated",
+  "details": {
+    "Jewelry Sets Type": "Bridal Jewellery Sets",
+    "Jewelry Main Material": "Brass",
+    "Diamond shape": "Princess Cut",
+    "Main Stone": "Cubic zirconia",
+    "Jewelry Type": "Jewellery Sets",
+    "Shape / pattern": "Square",
+    "Style": "Trendy",
+    "Inlay technology": "Claw Setting"
+  },
+  "images": [
+    {
+      "path": "rhodium-plated-leaf-jewellery-set/01.webp",
+      "alt": "Rhodium-Plated Leaf Jewellery Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "rhodium-plated-leaf-jewellery-set/02.webp",
+      "alt": "Rhodium-Plated Leaf Jewellery Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "rhodium-plated-leaf-jewellery-set/03.webp",
+      "alt": "Rhodium-Plated Leaf Jewellery Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "rhodium-plated-leaf-jewellery-set/04.webp",
+      "alt": "Rhodium-Plated Leaf Jewellery Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "rhodium-plated-leaf-jewellery-set/05.webp",
+      "alt": "Rhodium-Plated Leaf Jewellery Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "rhodium-plated-leaf-jewellery-set/06.webp",
+      "alt": "Rhodium-Plated Leaf Jewellery Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "sku": "RHO-PLA-PINKT1",
+      "label": "Pink T1017",
+      "price": 562900,
+      "stock": 10,
+      "swatch": "rhodium-plated-leaf-jewellery-set/swatch/pink-t1017.webp"
+    }
+  ],
+  "tags": [
+    "necklaces",
+    "jewellery set",
+    "cubic zirconia",
+    "square",
+    "modern",
+    "rhodium-plated",
+    "wedding",
+    "engagement",
+    "anniversary",
+    "party"
+  ],
+  "featured": false,
+  "status": "active",
+  "createdAt": "2026-09-12T20:13:31.537Z",
+  "updatedAt": "2026-09-12T21:22:55.187Z"
+}

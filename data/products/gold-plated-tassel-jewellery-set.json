@@ -1,0 +1,97 @@
+{
+  "id": "p-gold-plated-tassel-necklace",
+  "slug": "gold-plated-tassel-jewellery-set",
+  "title": "Gold-Plated Tassel Jewellery Set",
+  "category": "necklaces",
+  "tagline": "Round brilliant-cut cubic zirconia, micro-set",
+  "description": "A jewellery set in round brilliant-cut cubic zirconia, micro-set. Brass under rhodium plate. Meant for weddings.",
+  "material": "Copper Alloy",
+  "finish": "Rhodium Plated",
+  "details": {
+    "Jewelry Sets Type": "Bridal Jewellery Sets",
+    "Jewelry Main Material": "Brass",
+    "Diamond shape": "Round Brilliant Cut",
+    "Main Stone": "Cubic zirconia",
+    "Jewelry Type": "Jewellery Sets",
+    "Occasion": "Wedding",
+    "Style": "Trendy",
+    "Inlay technology": "Micro insert"
+  },
+  "images": [
+    {
+      "path": "gold-plated-tassel-jewellery-set/01.webp",
+      "alt": "Gold-Plated Tassel Jewellery Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "gold-plated-tassel-jewellery-set/02.webp",
+      "alt": "Gold-Plated Tassel Jewellery Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "gold-plated-tassel-jewellery-set/03.webp",
+      "alt": "Gold-Plated Tassel Jewellery Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "gold-plated-tassel-jewellery-set/04.webp",
+      "alt": "Gold-Plated Tassel Jewellery Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "gold-plated-tassel-jewellery-set/05.webp",
+      "alt": "Gold-Plated Tassel Jewellery Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "gold-plated-tassel-jewellery-set/06.webp",
+      "alt": "Gold-Plated Tassel Jewellery Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "sku": "GOL-PLA-SILVER",
+      "label": "Silver T0807 Yin FangShouLian / Adjustable",
+      "price": 760900,
+      "stock": 10,
+      "swatch": "gold-plated-tassel-jewellery-set/swatch/silver-t0807-yin-fangshoulian.webp"
+    }
+  ],
+  "tags": [
+    "necklaces",
+    "jewellery set",
+    "cubic zirconia",
+    "modern",
+    "rhodium-plated",
+    "wedding"
+  ],
+  "featured": false,
+  "status": "active",
+  "createdAt": "2026-09-12T20:15:31.357Z",
+  "updatedAt": "2026-09-12T21:22:55.182Z"
+}

@@ -1,0 +1,111 @@
+{
+  "id": "p-gold-plated-tassel-jhumka",
+  "slug": "gold-plated-tassel-boho-jhumka",
+  "title": "Gold-Plated Tassel Boho Jhumka",
+  "category": "jhumka",
+  "tagline": "Rhinestones, claw-set",
+  "description": "Bell jhumka, rhinestones, held in claw settings. Gold and silver plate over alloy, three colourways. Meant for anniversaries.",
+  "material": "Alloy",
+  "finish": "Gold Plated, Silver Plated",
+  "details": {
+    "Earrings Type": "Stud Earrings",
+    "Main Stone": "Crystal, Rhinestone",
+    "Jewelry Type": "Earrings",
+    "Occasion": "Anniversary",
+    "Shape / pattern": "Bells",
+    "Style": "Jhumka",
+    "Religious Type": "Tibetan Buddhism",
+    "Inlay technology": "Claw Setting"
+  },
+  "images": [
+    {
+      "path": "gold-plated-tassel-boho-jhumka/01.webp",
+      "alt": "Gold-Plated Tassel Boho Jhumka",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "gold-plated-tassel-boho-jhumka/02.webp",
+      "alt": "Gold-Plated Tassel Boho Jhumka",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "gold-plated-tassel-boho-jhumka/03.webp",
+      "alt": "Gold-Plated Tassel Boho Jhumka",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "gold-plated-tassel-boho-jhumka/04.webp",
+      "alt": "Gold-Plated Tassel Boho Jhumka",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "gold-plated-tassel-boho-jhumka/05.webp",
+      "alt": "Gold-Plated Tassel Boho Jhumka",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "gold-plated-tassel-boho-jhumka/06.webp",
+      "alt": "Gold-Plated Tassel Boho Jhumka",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "sku": "GOL-PLA-GOLD3",
+      "label": "Gold 3",
+      "price": 86900,
+      "stock": 10,
+      "swatch": "gold-plated-tassel-boho-jhumka/swatch/gold-3.webp"
+    },
+    {
+      "sku": "GOL-PLA-GOLD1",
+      "label": "Gold 1",
+      "price": 86900,
+      "stock": 10,
+      "swatch": "gold-plated-tassel-boho-jhumka/swatch/gold-1.webp"
+    },
+    {
+      "sku": "GOL-PLA-GOLD2",
+      "label": "Gold 2",
+      "price": 86900,
+      "stock": 10,
+      "swatch": "gold-plated-tassel-boho-jhumka/swatch/gold-2.webp"
+    }
+  ],
+  "tags": [
+    "jhumka",
+    "rhinestones",
+    "bell",
+    "gold-plated",
+    "silver-plated",
+    "anniversary"
+  ],
+  "featured": false,
+  "status": "active",
+  "createdAt": "2026-09-12T20:23:41.961Z",
+  "updatedAt": "2026-09-12T21:22:55.181Z"
+}

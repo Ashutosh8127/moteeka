@@ -1,0 +1,88 @@
+{
+  "id": "p-gold-plated-stud-nose-pin",
+  "slug": "butterfly-nose-stud",
+  "title": "Butterfly Nose Stud",
+  "category": "rings",
+  "tagline": "Micro-set, two colourways",
+  "description": "Butterfly nose pin. Gold and silver plate over copper alloy, in two colourways. Made for parties.",
+  "material": "Copper",
+  "finish": "18K gold or silver plated",
+  "details": {
+    "Occasion": "Gift, Party",
+    "Body Jewelry Type": "Nose Rings & Studs",
+    "Shape / pattern": "Butterfly",
+    "Style": "Trendy",
+    "Inlay technology": "Micro insert",
+    "Jewelry Type": "Body Jewellery",
+    "Piercing": "Nose"
+  },
+  "images": [
+    {
+      "path": "butterfly-nose-stud/01.webp",
+      "alt": "Butterfly Nose Stud",
+      "widths": [
+        160,
+        400,
+        800,
+        1200
+      ]
+    },
+    {
+      "path": "butterfly-nose-stud/02.webp",
+      "alt": "Butterfly Nose Stud",
+      "widths": [
+        160,
+        400,
+        800,
+        1200
+      ]
+    },
+    {
+      "path": "butterfly-nose-stud/03.webp",
+      "alt": "Butterfly Nose Stud",
+      "widths": [
+        160,
+        400,
+        800,
+        1200
+      ]
+    },
+    {
+      "path": "butterfly-nose-stud/04.webp",
+      "alt": "Butterfly Nose Stud",
+      "widths": [
+        160,
+        400,
+        800,
+        1200
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "sku": "BUT-NOS-GOLD",
+      "label": "Gold",
+      "price": 73900,
+      "stock": 10,
+      "swatch": "butterfly-nose-stud/swatch/gold.webp"
+    },
+    {
+      "sku": "BUT-NOS-SILVER",
+      "label": "Silver",
+      "price": 73900,
+      "stock": 10,
+      "swatch": "butterfly-nose-stud/swatch/silver.webp"
+    }
+  ],
+  "tags": [
+    "nose pin",
+    "nath",
+    "stud",
+    "butterfly",
+    "piercing"
+  ],
+  "featured": false,
+  "status": "active",
+  "createdAt": "2026-09-12T20:51:08.175Z",
+  "updatedAt": "2026-09-12T21:22:55.174Z"
+}

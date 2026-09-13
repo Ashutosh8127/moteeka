@@ -1,0 +1,144 @@
+{
+  "id": "p-oxidised-bridal-jhumka-3",
+  "slug": "stone-set-drops",
+  "title": "Stone-Set Drop Earrings",
+  "category": "earrings",
+  "tagline": "A disc jhumka and a leaf drop, in four colourways each",
+  "description": "Two shapes on one card. The disc jhumka sets a ring of coloured stones around a carved rosette above an oxidised bell with ghungroo; the leaf drop is a marquise of filigree with a single stone and a fringe of silver beads on a hook. Four colourways each — plain silver, turquoise, blue and red — so a set can be matched to the outfit rather than the other way round.",
+  "material": "Alloy",
+  "finish": "Antique silver, oxidised",
+  "details": {
+    "Earrings Type": "Drop Earrings",
+    "Jewelry Type": "Earrings",
+    "Shape": "Bells",
+    "Style": "Jhumka",
+    "Religious Type": "Indian",
+    "Inlay technology": "Claw Setting"
+  },
+  "images": [
+    {
+      "path": "stone-set-drops/01.webp",
+      "alt": "Oxidised Bridal Jhumka",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "stone-set-drops/02.webp",
+      "alt": "Oxidised Bridal Jhumka",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "stone-set-drops/03.webp",
+      "alt": "Oxidised Bridal Jhumka",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "stone-set-drops/04.webp",
+      "alt": "Oxidised Bridal Jhumka",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "stone-set-drops/05.webp",
+      "alt": "Oxidised Bridal Jhumka",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "stone-set-drops/06.webp",
+      "alt": "Oxidised Bridal Jhumka",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "sku": "STO-SET-DISCJH",
+      "label": "Disc Jhumka, Turquoise",
+      "price": 76900,
+      "stock": 10,
+      "swatch": "stone-set-drops/swatch/disc-jhumka-turquoise.webp"
+    },
+    {
+      "sku": "STO-SET-DISCJH-2",
+      "label": "Disc Jhumka, Silver",
+      "price": 76900,
+      "stock": 10,
+      "swatch": "stone-set-drops/swatch/disc-jhumka-silver.webp"
+    },
+    {
+      "sku": "STO-SET-DISCJH-3",
+      "label": "Disc Jhumka, Blue",
+      "price": 76900,
+      "stock": 10,
+      "swatch": "stone-set-drops/swatch/disc-jhumka-blue.webp"
+    },
+    {
+      "sku": "STO-SET-LEAFDR",
+      "label": "Leaf Drop, Red",
+      "price": 75900,
+      "stock": 10,
+      "swatch": "stone-set-drops/swatch/leaf-drop-red.webp"
+    },
+    {
+      "sku": "STO-SET-LEAFDR-2",
+      "label": "Leaf Drop, Black",
+      "price": 75900,
+      "stock": 10,
+      "swatch": "stone-set-drops/swatch/leaf-drop-black.webp"
+    },
+    {
+      "sku": "STO-SET-DISCJH-4",
+      "label": "Disc Jhumka, Red",
+      "price": 76900,
+      "stock": 10,
+      "swatch": "stone-set-drops/swatch/disc-jhumka-red.webp"
+    },
+    {
+      "sku": "STO-SET-LEAFDR-3",
+      "label": "Leaf Drop, Blue",
+      "price": 75900,
+      "stock": 10,
+      "swatch": "stone-set-drops/swatch/leaf-drop-blue.webp"
+    },
+    {
+      "sku": "STO-SET-LEAFDR-4",
+      "label": "Leaf Drop, Crystal",
+      "price": 75900,
+      "stock": 10,
+      "swatch": "stone-set-drops/swatch/leaf-drop-crystal.webp"
+    }
+  ],
+  "tags": [
+    "earrings",
+    "oxidised",
+    "stone",
+    "jhumka",
+    "drops",
+    "colour"
+  ],
+  "featured": false,
+  "status": "active",
+  "createdAt": "2026-09-12T19:23:33.280Z",
+  "updatedAt": "2026-09-12T21:22:55.189Z"
+}

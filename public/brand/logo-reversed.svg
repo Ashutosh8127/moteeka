@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 252 56" role="img" aria-label="Moteeka">
+  <!--
+    Mark plus wordmark, for anywhere the site's own CSS cannot reach: an
+    invoice, a WhatsApp display picture, a marketplace listing.
+
+    The wordmark is live text in Marcellus with a real serif fallback rather
+    than outlined paths, so it stays selectable and editable. On a machine
+    without the font it sets in Georgia, which is close enough that only you
+    would notice.
+  -->
+  <defs>
+    <radialGradient id="moteeka-pearl-lockup" cx="34%" cy="28%" r="80%">
+      <stop offset="0%" stop-color="#fff" stop-opacity=".5"/>
+      <stop offset="48%" stop-color="#fff" stop-opacity=".06"/>
+      <stop offset="100%" stop-color="#000" stop-opacity=".18"/>
+    </radialGradient>
+  </defs>
+  <g transform="translate(0 4)">
+    <path d="M8 31 Q26 27 41 17" fill="none" stroke="#f2eee7" stroke-width="1.2" stroke-linecap="round" opacity=".35"/>
+    <circle cx="9" cy="31" r="3.6" fill="#f2eee7"/><circle cx="9" cy="31" r="3.6" fill="url(#moteeka-pearl-lockup)"/>
+    <circle cx="21.5" cy="28" r="5.6" fill="#f2eee7"/><circle cx="21.5" cy="28" r="5.6" fill="url(#moteeka-pearl-lockup)"/>
+    <circle cx="38" cy="19" r="8.4" fill="#f2eee7"/><circle cx="38" cy="19" r="8.4" fill="url(#moteeka-pearl-lockup)"/>
+  </g>
+  <text x="60" y="38" font-family="Marcellus, Georgia, 'Times New Roman', serif"
+    font-size="31" letter-spacing="1.4" fill="#f2eee7">Moteeka</text>
+</svg>

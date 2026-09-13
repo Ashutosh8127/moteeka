@@ -1,0 +1,66 @@
+{
+  "id": "p-gold-plated-tassel-earrings",
+  "slug": "gold-plated-tassel-earrings",
+  "title": "Gold-Plated Tassel Earrings",
+  "category": "earrings",
+  "tagline": "",
+  "description": "A pair of tassel earrings. Alloy under gold plate. Meant for parties.",
+  "material": "Zinc Alloy",
+  "finish": "Gold Plated",
+  "details": {
+    "Jewelry Main Material": "Alloy",
+    "Earrings Type": "Pendant Earrings",
+    "Jewelry Type": "Earrings",
+    "Occasion": "Party",
+    "Shape / pattern": "Tassel",
+    "Style": "Trendy"
+  },
+  "images": [
+    {
+      "path": "gold-plated-tassel-earrings/01.webp",
+      "alt": "Gold-Plated Tassel Earrings",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "gold-plated-tassel-earrings/02.webp",
+      "alt": "Gold-Plated Tassel Earrings",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "gold-plated-tassel-earrings/03.webp",
+      "alt": "Gold-Plated Tassel Earrings",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "sku": "EAR-GOL-PINKON",
+      "label": "Pink / one size / Trendy Earrings Headpiece Set",
+      "price": 110900,
+      "stock": 10
+    }
+  ],
+  "tags": [
+    "earrings",
+    "tassel",
+    "modern",
+    "gold-plated",
+    "party"
+  ],
+  "featured": false,
+  "status": "active",
+  "createdAt": "2026-09-12T21:00:46.537Z",
+  "updatedAt": "2026-09-12T21:22:55.182Z"
+}

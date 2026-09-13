@@ -1,0 +1,107 @@
+{
+  "id": "p-gold-plated-bracelet",
+  "slug": "triple-strand-drop-anklet",
+  "title": "Triple-Strand Drop Anklet",
+  "category": "anklets",
+  "tagline": "Three rhinestone strands under a single drop",
+  "description": "Three strands of rhinestone chain hung in shallow loops, with a single round drop at the centre front and a smaller one at each side. Twenty and a half centimetres with a ten-centimetre extender, so it can sit high on the ankle or loose over the bone. Ten grams.",
+  "material": "Copper Alloy",
+  "finish": "Silver Plated, Gold Plated",
+  "details": {
+    "Jewelry Main Material": "Copper",
+    "Diamond shape": "Round Brilliant Cut",
+    "Main Stone": "Crystal, Rhinestone",
+    "Occasion": "Gift",
+    "Shape / pattern": "chain",
+    "Style": "Romantic",
+    "Inlay technology": "Claw Setting",
+    "Size": "20.5 cm + 10 cm extender",
+    "Weight": "10 g",
+    "Closure": "Lobster clasp"
+  },
+  "images": [
+    {
+      "path": "triple-strand-drop-anklet/01.webp",
+      "alt": "Triple-Strand Drop Anklet",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "triple-strand-drop-anklet/02.webp",
+      "alt": "Triple-Strand Drop Anklet",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "triple-strand-drop-anklet/03.webp",
+      "alt": "Triple-Strand Drop Anklet",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "triple-strand-drop-anklet/04.webp",
+      "alt": "Triple-Strand Drop Anklet",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "triple-strand-drop-anklet/05.webp",
+      "alt": "Triple-Strand Drop Anklet",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "triple-strand-drop-anklet/06.webp",
+      "alt": "Triple-Strand Drop Anklet",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "sku": "ANK-GOL-GOLD",
+      "label": "Gold",
+      "price": 90900,
+      "stock": 10,
+      "swatch": "triple-strand-drop-anklet/swatch/gold.webp"
+    },
+    {
+      "sku": "ANK-GOL-SILVER",
+      "label": "Silver",
+      "price": 90900,
+      "stock": 10,
+      "swatch": "triple-strand-drop-anklet/swatch/silver.webp"
+    }
+  ],
+  "tags": [
+    "anklets",
+    "bracelet",
+    "rhinestones",
+    "chain",
+    "romantic",
+    "gold-plated",
+    "silver-plated"
+  ],
+  "featured": false,
+  "status": "active",
+  "createdAt": "2026-09-12T20:10:17.023Z",
+  "updatedAt": "2026-09-13T09:26:14.257Z"
+}

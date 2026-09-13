@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Not found — Moteeka</title>
+<link rel="icon" href="/brand/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/brand/favicon.png" sizes="any">
+<link rel="apple-touch-icon" href="/brand/apple-touch-icon.png">
+<meta name="theme-color" content="#221f1b">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Karla:wght@400;500;700&family=Marcellus&display=swap">
+<link rel="stylesheet" href="/assets/css/site.css">
+<script src="/config.js"></script>
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="/">
+      <img class="logo" src="/brand/mark.svg" alt="" width="30" height="30">
+      <span class="mark">Moteeka</span><span class="sub">Silver &amp; Gold-Plated</span></a>
+    <nav class="cats"><a href="/">All pieces</a></nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <!--
+    A piece that has been renamed or taken down lands here. Search is offered
+    rather than a bare apology: whoever followed the link wanted something
+    specific, and the catalogue probably still has it under another name.
+  -->
+  <section class="gone">
+    <h1>That page has moved or gone</h1>
+    <p>A piece may have been renamed, or sold out and been taken down. The rest of
+    the catalogue is still here.</p>
+    <form class="find" action="/" method="get">
+      <input type="search" name="search" placeholder="Search jhumka, anklet, necklace…" aria-label="Search the catalogue">
+      <button class="btn" type="submit">Search</button>
+    </form>
+    <p class="muted-note">Looking for an order? <a href="/order.html">Track it with your reference</a>.
+    Something else — <a href="/contact.html">get in touch</a>.</p>
+  </section>
+  <section class="related" id="related" hidden></section>
+</main>
+
+<footer class="site"><div class="wrap" id="footer"></div></footer>
+<script type="module" src="/assets/js/notfound.js"></script>
+<script type="module" src="/assets/js/footer.js"></script>
+</body>
+</html>

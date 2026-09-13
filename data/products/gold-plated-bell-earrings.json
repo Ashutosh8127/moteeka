@@ -1,0 +1,228 @@
+{
+  "id": "p-gold-plated-bell-earrings",
+  "slug": "gold-plated-bell-earrings",
+  "title": "Gold-Plated Bell Earrings",
+  "category": "earrings",
+  "tagline": "Rhinestones, 20 colourways",
+  "description": "Bell earrings, rhinestones. Gold plate over alloy, in 20 colourways.",
+  "material": "Zinc Alloy",
+  "finish": "Gold-Plated",
+  "details": {
+    "Jewelry Main Material": "Alloy",
+    "Earrings Type": "Drop Earrings",
+    "Main Stone": "Crystal, Rhinestone",
+    "Jewelry Type": "Earrings",
+    "Occasion": "Gift",
+    "Shape / pattern": "Bell",
+    "Style": "Vintage"
+  },
+  "images": [
+    {
+      "path": "gold-plated-bell-earrings/01.webp",
+      "alt": "Gold-Plated Bell Earrings",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "gold-plated-bell-earrings/02.webp",
+      "alt": "Gold-Plated Bell Earrings",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "gold-plated-bell-earrings/03.webp",
+      "alt": "Gold-Plated Bell Earrings",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "gold-plated-bell-earrings/04.webp",
+      "alt": "Gold-Plated Bell Earrings",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "gold-plated-bell-earrings/05.webp",
+      "alt": "Gold-Plated Bell Earrings",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "gold-plated-bell-earrings/06.webp",
+      "alt": "Gold-Plated Bell Earrings",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "sku": "EAR-GOL-GOLD2",
+      "label": "Gold2",
+      "price": 91900,
+      "stock": 10,
+      "swatch": "gold-plated-bell-earrings/swatch/gold2.webp"
+    },
+    {
+      "sku": "EAR-GOL-GOLD1",
+      "label": "Gold1",
+      "price": 91900,
+      "stock": 10,
+      "swatch": "gold-plated-bell-earrings/swatch/gold1.webp"
+    },
+    {
+      "sku": "EAR-GOL-GOLD4",
+      "label": "Gold4",
+      "price": 91900,
+      "stock": 10,
+      "swatch": "gold-plated-bell-earrings/swatch/gold4.webp"
+    },
+    {
+      "sku": "EAR-GOL-GOLD3",
+      "label": "Gold3",
+      "price": 91900,
+      "stock": 10,
+      "swatch": "gold-plated-bell-earrings/swatch/gold3.webp"
+    },
+    {
+      "sku": "EAR-GOL-WHITE",
+      "label": "White",
+      "price": 78900,
+      "stock": 10,
+      "swatch": "gold-plated-bell-earrings/swatch/white.webp"
+    },
+    {
+      "sku": "EAR-GOL-GOLD12",
+      "label": "Gold12",
+      "price": 91900,
+      "stock": 10,
+      "swatch": "gold-plated-bell-earrings/swatch/gold12.webp"
+    },
+    {
+      "sku": "EAR-GOL-GOLD13",
+      "label": "Gold13",
+      "price": 91900,
+      "stock": 10,
+      "swatch": "gold-plated-bell-earrings/swatch/gold13.webp"
+    },
+    {
+      "sku": "EAR-GOL-GOLD10",
+      "label": "Gold10",
+      "price": 91900,
+      "stock": 10,
+      "swatch": "gold-plated-bell-earrings/swatch/gold10.webp"
+    },
+    {
+      "sku": "EAR-GOL-GOLD11",
+      "label": "Gold11",
+      "price": 91900,
+      "stock": 10,
+      "swatch": "gold-plated-bell-earrings/swatch/gold11.webp"
+    },
+    {
+      "sku": "EAR-GOL-ORANGE",
+      "label": "Orange 726 4",
+      "price": 91900,
+      "stock": 10,
+      "swatch": "gold-plated-bell-earrings/swatch/orange-726-4.webp"
+    },
+    {
+      "sku": "EAR-GOL-RED726",
+      "label": "Red 726 5",
+      "price": 91900,
+      "stock": 10,
+      "swatch": "gold-plated-bell-earrings/swatch/red-726-5.webp"
+    },
+    {
+      "sku": "EAR-GOL-PINK72",
+      "label": "Pink 726 1",
+      "price": 91900,
+      "stock": 10,
+      "swatch": "gold-plated-bell-earrings/swatch/pink-726-1.webp"
+    },
+    {
+      "sku": "EAR-GOL-WHITE7",
+      "label": "White 726 2",
+      "price": 91900,
+      "stock": 10,
+      "swatch": "gold-plated-bell-earrings/swatch/white-726-2.webp"
+    },
+    {
+      "sku": "EAR-GOL-BLACK7",
+      "label": "Black 726 6",
+      "price": 91900,
+      "stock": 10,
+      "swatch": "gold-plated-bell-earrings/swatch/black-726-6.webp"
+    },
+    {
+      "sku": "EAR-GOL-BLUE72",
+      "label": "Blue 726 3",
+      "price": 91900,
+      "stock": 10,
+      "swatch": "gold-plated-bell-earrings/swatch/blue-726-3.webp"
+    },
+    {
+      "sku": "EAR-GOL-GOLD9",
+      "label": "Gold9",
+      "price": 91900,
+      "stock": 10,
+      "swatch": "gold-plated-bell-earrings/swatch/gold9.webp"
+    },
+    {
+      "sku": "EAR-GOL-GOLD6",
+      "label": "Gold6",
+      "price": 91900,
+      "stock": 10,
+      "swatch": "gold-plated-bell-earrings/swatch/gold6.webp"
+    },
+    {
+      "sku": "EAR-GOL-GOLD5",
+      "label": "Gold5",
+      "price": 91900,
+      "stock": 10,
+      "swatch": "gold-plated-bell-earrings/swatch/gold5.webp"
+    },
+    {
+      "sku": "EAR-GOL-GOLD8",
+      "label": "Gold8",
+      "price": 91900,
+      "stock": 10,
+      "swatch": "gold-plated-bell-earrings/swatch/gold8.webp"
+    },
+    {
+      "sku": "EAR-GOL-GOLD7",
+      "label": "Gold7",
+      "price": 91900,
+      "stock": 10,
+      "swatch": "gold-plated-bell-earrings/swatch/gold7.webp"
+    }
+  ],
+  "tags": [
+    "earrings",
+    "rhinestones",
+    "bell",
+    "vintage",
+    "gold-plated"
+  ],
+  "featured": false,
+  "status": "active",
+  "createdAt": "2026-09-12T20:25:23.760Z",
+  "updatedAt": "2026-09-12T21:22:55.178Z"
+}

@@ -1,0 +1,146 @@
+{
+  "id": "p-oxidised-bridal-jhumka-2",
+  "slug": "silver-statement-jhumka",
+  "title": "Silver Statement Jhumka",
+  "category": "jhumka",
+  "tagline": "Eight statement pieces — peacocks, chandbalis and a triple-tier bell",
+  "description": "The pieces you wear when the outfit is plain. A peacock ear crawler that follows the lobe, a long peacock dangle, three bells stacked one under another, a pearl-fringed chandbali, a crystal leaf drop, a black-bead chandbali, a teal enamel chandbali, and the peacock long drop in antique gold. All oxidised alloy, all light enough to wear a whole evening.",
+  "material": "Alloy",
+  "finish": "Antique silver, oxidised",
+  "details": {
+    "Earrings Type": "Drop Earrings",
+    "Main Stone": "Crystal, Rhinestone",
+    "Jewelry Type": "Earrings",
+    "Shape": "Peacock",
+    "Style": "Jhumka",
+    "Religious Type": "Indian",
+    "Inlay technology": "Claw Setting"
+  },
+  "images": [
+    {
+      "path": "silver-statement-jhumka/01.webp",
+      "alt": "Oxidised Bridal Jhumka",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "silver-statement-jhumka/02.webp",
+      "alt": "Oxidised Bridal Jhumka",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "silver-statement-jhumka/03.webp",
+      "alt": "Oxidised Bridal Jhumka",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "silver-statement-jhumka/04.webp",
+      "alt": "Oxidised Bridal Jhumka",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "silver-statement-jhumka/05.webp",
+      "alt": "Oxidised Bridal Jhumka",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "silver-statement-jhumka/06.webp",
+      "alt": "Oxidised Bridal Jhumka",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "sku": "SIL-STA-PEACOC",
+      "label": "Peacock Crawler",
+      "price": 90900,
+      "stock": 10,
+      "swatch": "silver-statement-jhumka/swatch/peacock-crawler.webp"
+    },
+    {
+      "sku": "SIL-STA-PEACOC-2",
+      "label": "Peacock Long Drop",
+      "price": 81900,
+      "stock": 10,
+      "swatch": "silver-statement-jhumka/swatch/peacock-long-drop.webp"
+    },
+    {
+      "sku": "SIL-STA-GOLDPE",
+      "label": "Gold Peacock Drop",
+      "price": 90900,
+      "stock": 10,
+      "swatch": "silver-statement-jhumka/swatch/gold-peacock-drop.webp"
+    },
+    {
+      "sku": "SIL-STA-TRIPLE",
+      "label": "Triple-Tier Bell",
+      "price": 84900,
+      "stock": 10,
+      "swatch": "silver-statement-jhumka/swatch/triple-tier-bell.webp"
+    },
+    {
+      "sku": "SIL-STA-BLACKB",
+      "label": "Black Bead Chandbali",
+      "price": 81900,
+      "stock": 10,
+      "swatch": "silver-statement-jhumka/swatch/black-bead-chandbali.webp"
+    },
+    {
+      "sku": "SIL-STA-TEALCH",
+      "label": "Teal Chandbali",
+      "price": 82900,
+      "stock": 10,
+      "swatch": "silver-statement-jhumka/swatch/teal-chandbali.webp"
+    },
+    {
+      "sku": "SIL-STA-PEARLC",
+      "label": "Pearl Chandbali",
+      "price": 93900,
+      "stock": 10,
+      "swatch": "silver-statement-jhumka/swatch/pearl-chandbali.webp"
+    },
+    {
+      "sku": "SIL-STA-CRYSTA",
+      "label": "Crystal Leaf Drop",
+      "price": 75900,
+      "stock": 10,
+      "swatch": "silver-statement-jhumka/swatch/crystal-leaf-drop.webp"
+    }
+  ],
+  "tags": [
+    "jhumka",
+    "earrings",
+    "oxidised",
+    "chandbali",
+    "peacock",
+    "statement",
+    "bridal"
+  ],
+  "featured": false,
+  "status": "active",
+  "createdAt": "2026-09-12T19:22:58.961Z",
+  "updatedAt": "2026-09-12T21:22:55.189Z"
+}

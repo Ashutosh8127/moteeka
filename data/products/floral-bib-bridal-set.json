@@ -1,0 +1,96 @@
+{
+  "id": "p-rhodium-plated-bridal-jewellery-set",
+  "slug": "floral-bib-bridal-set",
+  "title": "Floral Bib Bridal Set",
+  "category": "necklaces",
+  "tagline": "Cubic zirconia, four pieces",
+  "description": "A set of four pieces in cubic zirconia. Plated rhodium over a copper alloy body.",
+  "material": "copper",
+  "finish": "Platinum Plated, Rhodium Plated",
+  "details": {
+    "Jewelry Sets Type": "4piece jewellery set",
+    "Main Stone": "Cubic zirconia",
+    "Jewelry Type": "Jewellery Sets",
+    "Style": "High quality jewellery set",
+    "Inlay technology": "Handmade"
+  },
+  "images": [
+    {
+      "path": "floral-bib-bridal-set/01.webp",
+      "alt": "Floral Bib Bridal Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "floral-bib-bridal-set/02.webp",
+      "alt": "Floral Bib Bridal Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "floral-bib-bridal-set/03.webp",
+      "alt": "Floral Bib Bridal Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "floral-bib-bridal-set/04.webp",
+      "alt": "Floral Bib Bridal Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "floral-bib-bridal-set/05.webp",
+      "alt": "Floral Bib Bridal Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "floral-bib-bridal-set/06.webp",
+      "alt": "Floral Bib Bridal Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "sku": "FLO-BIB-WHITEA",
+      "label": "White / Adjustable / TRENDY",
+      "price": 471900,
+      "stock": 10,
+      "swatch": "floral-bib-bridal-set/swatch/white.webp"
+    }
+  ],
+  "tags": [
+    "necklaces",
+    "jewellery set",
+    "cubic zirconia",
+    "rhodium-plated",
+    "wedding",
+    "engagement",
+    "anniversary",
+    "party"
+  ],
+  "featured": false,
+  "status": "active",
+  "createdAt": "2026-09-12T21:01:25.071Z",
+  "updatedAt": "2026-09-12T21:22:55.176Z"
+}

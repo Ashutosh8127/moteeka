@@ -1,0 +1,126 @@
+{
+  "id": "p-rhodium-plated-tassel-earrings",
+  "slug": "rhodium-plated-tassel-earrings",
+  "title": "Rhodium-Plated Tassel Earrings",
+  "category": "earrings",
+  "tagline": "Pear-cut cubic zirconia, claw-set",
+  "description": "Water drop earrings, pear-cut cubic zirconia, held in claw settings. Rhodium plate over brass, in five colourways. Made for weddings.",
+  "material": "Copper Alloy",
+  "finish": "Rhodium Plated",
+  "details": {
+    "Jewelry Main Material": "Brass",
+    "Diamond shape": "Pear Cut",
+    "Earrings Type": "Drop Earrings",
+    "Main Stone": "Cubic zirconia",
+    "Jewelry Type": "Earrings",
+    "Occasion": "Wedding",
+    "Shape / pattern": "Water Drop",
+    "Style": "Trendy",
+    "Inlay technology": "Claw Setting"
+  },
+  "images": [
+    {
+      "path": "rhodium-plated-tassel-earrings/01.webp",
+      "alt": "Rhodium-Plated Tassel Earrings",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "rhodium-plated-tassel-earrings/02.webp",
+      "alt": "Rhodium-Plated Tassel Earrings",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "rhodium-plated-tassel-earrings/03.webp",
+      "alt": "Rhodium-Plated Tassel Earrings",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "rhodium-plated-tassel-earrings/04.webp",
+      "alt": "Rhodium-Plated Tassel Earrings",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "rhodium-plated-tassel-earrings/05.webp",
+      "alt": "Rhodium-Plated Tassel Earrings",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "rhodium-plated-tassel-earrings/06.webp",
+      "alt": "Rhodium-Plated Tassel Earrings",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "sku": "EAR-RHO-GREENL",
+      "label": "Green E0506 LVVV",
+      "price": 149900,
+      "stock": 10,
+      "swatch": "rhodium-plated-tassel-earrings/swatch/green-e0506-lvvv.webp"
+    },
+    {
+      "sku": "EAR-RHO-YELLOW",
+      "label": "Yellow E0506 Huang",
+      "price": 149900,
+      "stock": 10,
+      "swatch": "rhodium-plated-tassel-earrings/swatch/yellow-e0506-huang.webp"
+    },
+    {
+      "sku": "EAR-RHO-WHITEB",
+      "label": "White E0506 Bai",
+      "price": 149900,
+      "stock": 10,
+      "swatch": "rhodium-plated-tassel-earrings/swatch/white-e0506-bai.webp"
+    },
+    {
+      "sku": "EAR-RHO-BLUELA",
+      "label": "Blue E0506 Lan",
+      "price": 149900,
+      "stock": 10,
+      "swatch": "rhodium-plated-tassel-earrings/swatch/blue-e0506-lan.webp"
+    },
+    {
+      "sku": "EAR-RHO-REDHON",
+      "label": "Red E0506 Hong",
+      "price": 149900,
+      "stock": 10,
+      "swatch": "rhodium-plated-tassel-earrings/swatch/red-e0506-hong.webp"
+    }
+  ],
+  "tags": [
+    "earrings",
+    "cubic zirconia",
+    "water drop",
+    "modern",
+    "rhodium-plated",
+    "wedding"
+  ],
+  "featured": false,
+  "status": "active",
+  "createdAt": "2026-09-12T20:09:18.628Z",
+  "updatedAt": "2026-09-12T21:22:55.188Z"
+}

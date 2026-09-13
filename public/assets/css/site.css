@@ -1,0 +1,722 @@
+/* Oxidised silver against warm stone: the ground is bone, the ink is a warm
+   near-black, and the two accents are the metals themselves — cool oxide grey
+   and antique brass. */
+:root {
+  color-scheme: light;
+  --bone: #f2eee7;
+  --surface: #fbf9f5;
+  --surface-2: #e9e3d9;
+  --ink: #221f1b;
+  --ink-2: #5d564d;
+  --ink-3: #8b8378;
+  --rule: #ddd5c9;
+  --rule-strong: #c6bcac;
+  --oxide: #47525d;
+  --oxide-soft: #e3e6ea;
+  --brass: #92702f;
+  --ok: #2f6b46;
+  --warn: #8a5a12;
+  --shadow: 0 1px 2px rgba(34,31,27,.05), 0 14px 32px -20px rgba(34,31,27,.35);
+  --display: "Marcellus", Georgia, serif;
+  --body: "Karla", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bone: #171512;
+    --surface: #1e1b17;
+    --surface-2: #272319;
+    --ink: #f2efe9;
+    --ink-2: #b7ad9f;
+    --ink-3: #8b8378;
+    --rule: #332e26;
+    --rule-strong: #4a4338;
+    --oxide: #9fb0bf;
+    --oxide-soft: #232b33;
+    --brass: #c79a4a;
+    --shadow: 0 1px 2px rgba(0,0,0,.4), 0 14px 32px -20px rgba(0,0,0,.8);
+  }
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--bone);
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: 15.5px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; display: block; }
+a { color: inherit; }
+
+.wrap { max-width: 1200px; margin: 0 auto; padding: 0 22px; }
+
+/* The mark sits with the wordmark, not above it — the header is 56px and a
+   stacked lockup would halve the type. Hidden on the narrowest screens, where
+   the name alone is the better use of the width. */
+/* Nudged down: `.brand` aligns on the baseline and an image's baseline is its
+   bottom edge, which left the mark riding high against the cap height. */
+.brand .logo { flex: none; display: block; position: relative; top: 4px; }
+/* The line under the name is a qualifier, not a headline — it must never wrap
+   into a three-line stack beside a one-line wordmark. */
+.brand .sub { white-space: nowrap; }
+@media (max-width: 560px) { .brand .sub { display: none; } }
+@media (max-width: 420px) { .brand .logo { display: none; } }
+
+/*
+ * `hidden` is only `display: none` in the browser's own stylesheet, so any
+ * author rule that sets `display` beats it. Both the pager and the admin
+ * sign-in set one, and both stayed on screen after being hidden — the admin
+ * form sat on top of the dashboard, which is how this was found.
+ */
+[hidden] { display: none !important; }
+
+/* Shown while fabricated sample data is in the shop — see scripts/demo-data.ts.
+   Deliberately loud: its whole job is to be impossible to miss. */
+.demo-bar {
+  background: #8a5a12; color: #fff; font-size: 12.5px; line-height: 1.5;
+  padding: 9px 0; position: relative; z-index: 50;
+}
+.demo-bar .mono { font-family: var(--mono); font-size: 11.5px; background: rgba(255,255,255,.16); padding: 1px 5px; border-radius: 3px; }
+
+/* ---------- notice ---------- */
+.notice {
+  background: var(--surface-2);
+  border-bottom: 1px solid var(--rule);
+  font-size: 13px;
+  color: var(--ink-2);
+}
+.notice .wrap { padding-block: 9px; display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+.notice b { color: var(--ink); font-weight: 700; }
+
+/* ---------- header ---------- */
+header.site { border-bottom: 1px solid var(--rule); background: var(--surface); }
+header.site .wrap {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 20px; padding-block: 18px;
+}
+.brand { display: flex; align-items: baseline; gap: 10px; text-decoration: none; }
+.brand .mark {
+  font-family: var(--display); font-size: 25px; letter-spacing: .04em; color: var(--ink);
+}
+.brand .sub {
+  font-family: var(--mono); font-size: 9.5px; letter-spacing: .22em;
+  text-transform: uppercase; color: var(--ink-3);
+}
+nav.cats { display: flex; flex-wrap: wrap; gap: 4px; }
+nav.cats a, nav.cats button {
+  font: inherit; font-size: 13.5px; color: var(--ink-2);
+  background: none; border: 0; border-radius: 999px;
+  padding: 6px 13px; cursor: pointer; text-decoration: none;
+}
+nav.cats a:hover, nav.cats button:hover { background: var(--surface-2); color: var(--ink); }
+nav.cats [aria-current="true"] { background: var(--oxide); color: #fff; }
+
+.cart-btn {
+  font: inherit; font-size: 13.5px; display: inline-flex; align-items: center; gap: 8px;
+  background: var(--ink); color: var(--surface); border: 0; border-radius: 999px;
+  padding: 9px 17px; cursor: pointer;
+}
+.cart-btn .count {
+  font-family: var(--mono); font-size: 11px; background: var(--brass);
+  border-radius: 999px; padding: 1px 7px; color: #fff;
+}
+
+/* ---------- hero ---------- */
+.hero { border-bottom: 1px solid var(--rule); background: var(--surface); }
+.hero .wrap { padding-block: 54px 46px; display: grid; gap: 26px; grid-template-columns: 1.15fr .85fr; align-items: center; }
+@media (max-width: 860px) { .hero .wrap { grid-template-columns: 1fr; } }
+.hero h1 {
+  font-family: var(--display); font-weight: 400;
+  font-size: clamp(34px, 5vw, 54px); line-height: 1.08; margin: 0;
+  letter-spacing: -.005em; text-wrap: balance;
+}
+.hero p { color: var(--ink-2); max-width: 52ch; margin: 16px 0 0; font-size: 16.5px; }
+.hero .meta { display: flex; gap: 26px; margin-top: 26px; flex-wrap: wrap; }
+.hero .meta div { }
+.hero .meta .n { font-family: var(--display); font-size: 26px; display: block; }
+.hero .meta .k {
+  font-family: var(--mono); font-size: 10px; letter-spacing: .14em;
+  text-transform: uppercase; color: var(--ink-3);
+}
+/*
+ * The hero is five real photographs from the catalogue, laid out as a mosaic
+ * rather than composited into one file — see scripts/hero.ts for why. One tall
+ * tile carries the composition and four fill the block beside it; the tiles are
+ * the responsive variants that already exist, so this is sharp on a retina
+ * screen without anybody generating a hero at 2x.
+ */
+.hero-art {
+  aspect-ratio: 4 / 3; display: grid; gap: 8px;
+  grid-template-columns: 1.25fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 't1 t2 t3' 't1 t4 t5';
+}
+.hero-art a {
+  display: block; overflow: hidden; border-radius: 3px;
+  background: var(--surface-2); position: relative;
+}
+.hero-art a:nth-child(1) { grid-area: t1; }
+.hero-art a:nth-child(2) { grid-area: t2; }
+.hero-art a:nth-child(3) { grid-area: t3; }
+.hero-art a:nth-child(4) { grid-area: t4; }
+.hero-art a:nth-child(5) { grid-area: t5; }
+.hero-art img {
+  width: 100%; height: 100%; object-fit: cover; display: block;
+  transition: transform .5s cubic-bezier(.2, .7, .3, 1);
+}
+.hero-art a:hover img { transform: scale(1.05); }
+/* These photographs range from black velvet to white flat-lay. A hairline
+   inside each tile keeps the pale ones from bleeding into the page. */
+.hero-art a::after {
+  content: ''; position: absolute; inset: 0; border-radius: 3px;
+  box-shadow: inset 0 0 0 1px rgba(34, 31, 27, .09); pointer-events: none;
+}
+@media (prefers-reduced-motion: reduce) { .hero-art img { transition: none; } }
+@media (max-width: 860px) {
+  /* Below the copy on a phone, so it is a row of pieces rather than a wall. */
+  .hero-art { aspect-ratio: 16 / 7; gap: 6px; }
+}
+
+/* ---------- controls ---------- */
+.toolbar {
+  display: flex; flex-wrap: wrap; gap: 12px; align-items: center;
+  justify-content: space-between; padding-block: 22px 14px;
+}
+.toolbar .left { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+input[type="search"], select {
+  font: inherit; font-size: 14px; color: var(--ink);
+  background: var(--surface); border: 1px solid var(--rule-strong);
+  border-radius: 4px; padding: 8px 12px;
+}
+input[type="search"] { min-width: 210px; }
+input:focus-visible, select:focus-visible, button:focus-visible, a:focus-visible {
+  outline: 2px solid var(--oxide); outline-offset: 2px;
+}
+.result-count { font-family: var(--mono); font-size: 12px; color: var(--ink-3); }
+
+/* ---------- grid ---------- */
+.grid {
+  display: grid; gap: 26px 22px;
+  grid-template-columns: repeat(auto-fill, minmax(238px, 1fr));
+  padding-bottom: 56px;
+}
+/*
+ * Two across on a phone, which is what the `sizes` attribute on every card
+ * image has always claimed. A 238px minimum gave one column at 375px, so each
+ * card was 88vw while the browser was told to fetch for 46vw — it downloaded an
+ * image half the width it needed and drew it soft, on the device three quarters
+ * of the traffic arrives on.
+ */
+@media (max-width: 700px) {
+  .grid { grid-template-columns: repeat(2, 1fr); gap: 20px 14px; }
+  .card .title { font-size: 15px; }
+  .card .tag { font-size: 12px; }
+}
+.card { display: flex; flex-direction: column; text-decoration: none; }
+.card .shot {
+  position: relative; aspect-ratio: 1; background: var(--surface-2);
+  border: 1px solid var(--rule); border-radius: 3px; overflow: hidden;
+}
+.card .shot img { width: 100%; height: 100%; object-fit: cover; }
+.card:hover .shot { border-color: var(--rule-strong); }
+.badge {
+  position: absolute; top: 9px; left: 9px;
+  font-family: var(--mono); font-size: 9px; letter-spacing: .12em; text-transform: uppercase;
+  background: var(--surface); color: var(--ink-2);
+  border: 1px solid var(--rule-strong); border-radius: 2px; padding: 3px 6px;
+}
+.badge.sale { background: var(--brass); border-color: var(--brass); color: #fff; }
+/*
+ * Presence, on the photograph. Opposite corner to the Sale badge so a piece
+ * that is both does not stack two labels in one spot, and on a dark translucent
+ * ground because these photographs range from black velvet to white flat-lay
+ * and a light chip disappears against half of them.
+ */
+.watchers {
+  position: absolute; top: 9px; right: 9px; z-index: 1;
+  display: inline-flex; align-items: center; gap: 5px;
+  font-family: var(--mono); font-size: 11px; font-weight: 500;
+  background: rgba(24, 22, 19, .62); color: #fff;
+  border-radius: 999px; padding: 4px 9px 4px 7px;
+  backdrop-filter: blur(3px);
+}
+.watchers .dot {
+  width: 6px; height: 6px; border-radius: 50%; background: #7fd6a0; flex: none;
+  animation: pulse-sm 2.4s ease-out infinite;
+}
+@keyframes pulse-sm {
+  0% { box-shadow: 0 0 0 0 rgba(127,214,160,.6); }
+  70% { box-shadow: 0 0 0 6px rgba(127,214,160,0); }
+  100% { box-shadow: 0 0 0 0 rgba(127,214,160,0); }
+}
+@media (prefers-reduced-motion: reduce) { .watchers .dot { animation: none; } }
+
+.card-rating {
+  display: flex; align-items: center; gap: 6px; margin: 1px 0 5px;
+  font-size: 12px; color: var(--ink-2);
+}
+.card-rating .stars { font-size: 12px; }
+.card-rating small { color: var(--ink-3); font-size: 11px; }
+.card .title { font-family: var(--display); font-size: 17.5px; margin: 12px 0 3px; line-height: 1.25; }
+.card .tag { font-size: 13px; color: var(--ink-2); margin: 0 0 8px; }
+.price { font-family: var(--mono); font-size: 13.5px; display: flex; gap: 9px; align-items: baseline; }
+.price .was { color: var(--ink-3); text-decoration: line-through; font-size: 12px; }
+.stock-low { font-family: var(--mono); font-size: 11px; color: var(--warn); }
+
+/* ---------- pagination ---------- */
+/* The grid's own bottom padding is the gap to the footer; with a pager under
+   it that reads as a hole, so the grid gives some of it back. */
+.grid:has(+ .pager:not([hidden])) { padding-bottom: 26px; }
+.pager {
+  display: flex; flex-wrap: wrap; gap: 6px;
+  align-items: center; justify-content: center;
+  padding-bottom: 56px;
+}
+.pager button {
+  font: inherit; font-family: var(--mono); font-size: 13px; color: var(--ink-2);
+  background: var(--surface); border: 1px solid var(--rule);
+  border-radius: 4px; min-width: 38px; height: 38px; padding: 0 11px;
+  cursor: pointer; display: inline-flex; align-items: center; gap: 7px;
+}
+.pager button:hover:not(:disabled) { border-color: var(--rule-strong); color: var(--ink); }
+/* The page you are on is a label, not a button — flat, and not clickable. */
+.pager [aria-current="page"] {
+  background: var(--oxide); border-color: var(--oxide); color: #fff; opacity: 1;
+}
+/* An end of the run, greyed rather than removed, so the row does not shift. */
+.pager button:disabled:not([aria-current]) { opacity: .38; cursor: default; }
+.pager .step { font-family: var(--body); font-size: 13.5px; }
+.pager .gap { color: var(--ink-3); font-family: var(--mono); padding: 0 2px; user-select: none; }
+@media (max-width: 560px) {
+  /* Arrows only — the words are what push the row onto a second line. */
+  .pager .step span { display: none; }
+  .pager button { min-width: 34px; height: 34px; padding: 0 8px; }
+}
+
+/* ---------- product page ---------- */
+.detail { display: grid; grid-template-columns: 1.05fr 1fr; gap: 44px; padding: 34px 0 60px; }
+@media (max-width: 860px) { .detail { grid-template-columns: 1fr; gap: 26px; } }
+.gallery .main {
+  aspect-ratio: 1; border: 1px solid var(--rule); border-radius: 3px;
+  background: var(--surface-2); overflow: hidden;
+}
+.gallery .main img { width: 100%; height: 100%; object-fit: cover; }
+.thumbs { display: flex; gap: 8px; margin-top: 10px; flex-wrap: wrap; }
+.thumbs button {
+  width: 62px; height: 62px; padding: 0; border: 1px solid var(--rule);
+  border-radius: 3px; overflow: hidden; background: var(--surface-2); cursor: pointer;
+}
+.thumbs button[aria-current="true"] { border-color: var(--ink); }
+.thumbs img { width: 100%; height: 100%; object-fit: cover; }
+
+.detail h1 { font-family: var(--display); font-weight: 400; font-size: 34px; margin: 0 0 6px; line-height: 1.14; }
+.detail .tagline { color: var(--ink-2); margin: 0 0 20px; font-size: 16px; }
+/* ---------- product page, rebuilt ---------- */
+.crumbs {
+  display: flex; gap: 7px; align-items: center; flex-wrap: wrap;
+  font-size: 12.5px; color: var(--ink-3); margin: 0 0 14px;
+}
+.crumbs a { color: var(--ink-3); text-decoration: none; }
+.crumbs a:hover { color: var(--ink); text-decoration: underline; }
+
+.detail h1 { font-size: clamp(27px, 3.4vw, 36px); line-height: 1.12; margin: 0 0 8px; text-wrap: balance; }
+.detail .tagline { font-size: 15px; color: var(--ink-2); margin: 0 0 20px; line-height: 1.5; max-width: 46ch; }
+
+/*
+ * What you pay, what it was, and what that saves — in that order of weight.
+ * They used to be two numbers of the same size sitting next to each other,
+ * which reads as a typo rather than as a discount.
+ */
+.detail .buy-price { display: flex; gap: 12px; align-items: baseline; flex-wrap: wrap; }
+.buy-price .now { font-family: var(--display); font-size: 32px; line-height: 1; letter-spacing: .01em; }
+.buy-price .was {
+  font-family: var(--mono); font-size: 15px; color: var(--ink-3);
+  text-decoration: line-through; text-decoration-thickness: 1px;
+}
+.buy-price .save {
+  font-family: var(--mono); font-size: 11px; letter-spacing: .06em; text-transform: uppercase;
+  background: var(--brass); color: #fff; border-radius: 3px; padding: 4px 8px; white-space: nowrap;
+}
+.price-note { font-size: 12.5px; color: var(--ink-3); margin: 7px 0 0; }
+
+.colourways { margin: 26px 0 4px; }
+.cw-head { display: flex; gap: 10px; align-items: baseline; margin-bottom: 9px; }
+.cw-head .label {
+  font-family: var(--mono); font-size: 10.5px; letter-spacing: .12em;
+  text-transform: uppercase; color: var(--ink-3);
+}
+.cw-head .chosen { font-size: 13.5px; color: var(--ink); }
+/* Beyond twelve the grid stops reading as a set of choices — see product.js. */
+.variants.folded > :nth-child(n + 13) { display: none; }
+.colourways .more {
+  font: inherit; font-size: 13px; color: var(--ink-2); background: none;
+  border: 0; border-bottom: 1px solid var(--rule-strong); padding: 3px 0;
+  cursor: pointer; margin-top: 11px;
+}
+.colourways .more:hover { color: var(--ink); border-color: var(--ink); }
+
+.detail .buy-row { margin: 20px 0 6px; align-items: stretch; }
+.detail .buy-row .btn { flex: 1 1 150px; }
+.detail .buy-row .qty { flex: none; }
+.detail #stockline { margin: 14px 0 0; min-height: 17px; }
+
+/* Three claims this shop can actually make. Not a badge wall. */
+.assurances { list-style: none; margin: 24px 0 0; padding: 18px 0 0; border-top: 1px solid var(--rule); display: grid; gap: 11px; }
+.assurances li { display: flex; flex-direction: column; gap: 1px; font-size: 13px; }
+.assurances b { font-weight: 500; }
+.assurances span { color: var(--ink-3); font-size: 12.5px; }
+
+.folds { margin-top: 26px; border-top: 1px solid var(--rule); }
+.folds details { border-bottom: 1px solid var(--rule); }
+.folds summary {
+  cursor: pointer; padding: 14px 0; font-size: 14px; list-style: none;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.folds summary::-webkit-details-marker { display: none; }
+.folds summary::after { content: '+'; font-family: var(--mono); color: var(--ink-3); font-size: 16px; }
+.folds details[open] summary::after { content: '–'; }
+.folds summary:hover { color: var(--ink); }
+.folds details > div { padding: 0 0 18px; }
+.folds .about { margin: 0; }
+
+.specs2 { margin: 0; display: grid; gap: 9px; }
+.specs2 > div { display: grid; grid-template-columns: 42% 1fr; gap: 14px; font-size: 13.5px; }
+.specs2 dt { color: var(--ink-3); }
+.specs2 dd { margin: 0; font-family: var(--mono); font-size: 12.5px; }
+
+/* The hero opens full size. A lens is the control that never works on a phone. */
+.gallery .main { position: relative; padding: 0; border-width: 1px; cursor: zoom-in; display: block; width: 100%; }
+.gallery .main img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.zoom-hint {
+  position: absolute; right: 11px; bottom: 11px; width: 30px; height: 30px;
+  display: grid; place-items: center; border-radius: 50%;
+  background: var(--surface); border: 1px solid var(--rule-strong); color: var(--ink-2); font-size: 13px;
+}
+.lightbox {
+  position: fixed; inset: 0; z-index: 60; background: rgba(24, 22, 19, .92);
+  display: grid; place-items: center; padding: 24px; cursor: zoom-out;
+}
+.lightbox img { max-width: 100%; max-height: 100%; object-fit: contain; }
+.lightbox .close {
+  position: absolute; top: 16px; right: 18px; width: 38px; height: 38px; border-radius: 50%;
+  border: 0; background: rgba(255,255,255,.14); color: #fff; font-size: 15px; cursor: pointer;
+}
+
+.buy-bar {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 40;
+  display: flex; gap: 12px; align-items: center;
+  padding: 11px 16px calc(11px + env(safe-area-inset-bottom));
+  background: var(--surface); border-top: 1px solid var(--rule);
+  box-shadow: 0 -8px 24px -18px rgba(34,31,27,.5);
+}
+.buy-bar .bb-price { display: flex; gap: 8px; align-items: baseline; flex: none; }
+.buy-bar #bb-now { font-family: var(--display); font-size: 20px; }
+.buy-bar #bb-was { font-family: var(--mono); font-size: 12px; color: var(--ink-3); }
+.buy-bar .btn { flex: 1; padding: 13px 18px; }
+/* Desktop keeps the buy column in view on its own — see .detail .buy. */
+@media (min-width: 861px) { .buy-bar { display: none !important; } }
+
+/* ---------- ratings ---------- */
+/* Two rows of stars, the filled one clipped to the average. */
+.stars { position: relative; display: inline-block; white-space: nowrap; letter-spacing: .08em; line-height: 1; }
+.stars .fill { position: absolute; left: 0; top: 0; overflow: hidden; }
+.rating-line {
+  display: inline-flex; gap: 8px; align-items: center; text-decoration: none;
+  color: var(--ink-2); font-size: 13px; margin: 0 0 12px;
+}
+.rating-line b { color: var(--ink); }
+.rating-line:hover span:last-child { text-decoration: underline; }
+/* Real page views over a real window. Quiet, because it is information and
+   not a countdown — see the note in src/routes/catalogue.ts. */
+/* Real presence — a count of people on the page, not a countdown. Stated
+   quietly for that reason; see src/lib/live.ts. */
+.watching {
+  display: inline-flex; align-items: center; gap: 9px;
+  font-size: 14px; color: var(--ink-2); margin: 16px 0 0;
+  /* Sat as plain grey text it read as a footnote and went unnoticed. Given a
+     ground of its own it reads as a live reading, which is what it is. */
+  background: var(--oxide-soft); border: 1px solid #cfd6dd;
+  border-radius: 999px; padding: 8px 15px 8px 13px;
+}
+.watching b {
+  font-weight: 700; color: var(--ink); font-variant-numeric: tabular-nums;
+  transition: color .2s ease;
+}
+/* A half-second flicker as the number moves, so a change is seen and not just
+   discovered later. */
+.watching.ticked b { color: var(--ok); }
+.watching .dot {
+  width: 8px; height: 8px; border-radius: 50%; background: var(--ok); flex: none;
+  box-shadow: 0 0 0 0 rgba(47,107,70,.5); animation: pulse 2.4s ease-out infinite;
+}
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(47,107,70,.45); }
+  70% { box-shadow: 0 0 0 7px rgba(47,107,70,0); }
+  100% { box-shadow: 0 0 0 0 rgba(47,107,70,0); }
+}
+@media (prefers-reduced-motion: reduce) { .watching .dot { animation: none; } }
+
+.interest { font-size: 12.5px; color: var(--ink-3); margin: 8px 0 0; }
+.interest b { color: var(--ink-2); font-weight: 500; }
+
+.reviews { padding: 34px 0 10px; border-top: 1px solid var(--rule); }
+.reviews h2 { font-family: var(--display); font-weight: 400; font-size: 22px; margin: 0 0 20px; }
+.muted-note { color: var(--ink-3); font-size: 13.5px; line-height: 1.6; max-width: 60ch; margin: 0; }
+
+.rating-summary { display: flex; gap: 46px; flex-wrap: wrap; align-items: center; margin-bottom: 26px; }
+.rating-summary .big { display: flex; flex-direction: column; gap: 5px; }
+.rating-summary .avg { font-family: var(--display); font-size: 40px; line-height: 1; }
+.rating-summary .cnt { font-size: 12.5px; color: var(--ink-3); }
+.rating-summary .bars { display: grid; gap: 4px; min-width: 210px; }
+.bars .bar { display: grid; grid-template-columns: 26px 1fr 26px; gap: 9px; align-items: center; font-size: 11.5px; color: var(--ink-3); font-family: var(--mono); }
+.bars .track { height: 6px; background: var(--surface-2); border-radius: 3px; overflow: hidden; }
+.bars .track span { display: block; height: 100%; background: var(--brass); }
+.bars .n { text-align: right; }
+
+.review-list { list-style: none; margin: 0 0 26px; padding: 0; display: grid; gap: 20px; max-width: 70ch; }
+.review-list li { display: grid; gap: 6px; padding-bottom: 18px; border-bottom: 1px solid var(--rule); }
+.review-list b { font-size: 14.5px; font-weight: 500; }
+.review-list p { margin: 0; font-size: 14px; color: var(--ink-2); line-height: 1.6; }
+.review-list .who { font-family: var(--mono); font-size: 11px; color: var(--ink-3); }
+
+.reviews .write { border-top: 1px solid var(--rule); }
+.reviews .write summary { cursor: pointer; padding: 16px 0; font-size: 14px; list-style: none; }
+.reviews .write summary::-webkit-details-marker { display: none; }
+.reviews .write summary::before { content: '+ '; font-family: var(--mono); color: var(--ink-3); }
+.reviews .write[open] summary::before { content: '– '; }
+.reviews form { display: grid; gap: 13px; max-width: 460px; padding-bottom: 30px; }
+.reviews form label { display: grid; gap: 5px; font-size: 12.5px; color: var(--ink-2); }
+.reviews form input, .reviews form textarea {
+  font: inherit; font-size: 14px; padding: 9px 11px; color: var(--ink);
+  border: 1px solid var(--rule-strong); border-radius: 4px; background: var(--surface);
+}
+.reviews form textarea { resize: vertical; }
+.reviews .picker { display: flex; gap: 3px; }
+.reviews .picker button {
+  font-size: 25px; line-height: 1; background: none; border: 0; cursor: pointer;
+  color: var(--rule-strong); padding: 0 2px;
+}
+.reviews .picker button.on { color: var(--brass); }
+.reviews .note { font-size: 12.5px; margin: 0; color: var(--ink-3); }
+.reviews .note.warn { color: var(--warn); }
+.reviews .note.good { color: var(--ok); }
+
+/* ---------- order tracking ---------- */
+.track { padding: 54px 0 64px; max-width: 620px; }
+.track h1 { font-family: var(--display); font-weight: 400; font-size: clamp(28px, 4vw, 38px); margin: 0 0 20px; }
+.track form { display: flex; gap: 9px; align-items: flex-end; flex-wrap: wrap; }
+.track label { display: grid; gap: 5px; font-size: 12.5px; color: var(--ink-2); flex: 1 1 260px; }
+.track input {
+  font: inherit; font-family: var(--mono); font-size: 14px; padding: 10px 12px;
+  border: 1px solid var(--rule-strong); border-radius: 4px; background: var(--surface); color: var(--ink);
+}
+.track .muted-note { font-size: 13px; color: var(--ink-3); margin: 12px 0 0; line-height: 1.6; }
+.track .err { color: #9c2c2c; font-size: 14px; margin: 16px 0 0; line-height: 1.55; }
+
+.ord { margin-top: 30px; border-top: 1px solid var(--rule); padding-top: 26px; }
+.ord h2 { font-family: var(--mono); font-size: 10.5px; letter-spacing: .13em; text-transform: uppercase;
+  color: var(--ink-3); font-weight: 500; margin: 30px 0 11px; }
+.ord-head { display: flex; gap: 30px; flex-wrap: wrap; }
+.ord-head .k { font-family: var(--mono); font-size: 10px; letter-spacing: .12em;
+  text-transform: uppercase; color: var(--ink-3); display: block; margin-bottom: 3px; }
+.ord-head b { font-size: 16px; font-weight: 500; }
+
+/* Where the order has got to. The current step is the only one that explains
+   itself — the rest are labels, and a wall of explanation reads as noise. */
+.steps { list-style: none; margin: 28px 0 0; padding: 0; display: grid; gap: 2px; }
+.steps li { padding: 13px 0 13px 30px; position: relative; color: var(--ink-3); font-size: 14px;
+  border-top: 1px solid var(--rule); }
+.steps li::before {
+  content: ''; position: absolute; left: 4px; top: 17px; width: 11px; height: 11px;
+  border-radius: 50%; border: 1.5px solid var(--rule-strong); background: var(--bone);
+}
+.steps li.done { color: var(--ink-2); }
+.steps li.done::before { background: var(--ok); border-color: var(--ok); }
+.steps li.now { color: var(--ink); }
+.steps li.now::before { background: var(--oxide); border-color: var(--oxide);
+  box-shadow: 0 0 0 4px var(--oxide-soft); }
+.steps li b { display: block; font-weight: 500; }
+.steps li span { display: block; font-size: 13.5px; color: var(--ink-2); margin-top: 4px; line-height: 1.6; max-width: 52ch; }
+.cancelled { margin: 24px 0 0; font-size: 14px; color: var(--warn); line-height: 1.6; }
+
+.ord-lines { display: grid; gap: 2px; }
+.ord-lines > div { display: flex; justify-content: space-between; gap: 16px;
+  padding: 8px 0; border-bottom: 1px dotted var(--rule); font-size: 14px; }
+.ord-lines .grand { font-weight: 700; border-bottom: 0; border-top: 1px solid var(--rule-strong); padding-top: 11px; }
+.ord .addr { font-size: 14px; line-height: 1.7; color: var(--ink-2); margin: 0; }
+
+.gone { padding: 70px 0 44px; max-width: 56ch; }
+.gone h1 { font-family: var(--display); font-weight: 400; font-size: clamp(28px, 4vw, 40px); margin: 0 0 12px; line-height: 1.1; }
+.gone p { color: var(--ink-2); font-size: 15.5px; line-height: 1.6; margin: 0 0 18px; }
+.gone .find { display: flex; gap: 9px; flex-wrap: wrap; margin-bottom: 20px; }
+.gone .find input { flex: 1 1 240px; }
+.gone .muted-note { font-size: 13.5px; color: var(--ink-3); margin: 0; }
+.gone .muted-note a { color: var(--oxide); }
+
+.related { padding: 10px 0 64px; }
+.related h2 { font-family: var(--display); font-weight: 400; font-size: 22px; margin: 0 0 18px; }
+.related .grid { grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); padding-bottom: 0; }
+
+@media (min-width: 861px) {
+  /* The buy column follows you down a long gallery instead of scrolling away. */
+  .detail .buy { position: sticky; top: 22px; align-self: start; }
+}
+@media (max-width: 860px) {
+  .detail h1 { font-size: 26px; }
+  .buy-price .now { font-size: 28px; }
+  .assurances { grid-template-columns: 1fr; }
+}
+.variants { display: flex; flex-wrap: wrap; gap: 8px; margin: 20px 0 6px; }
+.variants button {
+  font: inherit; font-size: 13.5px; background: var(--surface);
+  border: 1px solid var(--rule-strong); border-radius: 4px; padding: 9px 15px; cursor: pointer;
+}
+.variants button[aria-pressed="true"] { border-color: var(--ink); background: var(--ink); color: var(--surface); }
+.variants button[disabled] { opacity: .45; cursor: not-allowed; text-decoration: line-through; }
+
+.buy-row { display: flex; gap: 10px; margin: 22px 0 8px; flex-wrap: wrap; }
+.qty { display: inline-flex; border: 1px solid var(--rule-strong); border-radius: 4px; overflow: hidden; }
+.qty button { font: inherit; width: 38px; border: 0; background: var(--surface); cursor: pointer; color: var(--ink); }
+.qty input { width: 46px; border: 0; text-align: center; font-family: var(--mono); background: var(--surface); color: var(--ink); }
+.btn {
+  font: inherit; font-size: 15px; border: 0; border-radius: 4px; padding: 12px 26px;
+  cursor: pointer; background: var(--ink); color: var(--surface);
+}
+.btn.ghost { background: none; color: var(--ink); border: 1px solid var(--rule-strong); }
+.btn:disabled { opacity: .5; cursor: not-allowed; }
+
+/* The paragraph under the buy row. Measure kept short — it is read, not scanned. */
+.about {
+  color: var(--ink-2); font-size: 14.5px; line-height: 1.62;
+  margin: 22px 0 0; max-width: 52ch;
+}
+.specs { width: 100%; border-collapse: collapse; margin-top: 26px; font-size: 14px; }
+.specs th, .specs td { text-align: left; padding: 9px 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
+.specs th { font-weight: 400; color: var(--ink-3); width: 42%; font-size: 13px; }
+.specs td { font-family: var(--mono); font-size: 12.5px; }
+
+/* ---------- cart drawer ---------- */
+.drawer {
+  position: fixed; inset: 0 0 0 auto; width: min(430px, 100%);
+  background: var(--surface); border-left: 1px solid var(--rule);
+  box-shadow: var(--shadow); transform: translateX(100%);
+  transition: transform .22s ease; z-index: 40;
+  display: flex; flex-direction: column;
+}
+.drawer[data-open="true"] { transform: none; }
+@media (prefers-reduced-motion: reduce) { .drawer { transition: none; } }
+.drawer header { display: flex; justify-content: space-between; align-items: center; padding: 18px 20px; border-bottom: 1px solid var(--rule); }
+.drawer header h2 { font-family: var(--display); font-weight: 400; font-size: 21px; margin: 0; }
+.drawer .lines { flex: 1; overflow-y: auto; padding: 6px 20px; }
+.line { display: grid; grid-template-columns: 56px 1fr auto; gap: 12px; padding: 14px 0; border-bottom: 1px solid var(--rule); align-items: start; }
+.line img { width: 56px; height: 56px; object-fit: cover; border-radius: 3px; border: 1px solid var(--rule); }
+.line .nm { font-size: 14px; }
+.line .vl { font-family: var(--mono); font-size: 11px; color: var(--ink-3); }
+.line .amt { font-family: var(--mono); font-size: 13px; text-align: right; }
+.totals { padding: 16px 20px; border-top: 1px solid var(--rule); font-family: var(--mono); font-size: 13px; }
+.totals div { display: flex; justify-content: space-between; padding: 3px 0; color: var(--ink-2); }
+.totals div.grand { color: var(--ink); font-size: 16px; padding-top: 9px; margin-top: 6px; border-top: 1px solid var(--rule); }
+.drawer .actions { padding: 0 20px 20px; }
+.scrim {
+  position: fixed; inset: 0; background: rgba(34,31,27,.42);
+  opacity: 0; pointer-events: none; transition: opacity .2s ease; z-index: 39;
+}
+.scrim[data-open="true"] { opacity: 1; pointer-events: auto; }
+.empty { color: var(--ink-3); font-size: 14px; padding: 30px 0; text-align: center; }
+
+/* ---------- footer ---------- */
+footer.site { border-top: 1px solid var(--rule); background: var(--surface); margin-top: 30px; }
+footer.site .wrap { padding-block: 30px 44px; display: grid; gap: 22px; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); }
+footer h3 { font-family: var(--mono); font-size: 10px; letter-spacing: .16em; text-transform: uppercase; color: var(--ink-3); margin: 0 0 9px; font-weight: 400; }
+footer p, footer li { font-size: 13.5px; color: var(--ink-2); margin: 4px 0; }
+footer ul { list-style: none; padding: 0; margin: 0; }
+
+.skeleton { background: var(--surface-2); border-radius: 3px; animation: pulse 1.3s ease-in-out infinite; }
+@keyframes pulse { 50% { opacity: .55; } }
+@media (prefers-reduced-motion: reduce) { .skeleton { animation: none; } }
+
+/* ---- colourway swatches ----
+   These are full product photographs, one per colourway, shot on white. A small
+   `cover` crop of one shows nothing but background, so they are sized up and
+   contained — the whole piece has to be visible for the swatch to mean anything. */
+.variants.swatches { gap: 8px; max-width: 520px; }
+.variants button.swatch {
+  padding: 3px; width: 68px; height: 68px; border-radius: 3px; overflow: hidden;
+  border: 1px solid var(--rule); background: #fff;
+}
+.variants button.swatch img { width: 100%; height: 100%; object-fit: contain; display: block; }
+.variants button.swatch:hover { border-color: var(--rule-strong); }
+.variants button.swatch[aria-pressed="true"] {
+  border-color: var(--ink);
+  box-shadow: 0 0 0 1px var(--ink);
+}
+.variants button.swatch[disabled] { opacity: .45; }
+/* Out of stock reads as a line through the chip, not just a faded one. */
+.variants button.swatch[disabled]::after {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(to top right, transparent 47%, var(--rule-strong) 47%, var(--rule-strong) 53%, transparent 53%);
+}
+.variants button.swatch { position: relative; }
+#variant-name { font-family: var(--mono); font-size: 12px; }
+
+/* ---------- legal pages ---------- */
+/* Long-form text, not a shop grid: one narrow column, generous leading. */
+.prose { max-width: 62ch; padding-block: 40px 56px; }
+.prose h1 { font-family: var(--display); font-weight: 400; font-size: 34px; margin: 0 0 10px; }
+.prose .lede { color: var(--ink-2); font-size: 16px; margin: 0 0 30px; }
+.prose h2 { font-family: var(--mono); font-size: 11px; letter-spacing: .16em; text-transform: uppercase;
+  color: var(--ink-3); font-weight: 400; margin: 34px 0 10px; }
+.prose p { line-height: 1.65; margin: 0 0 14px; }
+.prose table.specs { margin: 4px 0 18px; }
+.prose table.specs th { width: 34%; vertical-align: top; }
+.prose .mono { font-family: var(--mono); font-size: .92em; }
+.prose a { color: var(--oxide); }
+/* An unfilled legal detail has to be impossible to miss — a blank space in a
+   policy reads as finished text. */
+.prose mark.unfilled { background: var(--surface-2); color: var(--warn); font-family: var(--mono);
+  font-size: 12px; padding: 2px 6px; border-radius: 3px; }
+
+
+
+/* ---------- cart lines ---------- */
+/* Three columns: thumbnail, everything about the piece, money and the bin.
+   Aligned to the top, so the amount sits on the same baseline as the name
+   rather than floating halfway down a taller block. */
+.line .line-main { min-width: 0; display: flex; flex-direction: column; gap: 5px; }
+.line .line-side { display: flex; flex-direction: column; align-items: flex-end; gap: 8px; }
+.line .nm { font-size: 14px; line-height: 1.3; }
+.line .vl { font-family: var(--mono); font-size: 11px; color: var(--ink-3); }
+.line .vl.low { color: var(--warn); }
+.line .amt { font-family: var(--mono); font-size: 13px; font-variant-numeric: tabular-nums;
+  text-align: right; white-space: nowrap; }
+
+/* Equal cells either side of the count, so the number sits dead centre. */
+.line .stepper { display: inline-grid; grid-template-columns: 26px 32px 26px; align-items: stretch;
+  border: 1px solid var(--rule-strong); border-radius: 4px; overflow: hidden;
+  background: var(--surface); width: max-content; }
+.line .stepper button { font: inherit; font-size: 15px; line-height: 1; height: 26px; padding: 0;
+  background: none; border: 0; color: var(--ink); cursor: pointer; display: grid; place-items: center; }
+.line .stepper button:hover:not(:disabled) { background: var(--surface-2); }
+.line .stepper button:disabled { color: var(--rule-strong); cursor: default; }
+.line .stepper .qty { display: grid; place-items: center; font-family: var(--mono); font-size: 12px;
+  font-variant-numeric: tabular-nums; border-inline: 1px solid var(--rule); }
+
+/* The bin is the control, so give it a real hit area and a destructive hover. */
+.line .rm { display: grid; place-items: center; width: 28px; height: 28px; padding: 0;
+  background: none; border: 1px solid transparent; border-radius: 4px;
+  color: var(--ink-3); cursor: pointer; }
+.line .rm:hover { color: #9a3232; border-color: var(--rule); background: var(--surface); }
+.line .rm:focus-visible { outline: 2px solid var(--oxide); outline-offset: 1px; }
+
+/* A line that can no longer be sold: visibly inert, but still removable. */
+.line.gone { opacity: .62; }
+.line.gone .nm { text-decoration: line-through; }
+.line .shot-gone { width: 56px; height: 56px; border-radius: 3px;
+  background: var(--surface-2); border: 1px dashed var(--rule-strong); }
+#cart-clear { margin-top: 10px; font: inherit; font-size: 12px; background: none;
+  border: 1px solid var(--rule-strong); border-radius: 4px; padding: 6px 10px; cursor: pointer; }

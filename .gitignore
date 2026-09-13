@@ -1,0 +1,19 @@
+node_modules/
+data/orders.json
+.env
+*.log
+data/sourcing.json
+html/
+captured/
+intake/
+data/analytics/
+data/reviews.json
+
+data/notifications.json
+
+# Firebase service account key — full admin access, bypasses firestore.rules
+*firebase-adminsdk*.json
+serviceAccount*.json
+.env.*
+!.env.example
+.DS_Store

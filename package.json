@@ -1,0 +1,48 @@
+{
+  "name": "oxide-jewelry",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Storefront and API for oxidised silver jewellery. JSON-backed today, database-ready.",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "node --watch --env-file-if-exists=.env src/server.ts",
+    "start": "node --env-file-if-exists=.env src/server.ts",
+    "seed": "node scripts/seed.ts",
+    "demo": "node scripts/demo-data.ts",
+    "slugs": "node scripts/slugs.ts",
+    "hero": "node scripts/hero.ts",
+    "brand": "node scripts/brand.ts",
+    "scrape": "node scripts/scrape-product.ts",
+    "extract": "node scripts/extract-supplier.ts",
+    "product:add": "node scripts/add-product.ts",
+    "edit": "node scripts/edit-product.ts",
+    "images:import": "node scripts/import-images.ts",
+    "swatches": "node scripts/import-swatches.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test test/*.test.ts",
+    "migrate:split": "node scripts/migrate-split.ts",
+    "debrand": "node scripts/debrand.ts",
+    "describe": "node scripts/describe.ts",
+    "stats": "node scripts/stats.ts",
+    "onboard": "node scripts/onboard.ts",
+    "sourcing": "node scripts/sourcing.ts",
+    "images:resize": "node scripts/resize-images.ts",
+    "firestore:sync": "node --env-file-if-exists=.env scripts/firestore-sync.ts",
+    "swatch:crop": "node scripts/crop-swatch.ts",
+    "cost": "node scripts/cost.ts",
+    "price": "node scripts/price.ts",
+    "onboard:batch": "node scripts/onboard-batch.ts"
+  },
+  "dependencies": {
+    "@google-cloud/firestore": "^9.1.0",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.0"
+  }
+}

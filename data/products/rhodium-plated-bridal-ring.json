@@ -1,0 +1,99 @@
+{
+  "id": "p-rhodium-plated-bridal-piece",
+  "slug": "rhodium-plated-bridal-ring",
+  "title": "Rhodium-Plated Bridal Ring",
+  "category": "rings",
+  "tagline": "Cubic zirconia, claw-set",
+  "description": "A flower ring, cubic zirconia, held in claw settings. Plated rhodium and silver over a brass body.",
+  "material": "Brass",
+  "finish": "Rhodium Plated, Silver Plated",
+  "details": {
+    "Main Stone": "Cubic zirconia",
+    "Jewelry Type": "Rings",
+    "Rings Type": "Wedding Bands or Rings",
+    "Shape / pattern": "Flower",
+    "Style": "Trendy",
+    "Inlay technology": "Claw Setting"
+  },
+  "images": [
+    {
+      "path": "rhodium-plated-bridal-ring/01.webp",
+      "alt": "Rhodium-Plated Bridal Ring",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "rhodium-plated-bridal-ring/02.webp",
+      "alt": "Rhodium-Plated Bridal Ring",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "rhodium-plated-bridal-ring/03.webp",
+      "alt": "Rhodium-Plated Bridal Ring",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "rhodium-plated-bridal-ring/04.webp",
+      "alt": "Rhodium-Plated Bridal Ring",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "rhodium-plated-bridal-ring/05.webp",
+      "alt": "Rhodium-Plated Bridal Ring",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "rhodium-plated-bridal-ring/06.webp",
+      "alt": "Rhodium-Plated Bridal Ring",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "sku": "RHO-PLA-J0250W",
+      "label": "J0250 White / Adjustable Size (one size fits all)",
+      "price": 116900,
+      "stock": 10,
+      "swatch": "rhodium-plated-bridal-ring/swatch/j0250-white.webp"
+    }
+  ],
+  "tags": [
+    "rings",
+    "ring",
+    "cubic zirconia",
+    "flower",
+    "modern",
+    "rhodium-plated",
+    "silver-plated",
+    "wedding",
+    "engagement",
+    "anniversary"
+  ],
+  "featured": false,
+  "status": "active",
+  "createdAt": "2026-09-12T20:13:00.238Z",
+  "updatedAt": "2026-09-12T21:22:55.186Z"
+}

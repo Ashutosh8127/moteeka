@@ -1,0 +1,97 @@
+{
+  "id": "p-gold-plated-bridal-jewellery-set",
+  "slug": "gold-plated-bridal-jewellery-set",
+  "title": "Gold-Plated Bridal Jewellery Set",
+  "category": "necklaces",
+  "tagline": "Cubic zirconia, four pieces",
+  "description": "Four pieces in cubic zirconia, meant to be worn together. Copper alloy under gold and rhodium plate.",
+  "material": "copper",
+  "finish": "Platinum Plated, 24K Gold Plated, Rhodium Plated, 18K Gold Plated",
+  "details": {
+    "Jewelry Sets Type": "4piece jewellery set",
+    "Main Stone": "Cubic zirconia",
+    "Jewelry Type": "Jewellery Sets",
+    "Style": "High quality jewellery set",
+    "Inlay technology": "Handmade"
+  },
+  "images": [
+    {
+      "path": "gold-plated-bridal-jewellery-set/01.webp",
+      "alt": "Gold-Plated Bridal Jewellery Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "gold-plated-bridal-jewellery-set/02.webp",
+      "alt": "Gold-Plated Bridal Jewellery Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "gold-plated-bridal-jewellery-set/03.webp",
+      "alt": "Gold-Plated Bridal Jewellery Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "gold-plated-bridal-jewellery-set/04.webp",
+      "alt": "Gold-Plated Bridal Jewellery Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "gold-plated-bridal-jewellery-set/05.webp",
+      "alt": "Gold-Plated Bridal Jewellery Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "gold-plated-bridal-jewellery-set/06.webp",
+      "alt": "Gold-Plated Bridal Jewellery Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "sku": "NEC-GOL-WHITEA",
+      "label": "White / Adjustable / TRENDY",
+      "price": 463900,
+      "stock": 10,
+      "swatch": "gold-plated-bridal-jewellery-set/swatch/white.webp"
+    }
+  ],
+  "tags": [
+    "necklaces",
+    "jewellery set",
+    "cubic zirconia",
+    "gold-plated",
+    "rhodium-plated",
+    "wedding",
+    "engagement",
+    "anniversary",
+    "party"
+  ],
+  "featured": false,
+  "status": "active",
+  "createdAt": "2026-09-12T21:01:41.910Z",
+  "updatedAt": "2026-09-12T21:22:55.179Z"
+}

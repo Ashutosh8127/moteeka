@@ -1,0 +1,104 @@
+{
+  "id": "p-bracelet",
+  "slug": "zirconia-tennis-anklet",
+  "title": "Zirconia Tennis Anklet",
+  "category": "anklets",
+  "tagline": "Round-cut zirconia in a double row, 20 cm with an extender",
+  "description": "A tennis-style anklet: two staggered rows of round-cut zirconia set close along a flat band, so the line catches light continuously rather than stone by stone. Twenty centimetres with an eight-centimetre extender chain and a lobster clasp, which covers most ankles. Ten grams — light enough that it sits rather than swings.",
+  "material": "Zinc Alloy",
+  "finish": "",
+  "details": {
+    "Diamond shape": "Princess Cut",
+    "Main Stone": "Cubic zirconia",
+    "Occasion": "Gift",
+    "Shape / pattern": "Hook",
+    "Style": "Trendy",
+    "Inlay technology": "Channel setting",
+    "Size": "20 cm + 8 cm extender",
+    "Weight": "10 g",
+    "Closure": "Lobster clasp"
+  },
+  "images": [
+    {
+      "path": "zirconia-tennis-anklet/01.webp",
+      "alt": "Zirconia Tennis Anklet",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "zirconia-tennis-anklet/02.webp",
+      "alt": "Zirconia Tennis Anklet",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "zirconia-tennis-anklet/03.webp",
+      "alt": "Zirconia Tennis Anklet",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "zirconia-tennis-anklet/04.webp",
+      "alt": "Zirconia Tennis Anklet",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "zirconia-tennis-anklet/05.webp",
+      "alt": "Zirconia Tennis Anklet",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "zirconia-tennis-anklet/06.webp",
+      "alt": "Zirconia Tennis Anklet",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "sku": "ANK-BRA-GOLD",
+      "label": "Gold",
+      "price": 82900,
+      "stock": 20,
+      "swatch": "zirconia-tennis-anklet/swatch/gold.webp"
+    },
+    {
+      "sku": "ANK-BRA-SILVER",
+      "label": "Silver",
+      "price": 82900,
+      "stock": 10,
+      "swatch": "zirconia-tennis-anklet/swatch/silver.webp"
+    }
+  ],
+  "tags": [
+    "anklets",
+    "bracelet",
+    "cubic zirconia",
+    "hook",
+    "modern"
+  ],
+  "featured": false,
+  "status": "active",
+  "createdAt": "2026-09-12T20:11:37.471Z",
+  "updatedAt": "2026-09-13T09:42:41.156Z"
+}

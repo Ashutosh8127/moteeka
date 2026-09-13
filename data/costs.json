@@ -1,0 +1,36 @@
+{
+  "_note": "Every rate here is an assumption you own. Duty rates change with each Union Budget and freight changes with every quote \u2014 check them against your own customs broker and courier before pricing anything you will actually sell. npm run cost shows what each one does to the price.",
+  "import": {
+    "_hs": "7117 \u2014 imitation jewellery. Confirm the heading with your broker; a different heading is a different duty.",
+    "basicCustomsDutyPct": 20,
+    "socialWelfareSurchargePct": 10,
+    "igstPct": 18,
+    "igstCreditable": true,
+    "insurancePctOfFob": 1.125,
+    "clearanceFeePerShipment": 350000,
+    "freightPerKg": 45000,
+    "defaultWeightGrams": 40
+  },
+  "fulfilment": {
+    "domesticShippingPerOrder": 7900,
+    "packagingPerOrder": 2500,
+    "paymentGatewayPct": 2.36,
+    "marketplaceCommissionPct": 0
+  },
+  "returns": {
+    "_note": "RTO plus customer returns. Fashion jewellery sold D2C in India commonly sees 15-25% on prepaid and far worse on COD \u2014 set this from your own data as soon as you have any.",
+    "ratePct": 18,
+    "reverseShippingPerReturn": 9000,
+    "handlingPerReturn": 1500,
+    "unsellablePctOfReturns": 15
+  },
+  "pricing": {
+    "_note": "Margin is a share of revenue net of GST, not a multiplier on cost.",
+    "targetMarginPct": 45,
+    "outputGstPct": 18,
+    "roundTo": 10,
+    "roundEnding": 9,
+    "_floorNote": "The lowest margin a discount may take a piece to. Not a hard block - the admin page warns and lets you decide, because a loss-leader is sometimes deliberate. Set it from what your own fixed costs need.",
+    "floorMarginPct": 25
+  }
+}

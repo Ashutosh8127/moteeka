@@ -1,0 +1,251 @@
+{
+  "id": "p-filigree-chandbali-pearl-drops",
+  "slug": "jhumka",
+  "title": "Filigree Chandbali with Pearl Drops",
+  "category": "earrings",
+  "tagline": "Crescent filigree under a paisley stud, fringed in pearls",
+  "description": "A chandbali crescent worked in open filigree, hung from a paisley stud and fringed with small pearls along the lower edge. Larger on the ear than it looks in a photograph — the crescent is the full width of the drop. Oxidised, so the pattern reads dark and the raised beading stays bright.",
+  "material": "Alloy",
+  "finish": "Antique oxidised",
+  "details": {
+    "Material Type": "Zinc Alloy",
+    "Earrings Type": "Drop Earrings",
+    "Main Stone": "Crystal, Rhinestone",
+    "Jewelry Type": "Earrings",
+    "Occasion": "Gift",
+    "Shape / pattern": "Chandbali crescent",
+    "Style": "Vintage",
+    "Stones": "Faux pearl drops",
+    "Top": "Paisley filigree stud"
+  },
+  "images": [
+    {
+      "path": "jhumka/01.webp",
+      "alt": "Filigree Chandbali with Pearl Drops — view 1",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "jhumka/02.webp",
+      "alt": "Filigree Chandbali with Pearl Drops — view 2",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "jhumka/03.webp",
+      "alt": "Filigree Chandbali with Pearl Drops — view 3",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "jhumka/04.webp",
+      "alt": "Filigree Chandbali with Pearl Drops — view 4",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "jhumka/05.webp",
+      "alt": "Filigree Chandbali with Pearl Drops — view 5",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "jhumka/06.webp",
+      "alt": "Filigree Chandbali with Pearl Drops — view 6",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "sku": "JHU-SILVER",
+      "label": "Silver",
+      "price": 83900,
+      "stock": 25,
+      "swatch": "jhumka/swatch/silver.webp"
+    },
+    {
+      "sku": "JHU-BLACK",
+      "label": "Black",
+      "price": 84900,
+      "stock": 25,
+      "swatch": "jhumka/swatch/black.webp"
+    },
+    {
+      "sku": "JHU-WHITE",
+      "label": "White",
+      "price": 84900,
+      "stock": 25,
+      "swatch": "jhumka/swatch/white.webp"
+    },
+    {
+      "sku": "JHU-GOLD",
+      "label": "Gold",
+      "price": 84900,
+      "stock": 25,
+      "swatch": "jhumka/swatch/gold.webp"
+    },
+    {
+      "sku": "JHU-ANTIQU",
+      "label": "Antique Gold + Necklace",
+      "price": 99900,
+      "stock": 0,
+      "swatch": "jhumka/swatch/antique-gold-necklace.webp"
+    },
+    {
+      "sku": "JHU-ANTIQU-2",
+      "label": "Antique Gold & Pearl",
+      "price": 83900,
+      "stock": 0,
+      "swatch": "jhumka/swatch/antique-gold-pearl.webp"
+    },
+    {
+      "sku": "JHU-OXIDIS",
+      "label": "Oxidised & Pearl + Necklace",
+      "price": 99900,
+      "stock": 0,
+      "swatch": "jhumka/swatch/oxidised-pearl-necklace.webp"
+    },
+    {
+      "sku": "JHU-OXIDIS-2",
+      "label": "Oxidised, Silver Beads",
+      "price": 84900,
+      "stock": 0,
+      "swatch": "jhumka/swatch/oxidised-silver-beads.webp"
+    },
+    {
+      "sku": "JHU-NAVYBL",
+      "label": "Navy Blue",
+      "price": 84900,
+      "stock": 0,
+      "swatch": "jhumka/swatch/navy-blue.webp"
+    },
+    {
+      "sku": "JHU-GREEN",
+      "label": "Green",
+      "price": 84900,
+      "stock": 0,
+      "swatch": "jhumka/swatch/green.webp"
+    },
+    {
+      "sku": "JHU-RED",
+      "label": "Red",
+      "price": 84900,
+      "stock": 0,
+      "swatch": "jhumka/swatch/red.webp"
+    },
+    {
+      "sku": "JHU-ROSEGO",
+      "label": "Rose Gold, Pink Beads",
+      "price": 84900,
+      "stock": 0,
+      "swatch": "jhumka/swatch/rose-gold-pink-beads.webp"
+    },
+    {
+      "sku": "JHU-PINK",
+      "label": "Pink",
+      "price": 84900,
+      "stock": 0,
+      "swatch": "jhumka/swatch/pink.webp"
+    },
+    {
+      "sku": "JHU-PURPLE",
+      "label": "Purple",
+      "price": 84900,
+      "stock": 0,
+      "swatch": "jhumka/swatch/purple.webp"
+    },
+    {
+      "sku": "JHU-YELLOW",
+      "label": "Yellow",
+      "price": 84900,
+      "stock": 0,
+      "swatch": "jhumka/swatch/yellow.webp"
+    },
+    {
+      "sku": "JHU-ANTIQU-3",
+      "label": "Antique Gold Beads + Necklace",
+      "price": 102900,
+      "stock": 0,
+      "swatch": "jhumka/swatch/antique-gold-beads-necklace.webp"
+    },
+    {
+      "sku": "JHU-OXIDIS-3",
+      "label": "Oxidised Beads + Necklace",
+      "price": 102900,
+      "stock": 0,
+      "swatch": "jhumka/swatch/oxidised-beads-necklace.webp"
+    },
+    {
+      "sku": "JHU-GOLDPE",
+      "label": "Gold & Pearl + Necklace",
+      "price": 102900,
+      "stock": 0,
+      "swatch": "jhumka/swatch/gold-pearl-necklace.webp"
+    },
+    {
+      "sku": "JHU-GOLDBL",
+      "label": "Gold & Black + Necklace",
+      "price": 102900,
+      "stock": 0,
+      "swatch": "jhumka/swatch/gold-black-necklace.webp"
+    },
+    {
+      "sku": "JHU-GOLDNA",
+      "label": "Gold & Navy + Necklace",
+      "price": 102900,
+      "stock": 0,
+      "swatch": "jhumka/swatch/gold-navy-necklace.webp"
+    },
+    {
+      "sku": "JHU-GOLDGR",
+      "label": "Gold & Green + Necklace",
+      "price": 102900,
+      "stock": 0,
+      "swatch": "jhumka/swatch/gold-green-necklace.webp"
+    },
+    {
+      "sku": "JHU-GOLDRE",
+      "label": "Gold & Red + Necklace",
+      "price": 102900,
+      "stock": 0,
+      "swatch": "jhumka/swatch/gold-red-necklace.webp"
+    },
+    {
+      "sku": "JHU-GOLDPI",
+      "label": "Gold & Pink + Necklace",
+      "price": 102900,
+      "stock": 0,
+      "swatch": "jhumka/swatch/gold-pink-necklace.webp"
+    }
+  ],
+  "tags": [
+    "earrings",
+    "chandbali",
+    "pearl",
+    "oxidised",
+    "filigree"
+  ],
+  "featured": false,
+  "status": "active",
+  "createdAt": "2026-09-12T15:49:02.093Z",
+  "updatedAt": "2026-09-13T08:47:20.815Z"
+}

@@ -1,0 +1,153 @@
+{
+  "id": "p-gold-plated-pearl-earrings",
+  "slug": "hoop-earring-set",
+  "title": "Hoop & Stud Earring Set",
+  "category": "earrings",
+  "tagline": "A card of hoops, studs and pearls — twelve sets to choose from",
+  "description": "A whole card of earrings in one buy: chunky hoops, twisted croissant hoops, mini huggies, knot studs and pearl clusters, packed as a set rather than a single pair. Twelve sets to choose from, gold-toned or silver-toned depending on which you pick, so you can wear a different pair every day of the week or stack three in one ear. Plated alloy — light on the lobe and priced to be worn, not stored.",
+  "material": "Alloy",
+  "finish": "Gold or silver plated, depending on the set",
+  "details": {
+    "Jewelry Sets Type": "Earrings/Bracelet",
+    "Jewelry Type": "Jewellery Sets",
+    "Style": "Trendy"
+  },
+  "images": [
+    {
+      "path": "hoop-earring-set/01.webp",
+      "alt": "Gold-Plated Pearl Earrings",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "hoop-earring-set/02.webp",
+      "alt": "Gold-Plated Pearl Earrings",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "hoop-earring-set/03.webp",
+      "alt": "Gold-Plated Pearl Earrings",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "hoop-earring-set/04.webp",
+      "alt": "Gold-Plated Pearl Earrings",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "sku": "HOO-STU-GOLDPE",
+      "label": "Gold Pearl & Shell",
+      "price": 169900,
+      "stock": 10,
+      "swatch": "hoop-earring-set/swatch/gold-pearl-shell.webp"
+    },
+    {
+      "sku": "HOO-STU-GOLD24",
+      "label": "Gold 24-Piece Set",
+      "price": 153900,
+      "stock": 10,
+      "swatch": "hoop-earring-set/swatch/gold-24-piece-set.webp"
+    },
+    {
+      "sku": "HOO-STU-GOLDCR",
+      "label": "Gold Croissant & Pearl",
+      "price": 127900,
+      "stock": 10,
+      "swatch": "hoop-earring-set/swatch/gold-croissant-pearl.webp"
+    },
+    {
+      "sku": "HOO-STU-GOLDKN",
+      "label": "Gold Knot & Hoop",
+      "price": 127900,
+      "stock": 10,
+      "swatch": "hoop-earring-set/swatch/gold-knot-hoop.webp"
+    },
+    {
+      "sku": "HOO-STU-SILVER",
+      "label": "Silver Checkerboard",
+      "price": 111900,
+      "stock": 10,
+      "swatch": "hoop-earring-set/swatch/silver-checkerboard.webp"
+    },
+    {
+      "sku": "HOO-STU-SILVER-2",
+      "label": "Silver Star & Moon",
+      "price": 111900,
+      "stock": 10,
+      "swatch": "hoop-earring-set/swatch/silver-star-moon.webp"
+    },
+    {
+      "sku": "HOO-STU-SILVER-3",
+      "label": "Silver & Pastel Enamel",
+      "price": 144900,
+      "stock": 10,
+      "swatch": "hoop-earring-set/swatch/silver-pastel-enamel.webp"
+    },
+    {
+      "sku": "HOO-STU-GOLDKN-2",
+      "label": "Gold Knot & Pearl",
+      "price": 134900,
+      "stock": 10,
+      "swatch": "hoop-earring-set/swatch/gold-knot-pearl.webp"
+    },
+    {
+      "sku": "HOO-STU-GOLDCR-2",
+      "label": "Gold Crystal Hoop",
+      "price": 118900,
+      "stock": 10,
+      "swatch": "hoop-earring-set/swatch/gold-crystal-hoop.webp"
+    },
+    {
+      "sku": "HOO-STU-GOLDHO",
+      "label": "Gold Hoop & Pearl",
+      "price": 118900,
+      "stock": 10,
+      "swatch": "hoop-earring-set/swatch/gold-hoop-pearl.webp"
+    },
+    {
+      "sku": "HOO-STU-GOLDTW",
+      "label": "Gold Twisted Hoops",
+      "price": 98900,
+      "stock": 10,
+      "swatch": "hoop-earring-set/swatch/gold-twisted-hoops.webp"
+    },
+    {
+      "sku": "HOO-STU-GOLDMI",
+      "label": "Gold Mini Hoop Mix",
+      "price": 98900,
+      "stock": 10,
+      "swatch": "hoop-earring-set/swatch/gold-mini-hoop-mix.webp"
+    }
+  ],
+  "tags": [
+    "earrings",
+    "hoops",
+    "studs",
+    "pearl",
+    "gold plated",
+    "silver plated",
+    "set",
+    "gifting"
+  ],
+  "featured": false,
+  "status": "active",
+  "createdAt": "2026-09-12T16:45:48.065Z",
+  "updatedAt": "2026-09-12T21:22:55.183Z"
+}

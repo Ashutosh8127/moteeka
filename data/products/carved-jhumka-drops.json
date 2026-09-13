@@ -1,0 +1,106 @@
+{
+  "id": "p-oxidised-carved-earrings",
+  "slug": "carved-jhumka-drops",
+  "title": "Carved Jhumka Drops",
+  "category": "earrings",
+  "tagline": "A pierced bell under a carved leaf top, in silver or antique gold",
+  "description": "A deep pierced bell hung from a carved leaf-shaped top, finished with a close fringe of tiny beads. The openwork means it reads light on the ear for its size. Two finishes: oxidised antique silver, or the same piece in antique gold.",
+  "material": "Alloy",
+  "finish": "Oxidised silver or antique gold",
+  "details": {
+    "Earrings Type": "Drop Earrings",
+    "Jewelry Type": "Earrings",
+    "Shape": "Tassels",
+    "Style": "jhumki",
+    "Religious Type": "Indian",
+    "Inlay technology": "Claw Setting",
+    "Color": "Gold/Silver",
+    "Material": "Alloy Jewellery",
+    "Weight": "40g/Pairs",
+    "Earring Style": "Stud"
+  },
+  "images": [
+    {
+      "path": "carved-jhumka-drops/01.webp",
+      "alt": "Oxidised Carved Earrings",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "carved-jhumka-drops/02.webp",
+      "alt": "Oxidised Carved Earrings",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "carved-jhumka-drops/03.webp",
+      "alt": "Oxidised Carved Earrings",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "carved-jhumka-drops/04.webp",
+      "alt": "Oxidised Carved Earrings",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "carved-jhumka-drops/05.webp",
+      "alt": "Oxidised Carved Earrings",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "carved-jhumka-drops/06.webp",
+      "alt": "Oxidised Carved Earrings",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "sku": "CAR-JHU-ANTIQU",
+      "label": "Antique Gold",
+      "price": 76900,
+      "stock": 10,
+      "swatch": "carved-jhumka-drops/swatch/antique-gold.webp"
+    },
+    {
+      "sku": "CAR-JHU-OXIDIS",
+      "label": "Oxidised Silver",
+      "price": 76900,
+      "stock": 10,
+      "swatch": "carved-jhumka-drops/swatch/oxidised-silver.webp"
+    }
+  ],
+  "tags": [
+    "jhumka",
+    "earrings",
+    "oxidised",
+    "antique gold",
+    "carved",
+    "bridal"
+  ],
+  "featured": false,
+  "status": "active",
+  "createdAt": "2026-09-12T19:24:08.255Z",
+  "updatedAt": "2026-09-12T21:22:55.175Z"
+}

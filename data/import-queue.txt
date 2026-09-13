@@ -1,0 +1,64 @@
+# One listing per line:  <productId>  <category>
+# Capture each page with scripts/capture-snippet.js, drop the JSON in captured/,
+# then run:  npm run onboard:batch
+#
+# npm run slugs shows the categories that exist.
+
+# the listing calls itself "Hollow Out Bangles Bracelet" — it is not an earring
+1601927681099  bangles
+1601295543458  earrings
+1600351419915  earrings
+1600342189559  earrings
+1601519714677  earrings
+
+1601674947325  anklets
+1601107189323  anklets
+1601107118623  anklets
+1601107265073  anklets
+1601205967338  anklets
+1600546962474  anklets
+
+1600572613247  rings
+1600728786241  rings
+1600964466247  rings
+1601739528343  rings
+1600876577068  rings
+1600500555574  rings
+
+1601621745443  necklaces
+1601668206009  necklaces
+1600395932870  necklaces
+1601104985337  necklaces
+1600476952873  necklaces
+1600560229135  necklaces
+1600493705183  necklaces
+1600493749668  necklaces
+
+# Jewellery sets — the listing's own type is "Jewelry Sets"; they lead with a necklace.
+1600548080693  necklaces
+1600478074874  necklaces
+
+# "Jhumka" / "Bell" in the title: these belong with the jhumka, not in general earrings.
+1600243998215  jhumka
+1600303588347  jhumka
+1600195756539  jhumka
+1600206813799  earrings
+1601010814825  earrings
+
+# Nose jewellery — the "Rings & Nose Pins" category.
+1601663733566  rings
+1601806715123  rings
+1601253855076  rings
+
+# Chandbali with a matching tikka — an earring set, despite the tikka.
+1601779189942  earrings
+
+# Bridal CZ sets, all led by a necklace.
+1600943753949  necklaces
+1601657876186  necklaces
+1601657764861  necklaces
+1601423341416  necklaces
+1601601290554  necklaces
+1601638299783  necklaces
+1601284092565  necklaces
+1601653224485  necklaces

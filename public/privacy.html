@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy — Moteeka</title>
+<meta name="description" content="What this shop collects, why, how long it keeps it, and how to have it deleted.">
+<link rel="icon" href="/brand/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/brand/favicon.png" sizes="any">
+<link rel="apple-touch-icon" href="/brand/apple-touch-icon.png">
+<meta name="theme-color" content="#221f1b">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Karla:wght@400;500;700&family=Marcellus&display=swap">
+<link rel="stylesheet" href="/assets/css/site.css">
+<script src="/config.js"></script>
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="/">
+      <img class="logo" src="/brand/mark.svg" alt="" width="30" height="30">
+      <span class="mark">Moteeka</span><span class="sub">Silver &amp; Gold-Plated</span></a>
+    <nav class="cats"><a href="/">All pieces</a><a href="/contact.html">Contact</a></nav>
+  </div>
+</header>
+
+<main class="wrap prose">
+  <h1>Privacy</h1>
+  <p class="lede">What <span data-b="tradingName">this shop</span> collects, why, how long it is kept,
+  and how to have it removed. Last updated <span data-b="updated">—</span>.</p>
+
+  <h2>Who is collecting it</h2>
+  <p><b data-b="legalName">—</b>, <span data-b="address">—</span></p>
+  <p>Email <span data-b="email">—</span> · Phone <span data-b="phone">—</span> · <span data-b-optional="gstin"></span></p>
+
+  <h2>What is collected, and why</h2>
+  <table class="specs">
+    <tr><th>Order details</th><td>Your name, email, phone and delivery address. Collected when you
+      place an order, because a parcel cannot be addressed or a delivery confirmed without them.</td></tr>
+    <tr><th>Your cart</th><td>Kept in your own browser (<span class="mono">localStorage</span>), not on our
+      server, so it survives a page reload. Clearing your browser data removes it.</td></tr>
+    <tr><th>Server logs</th><td>Ordinary web-server records of requests. Used to keep the site working
+      and to investigate faults.</td></tr>
+    <tr data-when="stats" hidden><th>Page counts</th><td>We count how many times each page and each
+      piece is opened, added to a basket and ordered, which search terms are typed, and whether a
+      visit arrived from a link or an ad. <b>These are counts, not records of you.</b> No cookie is
+      set, nothing that identifies you is stored, and what is kept is a daily total per page — a
+      number that cannot be taken apart into individual people or visits. We do not store your IP
+      address or your browser's user-agent for this. It stays on our own server and is sent to
+      nobody.</td></tr>
+  </table>
+  <p>There are no accounts and no passwords on this site. <b>No payment is taken online</b> — we
+  contact you to arrange payment, so no card or bank details are entered here or held by us.</p>
+
+  <h2>Third parties</h2>
+  <p>Typefaces are loaded from <b>Google Fonts</b>. That request tells Google your IP address and
+  which page you are on. It is the only third-party request the site makes as standard.</p>
+  <div data-when="pixel" hidden>
+    <p>This site also runs the <b>Meta Pixel</b>. It reports to Meta (Facebook, Instagram) when you
+    view a product, choose a colourway, add something to the basket or start checkout, so that our
+    advertising can be measured. Meta may match this to your account if you have one. You can limit
+    it in your Meta account under <i>Ads settings</i>, or block it with any tracker-blocking
+    extension — the shop works normally either way.</p>
+  </div>
+  <p data-when="no-pixel" hidden>No advertising trackers run on this site. No Meta Pixel, no Google
+  Analytics, no advertising cookies.</p>
+  <p data-when="stats" hidden>The page counts described above are <b>our own</b>: they are collected
+  by this site, stored on this site, and shared with no one. If your browser sends
+  <span class="mono">Global Privacy Control</span> or <span class="mono">Do Not Track</span>, nothing
+  is counted at all.</p>
+
+  <h2>How long it is kept</h2>
+  <p>Order records are kept for <b>eight years</b>, because tax and GST law requires books to be
+  retained for that long. Anything not tied to an order is deleted when you ask.</p>
+  <p data-when="stats" hidden>Daily page counts are kept for about <b>13 months</b>, so one year can
+  be compared with the last, and then deleted. There is nothing in them to identify, so there is
+  nothing in them to remove on request.</p>
+
+  <h2>Who else sees it</h2>
+  <p>Your delivery address goes to the courier carrying your parcel. Nothing is sold, rented or
+  shared for anyone else's marketing. <b>Our suppliers never receive your details</b> — we place our
+  own orders with them, and they contain no customer information.</p>
+
+  <h2>Your rights</h2>
+  <p>Under the Digital Personal Data Protection Act, 2023 you may ask what we hold about you, ask
+  for it to be corrected, ask for it to be erased where we are not required to keep it, and withdraw
+  a consent you gave. Write to <span data-b="email">—</span> and we will answer within 30 days.</p>
+
+  <h2>Complaints</h2>
+  <p>Our Grievance Officer is <b data-b="officer">—</b>, <span data-b="officerEmail">—</span>.
+  Complaints are acknowledged within 48 hours and resolved within one month, as the Consumer
+  Protection (E-Commerce) Rules, 2020 require. If you are not satisfied you may approach the
+  Data Protection Board of India.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes materially we will say so on this page and update the date at the top.</p>
+</main>
+
+<footer class="site"><div class="wrap" id="footer"></div></footer>
+<script type="module" src="/assets/js/legal.js"></script>
+<script type="module" src="/assets/js/footer.js"></script>
+</body>
+</html>

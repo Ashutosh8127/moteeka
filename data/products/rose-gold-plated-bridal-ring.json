@@ -1,0 +1,172 @@
+{
+  "id": "p-rose-gold-plated-bridal-piece",
+  "slug": "rose-gold-plated-bridal-ring",
+  "title": "Rose Gold-Plated Bridal Ring",
+  "category": "rings",
+  "tagline": "Emerald-cut cubic zirconia, micro-set",
+  "description": "A geometric ring in emerald-cut cubic zirconia, micro-set. Brass under rose gold, gold, rhodium and silver plate, in twelve colourways.",
+  "material": "Brass",
+  "finish": "Rhodium Plated, Rose Gold Plated, 18K Gold Plated, Silver Plated, Gold Plated",
+  "details": {
+    "Main Stone": "Cubic zirconia",
+    "Jewelry Type": "Rings",
+    "Rings Type": "Wedding Bands or Rings",
+    "Shape / pattern": "Geometric",
+    "Style": "Romantic",
+    "Inlay technology": "Micro insert",
+    "Stone Shape": "Emerald Cut",
+    "Application": "Wedding"
+  },
+  "images": [
+    {
+      "path": "rose-gold-plated-bridal-ring/01.webp",
+      "alt": "Rose Gold-Plated Bridal Ring",
+      "widths": [
+        160,
+        400
+      ]
+    },
+    {
+      "path": "rose-gold-plated-bridal-ring/02.webp",
+      "alt": "Rose Gold-Plated Bridal Ring",
+      "widths": [
+        160,
+        400
+      ]
+    },
+    {
+      "path": "rose-gold-plated-bridal-ring/03.webp",
+      "alt": "Rose Gold-Plated Bridal Ring",
+      "widths": [
+        160,
+        400
+      ]
+    },
+    {
+      "path": "rose-gold-plated-bridal-ring/04.webp",
+      "alt": "Rose Gold-Plated Bridal Ring",
+      "widths": [
+        160,
+        400
+      ]
+    },
+    {
+      "path": "rose-gold-plated-bridal-ring/05.webp",
+      "alt": "Rose Gold-Plated Bridal Ring",
+      "widths": [
+        160,
+        400
+      ]
+    },
+    {
+      "path": "rose-gold-plated-bridal-ring/06.webp",
+      "alt": "Rose Gold-Plated Bridal Ring",
+      "widths": [
+        160,
+        400
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "sku": "ROS-GOL-GOLDJ0",
+      "label": "Gold J0122 HuangJin / 6",
+      "price": 127900,
+      "stock": 10,
+      "swatch": "rose-gold-plated-bridal-ring/swatch/gold-j0122-huangjin.webp"
+    },
+    {
+      "sku": "ROS-GOL-ROSEGO",
+      "label": "Rose Gold J0122 MeiGui / 7",
+      "price": 127900,
+      "stock": 10,
+      "swatch": "rose-gold-plated-bridal-ring/swatch/rose-gold-j0122-meigui.webp"
+    },
+    {
+      "sku": "ROS-GOL-ROSEGO-2",
+      "label": "Rose Gold J0122 MeiGui / 9",
+      "price": 127900,
+      "stock": 10,
+      "swatch": "rose-gold-plated-bridal-ring/swatch/rose-gold-j0122-meigui.webp"
+    },
+    {
+      "sku": "ROS-GOL-SILVER",
+      "label": "Silver J0122 Yin / 9",
+      "price": 127900,
+      "stock": 10,
+      "swatch": "rose-gold-plated-bridal-ring/swatch/silver-j0122-yin.webp"
+    },
+    {
+      "sku": "ROS-GOL-SILVER-2",
+      "label": "Silver J0122 Yin / 6",
+      "price": 127900,
+      "stock": 10,
+      "swatch": "rose-gold-plated-bridal-ring/swatch/silver-j0122-yin.webp"
+    },
+    {
+      "sku": "ROS-GOL-GOLDJ0-2",
+      "label": "Gold J0122 HuangJin / 9",
+      "price": 127900,
+      "stock": 10,
+      "swatch": "rose-gold-plated-bridal-ring/swatch/gold-j0122-huangjin.webp"
+    },
+    {
+      "sku": "ROS-GOL-ROSEGO-3",
+      "label": "Rose Gold J0122 MeiGui / 6",
+      "price": 127900,
+      "stock": 10,
+      "swatch": "rose-gold-plated-bridal-ring/swatch/rose-gold-j0122-meigui.webp"
+    },
+    {
+      "sku": "ROS-GOL-GOLDJ0-3",
+      "label": "Gold J0122 HuangJin / 8",
+      "price": 127900,
+      "stock": 10,
+      "swatch": "rose-gold-plated-bridal-ring/swatch/gold-j0122-huangjin.webp"
+    },
+    {
+      "sku": "ROS-GOL-ROSEGO-4",
+      "label": "Rose Gold J0122 MeiGui / 8",
+      "price": 127900,
+      "stock": 10,
+      "swatch": "rose-gold-plated-bridal-ring/swatch/rose-gold-j0122-meigui.webp"
+    },
+    {
+      "sku": "ROS-GOL-SILVER-3",
+      "label": "Silver J0122 Yin / 7",
+      "price": 127900,
+      "stock": 10,
+      "swatch": "rose-gold-plated-bridal-ring/swatch/silver-j0122-yin.webp"
+    },
+    {
+      "sku": "ROS-GOL-GOLDJ0-4",
+      "label": "Gold J0122 HuangJin / 7",
+      "price": 127900,
+      "stock": 10,
+      "swatch": "rose-gold-plated-bridal-ring/swatch/gold-j0122-huangjin.webp"
+    },
+    {
+      "sku": "ROS-GOL-SILVER-4",
+      "label": "Silver J0122 Yin / 8",
+      "price": 127900,
+      "stock": 10,
+      "swatch": "rose-gold-plated-bridal-ring/swatch/silver-j0122-yin.webp"
+    }
+  ],
+  "tags": [
+    "rings",
+    "ring",
+    "cubic zirconia",
+    "geometric",
+    "romantic",
+    "rose gold-plated",
+    "gold-plated",
+    "rhodium-plated",
+    "silver-plated",
+    "wedding"
+  ],
+  "featured": false,
+  "status": "active",
+  "createdAt": "2026-09-12T20:13:14.511Z",
+  "updatedAt": "2026-09-12T21:22:55.188Z"
+}

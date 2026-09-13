@@ -1,0 +1,213 @@
+{
+  "id": "p-jhumka-2",
+  "slug": "bell-jhumka",
+  "title": "Bell Jhumka",
+  "category": "jhumka",
+  "tagline": "Rhinestones, 18 colourways",
+  "description": "A bell jhumka in rhinestones. Alloy, in 18 colourways.",
+  "material": "Zinc Alloy",
+  "finish": "",
+  "details": {
+    "Jewelry Main Material": "Alloy",
+    "Earrings Type": "Drop Earrings",
+    "Main Stone": "Crystal, Rhinestone",
+    "Jewelry Type": "Earrings",
+    "Occasion": "Gift",
+    "Shape / pattern": "Bell",
+    "Style": "Vintage"
+  },
+  "images": [
+    {
+      "path": "bell-jhumka/01.webp",
+      "alt": "Bell Jhumka",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "bell-jhumka/02.webp",
+      "alt": "Bell Jhumka",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "bell-jhumka/03.webp",
+      "alt": "Bell Jhumka",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "bell-jhumka/04.webp",
+      "alt": "Bell Jhumka",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "bell-jhumka/05.webp",
+      "alt": "Bell Jhumka",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "bell-jhumka/06.webp",
+      "alt": "Bell Jhumka",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "sku": "BEL-JHU-GOLD2",
+      "label": "Gold2",
+      "price": 84900,
+      "stock": 10,
+      "swatch": "bell-jhumka/swatch/gold2.webp"
+    },
+    {
+      "sku": "BEL-JHU-GOLD1",
+      "label": "Gold1",
+      "price": 84900,
+      "stock": 10,
+      "swatch": "bell-jhumka/swatch/gold1.webp"
+    },
+    {
+      "sku": "BEL-JHU-GOLD4",
+      "label": "Gold4",
+      "price": 84900,
+      "stock": 10,
+      "swatch": "bell-jhumka/swatch/gold4.webp"
+    },
+    {
+      "sku": "BEL-JHU-GOLD3",
+      "label": "Gold3",
+      "price": 84900,
+      "stock": 10,
+      "swatch": "bell-jhumka/swatch/gold3.webp"
+    },
+    {
+      "sku": "BEL-JHU-GOLD12",
+      "label": "Gold12",
+      "price": 102900,
+      "stock": 10,
+      "swatch": "bell-jhumka/swatch/gold12.webp"
+    },
+    {
+      "sku": "BEL-JHU-GOLD13",
+      "label": "Gold13",
+      "price": 102900,
+      "stock": 10,
+      "swatch": "bell-jhumka/swatch/gold13.webp"
+    },
+    {
+      "sku": "BEL-JHU-GOLD10",
+      "label": "Gold10",
+      "price": 84900,
+      "stock": 10,
+      "swatch": "bell-jhumka/swatch/gold10.webp"
+    },
+    {
+      "sku": "BEL-JHU-GOLD11",
+      "label": "Gold11",
+      "price": 84900,
+      "stock": 10,
+      "swatch": "bell-jhumka/swatch/gold11.webp"
+    },
+    {
+      "sku": "BEL-JHU-GOLD16",
+      "label": "Gold16",
+      "price": 102900,
+      "stock": 10,
+      "swatch": "bell-jhumka/swatch/gold16.webp"
+    },
+    {
+      "sku": "BEL-JHU-GOLD17",
+      "label": "Gold17",
+      "price": 102900,
+      "stock": 10,
+      "swatch": "bell-jhumka/swatch/gold17.webp"
+    },
+    {
+      "sku": "BEL-JHU-GOLD14",
+      "label": "Gold14",
+      "price": 102900,
+      "stock": 10,
+      "swatch": "bell-jhumka/swatch/gold14.webp"
+    },
+    {
+      "sku": "BEL-JHU-GOLD15",
+      "label": "Gold15",
+      "price": 102900,
+      "stock": 10,
+      "swatch": "bell-jhumka/swatch/gold15.webp"
+    },
+    {
+      "sku": "BEL-JHU-GOLD18",
+      "label": "Gold18",
+      "price": 102900,
+      "stock": 10,
+      "swatch": "bell-jhumka/swatch/gold18.webp"
+    },
+    {
+      "sku": "BEL-JHU-GOLD9",
+      "label": "Gold9",
+      "price": 84900,
+      "stock": 10,
+      "swatch": "bell-jhumka/swatch/gold9.webp"
+    },
+    {
+      "sku": "BEL-JHU-GOLD6",
+      "label": "Gold6",
+      "price": 84900,
+      "stock": 10,
+      "swatch": "bell-jhumka/swatch/gold6.webp"
+    },
+    {
+      "sku": "BEL-JHU-GOLD5",
+      "label": "Gold5",
+      "price": 84900,
+      "stock": 10,
+      "swatch": "bell-jhumka/swatch/gold5.webp"
+    },
+    {
+      "sku": "BEL-JHU-GOLD8",
+      "label": "Gold8",
+      "price": 84900,
+      "stock": 10,
+      "swatch": "bell-jhumka/swatch/gold8.webp"
+    },
+    {
+      "sku": "BEL-JHU-GOLD7",
+      "label": "Gold7",
+      "price": 84900,
+      "stock": 10,
+      "swatch": "bell-jhumka/swatch/gold7.webp"
+    }
+  ],
+  "tags": [
+    "jhumka",
+    "rhinestones",
+    "bell",
+    "vintage"
+  ],
+  "featured": false,
+  "status": "active",
+  "createdAt": "2026-09-12T20:24:25.278Z",
+  "updatedAt": "2026-09-12T21:22:55.171Z"
+}

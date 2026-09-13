@@ -1,0 +1,115 @@
+{
+  "id": "p-gold-plated-carved-earrings",
+  "slug": "gold-plated-carved-earrings",
+  "title": "Gold-Plated Carved Earrings",
+  "category": "earrings",
+  "tagline": "Claw-set, three colourways",
+  "description": "A pair of tassel earrings. Alloy under gold plate, three colourways to pick from. Cut for anniversaries. 5.6cm/2.7in · 25.9g/pair.",
+  "material": "Zinc Alloy",
+  "finish": "Gold Plated",
+  "details": {
+    "Jewelry Main Material": "Alloy",
+    "Earrings Type": "Drop Earrings",
+    "Jewelry Type": "Earrings",
+    "Occasion": "Anniversary",
+    "Shape / pattern": "Tassel",
+    "Style": "Vintage",
+    "Inlay technology": "Claw Setting",
+    "Material": "Alloy Jewellery",
+    "Length": "5.6cm/2.7in",
+    "Weight": "25.9g/pair",
+    "Color Styles": "3 Colors",
+    "Earring Type": "Drop Earrings",
+    "Item Type": "Earrings"
+  },
+  "images": [
+    {
+      "path": "gold-plated-carved-earrings/01.webp",
+      "alt": "Gold-Plated Carved Earrings",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "gold-plated-carved-earrings/02.webp",
+      "alt": "Gold-Plated Carved Earrings",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "gold-plated-carved-earrings/03.webp",
+      "alt": "Gold-Plated Carved Earrings",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "gold-plated-carved-earrings/04.webp",
+      "alt": "Gold-Plated Carved Earrings",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "gold-plated-carved-earrings/05.webp",
+      "alt": "Gold-Plated Carved Earrings",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "gold-plated-carved-earrings/06.webp",
+      "alt": "Gold-Plated Carved Earrings",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "sku": "EAR-GOL-PINK",
+      "label": "Pink",
+      "price": 96900,
+      "stock": 10,
+      "swatch": "gold-plated-carved-earrings/swatch/pink.webp"
+    },
+    {
+      "sku": "EAR-GOL-WHITE-2",
+      "label": "White",
+      "price": 96900,
+      "stock": 10,
+      "swatch": "gold-plated-carved-earrings/swatch/white.webp"
+    },
+    {
+      "sku": "EAR-GOL-BLUE",
+      "label": "Blue",
+      "price": 96900,
+      "stock": 10,
+      "swatch": "gold-plated-carved-earrings/swatch/blue.webp"
+    }
+  ],
+  "tags": [
+    "earrings",
+    "tassel",
+    "vintage",
+    "gold-plated",
+    "anniversary"
+  ],
+  "featured": false,
+  "status": "active",
+  "createdAt": "2026-09-12T20:26:22.345Z",
+  "updatedAt": "2026-09-12T21:22:55.180Z"
+}

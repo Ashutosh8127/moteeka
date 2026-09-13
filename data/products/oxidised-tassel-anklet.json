@@ -1,0 +1,104 @@
+{
+  "id": "p-oxidised-carved-necklace",
+  "slug": "oxidised-tassel-anklet",
+  "title": "Oxidised Tassel Anklet",
+  "category": "anklets",
+  "tagline": "Micro-set",
+  "description": "A geometric anklet. Alloy under oxidised silver plate. Meant for engagements. 20+10cm.",
+  "material": "Alloy",
+  "finish": "Silver Plated",
+  "details": {
+    "Occasion": "Engagement",
+    "Shape / pattern": "Geometric",
+    "Style": "Retro fashion",
+    "Inlay technology": "Micro insert",
+    "Color": "Antique Silver Colour",
+    "Size": "20+10cm",
+    "Usage": "Daily Life",
+    "Type": "Tassel anklet"
+  },
+  "images": [
+    {
+      "path": "oxidised-tassel-anklet/01.webp",
+      "alt": "Oxidised Tassel Anklet",
+      "widths": [
+        160,
+        400,
+        800,
+        1200
+      ]
+    },
+    {
+      "path": "oxidised-tassel-anklet/02.webp",
+      "alt": "Oxidised Tassel Anklet",
+      "widths": [
+        160,
+        400,
+        800,
+        1200
+      ]
+    },
+    {
+      "path": "oxidised-tassel-anklet/03.webp",
+      "alt": "Oxidised Tassel Anklet",
+      "widths": [
+        160,
+        400,
+        800,
+        1200
+      ]
+    },
+    {
+      "path": "oxidised-tassel-anklet/04.webp",
+      "alt": "Oxidised Tassel Anklet",
+      "widths": [
+        160,
+        400,
+        800,
+        1200
+      ]
+    },
+    {
+      "path": "oxidised-tassel-anklet/05.webp",
+      "alt": "Oxidised Tassel Anklet",
+      "widths": [
+        160,
+        400,
+        800,
+        1200
+      ]
+    },
+    {
+      "path": "oxidised-tassel-anklet/06.webp",
+      "alt": "Oxidised Tassel Anklet",
+      "widths": [
+        160,
+        400,
+        800,
+        1200
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "sku": "ANK-OXI-ANTIQU",
+      "label": "Antique Silver / Anklets",
+      "price": 74900,
+      "stock": 10,
+      "swatch": "oxidised-tassel-anklet/swatch/antique-silver.webp"
+    }
+  ],
+  "tags": [
+    "anklets",
+    "necklace",
+    "geometric",
+    "vintage",
+    "oxidised silver-plated",
+    "engagement",
+    "everyday"
+  ],
+  "featured": false,
+  "status": "active",
+  "createdAt": "2026-09-12T20:11:04.001Z",
+  "updatedAt": "2026-09-13T09:20:13.382Z"
+}

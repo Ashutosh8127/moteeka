@@ -1,0 +1,60 @@
+{
+  "_howToUse": [
+    "Send this list to the supplier on the supplier chat or WhatsApp — most will fill it in and",
+    "attach an image pack the same day. Then: npm run product:add -- ./intake/jhumka.json",
+    "",
+    "Ask in the same message: 'Please confirm in writing that I may use these product",
+    "images on my own website and Indian marketplace listings.' Keep the reply."
+  ],
+
+  "title": "Ethnic Retro Carved Jhumka",
+  "category": "jhumka",
+  "tagline": "Deep-carved dome with an oxidised antique finish",
+  "description": "Long copy for the product page. Write your own — do not paste the supplier's, it is on every competing listing.",
+
+  "material": "Brass alloy, oxidised silver plating",
+  "finish": "Antique oxidised",
+
+  "askTheSupplierFor": {
+    "platingMaterial": "What exactly is the plating — silver, rhodium, or lacquer over brass?",
+    "platingMicrons": "Plating thickness in microns — decides how fast it wears",
+    "baseMetal": "Brass / zinc alloy / copper",
+    "nickelFree": "Yes or no. Matters for skin reaction and for EU-style claims",
+    "leadCadmium": "Confirm compliance if you plan to claim it",
+    "dimensions": "Length x width, and drop length for earrings",
+    "weightPerPiece": "In grams",
+    "moq": "Minimum order quantity",
+    "unitPriceFob": "Per piece at your quantity, and the currency",
+    "hsCode": "Usually 7117 for imitation jewellery — confirm, it sets your customs duty",
+    "countryOfOrigin": "Mandatory on Indian listings and on the package",
+    "packaging": "Polybag, box, card? Affects what you must re-pack",
+    "leadTime": "Days from payment to dispatch",
+    "imagePack": "High-resolution images: white background, detail, on-model, and scale shot"
+  },
+
+  "details": {
+    "Drop length": "4.5 cm",
+    "Closure": "Push back",
+    "Weight per pair": "18 g",
+    "Base metal": "",
+    "Plating": "",
+    "Nickel free": "",
+    "Country of origin": ""
+  },
+
+  "variants": [
+    { "label": "Oxidised silver", "priceRupees": 649, "compareAtRupees": 999, "stock": 40, "weightGrams": 18 },
+    { "label": "Antique gold tone", "priceRupees": 699, "stock": 25, "weightGrams": 18 }
+  ],
+
+  "tags": ["jhumka", "oxidised", "ethnic"],
+  "featured": false,
+  "status": "draft",
+  "sourceUrl": "https://www.the supplier site/product-detail/...",
+  "supplier": "Supplier name or the supplier site store",
+
+  "images": [
+    "./intake/photos/jhumka/01.jpg",
+    "./intake/photos/jhumka/02.jpg"
+  ]
+}

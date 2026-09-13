@@ -1,0 +1,59 @@
+# Firebase App Hosting.
+#
+#   firebase apphosting:backends:create
+#
+# App Hosting builds this repository and runs it on managed containers. There
+# is no build step — Node runs the TypeScript directly — so it installs
+# dependencies and runs `npm start`, which is `node src/server.ts`.
+#
+# Two things are deliberately absent and should stay absent:
+#
+#   - GOOGLE_APPLICATION_CREDENTIALS. In production the container carries its
+#     own identity and the Firestore client picks it up. The key file in
+#     ~/.config/moteeka is for your laptop only and must never be deployed.
+#   - .env. It is gitignored and never reaches the build. Everything the
+#     running shop needs is below, and secrets come from Secret Manager.
+
+runConfig:
+  # A shop this size is idle most of the day. Zero means you pay for requests
+  # rather than for uptime; the cost is a cold start on the first visit after
+  # a quiet spell.
+  minInstances: 0
+  maxInstances: 2
+  # Node is single-threaded but this workload is almost entirely waiting on
+  # Firestore, so one container handles many overlapping requests.
+  concurrency: 80
+  cpu: 1
+  memoryMiB: 512
+
+env:
+  - variable: REPO_DRIVER
+    value: firestore
+    availability:
+      - RUNTIME
+
+  - variable: GOOGLE_CLOUD_PROJECT
+    value: moteeka-94680
+    availability:
+      - RUNTIME
+
+  # The shop's day boundary. Without this the container runs in UTC and a sale
+  # at 11pm IST is counted against the previous day.
+  - variable: TZ_SHOP
+    value: Asia/Kolkata
+    availability:
+      - RUNTIME
+
+  # Unset means /api/stats and the admin page answer 404 rather than being
+  # open. Create it before the first deploy:
+  #   firebase apphosting:secrets:set admin-token
+  - variable: ADMIN_TOKEN
+    secret: admin-token
+    availability:
+      - RUNTIME
+
+  # Where a placed order is announced. Uncomment once you have a webhook.
+  # - variable: ORDER_WEBHOOK_URL
+  #   secret: order-webhook-url
+  #   availability:
+  #     - RUNTIME

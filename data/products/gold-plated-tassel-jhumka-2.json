@@ -1,0 +1,100 @@
+{
+  "id": "p-gold-plated-jhumka",
+  "slug": "gold-plated-tassel-jhumka-2",
+  "title": "Gold-Plated Tassel Jhumka",
+  "category": "jhumka",
+  "tagline": "Two colourways",
+  "description": "Flower jhumka. Gold plate over alloy, two colourways to pick from. Cut for parties.",
+  "material": "Alloy",
+  "finish": "Gold Plated",
+  "details": {
+    "Earrings Type": "Drop Earrings",
+    "Jewelry Type": "Earrings",
+    "Occasion": "Party",
+    "Shape / pattern": "Flower",
+    "Style": "Vintage"
+  },
+  "images": [
+    {
+      "path": "gold-plated-tassel-jhumka-2/01.webp",
+      "alt": "Gold-Plated Tassel Jhumka",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "gold-plated-tassel-jhumka-2/02.webp",
+      "alt": "Gold-Plated Tassel Jhumka",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "gold-plated-tassel-jhumka-2/03.webp",
+      "alt": "Gold-Plated Tassel Jhumka",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "gold-plated-tassel-jhumka-2/04.webp",
+      "alt": "Gold-Plated Tassel Jhumka",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "gold-plated-tassel-jhumka-2/05.webp",
+      "alt": "Gold-Plated Tassel Jhumka",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "gold-plated-tassel-jhumka-2/06.webp",
+      "alt": "Gold-Plated Tassel Jhumka",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "sku": "GOL-PLA-RANDOM",
+      "label": "random",
+      "price": 65900,
+      "stock": 10,
+      "swatch": "gold-plated-tassel-jhumka-2/swatch/random.webp"
+    },
+    {
+      "sku": "GOL-PLA-GOLD",
+      "label": "Gold",
+      "price": 99900,
+      "stock": 10,
+      "swatch": "gold-plated-tassel-jhumka-2/swatch/gold.webp"
+    }
+  ],
+  "tags": [
+    "jhumka",
+    "flower",
+    "vintage",
+    "gold-plated",
+    "party"
+  ],
+  "featured": false,
+  "status": "active",
+  "createdAt": "2026-09-12T20:24:05.174Z",
+  "updatedAt": "2026-09-12T21:22:55.182Z"
+}

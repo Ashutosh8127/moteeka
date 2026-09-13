@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-label="Moteeka">
+  <!--
+    Moteeka is from *moti* — pearl. Three beads on a thread, graduating to the
+    right, which is how a strand sits when it is laid down rather than worn.
+
+    Two earlier attempts are worth recording. A single bead with a hard white
+    catchlight read as an eye at any size above a favicon. Three beads arranged
+    symmetrically — two small above one large — read as a face. Asymmetry and a
+    soft gradient instead of a highlight fix both, and at sixteen pixels what
+    survives is three dots on a rising line, which is still recognisably beads.
+  -->
+  <defs>
+    <radialGradient id="moteeka-pearl" cx="34%" cy="28%" r="80%">
+      <stop offset="0%" stop-color="#fff" stop-opacity=".5"/>
+      <stop offset="48%" stop-color="#fff" stop-opacity=".06"/>
+      <stop offset="100%" stop-color="#000" stop-opacity=".18"/>
+    </radialGradient>
+  </defs>
+  <path d="M8 31 Q26 27 41 17" fill="none" stroke="#f2eee7" stroke-width="1.2" stroke-linecap="round" opacity=".35"/>
+  <circle cx="9" cy="31" r="3.6" fill="#f2eee7"/><circle cx="9" cy="31" r="3.6" fill="url(#moteeka-pearl)"/>
+  <circle cx="21.5" cy="28" r="5.6" fill="#f2eee7"/><circle cx="21.5" cy="28" r="5.6" fill="url(#moteeka-pearl)"/>
+  <circle cx="38" cy="19" r="8.4" fill="#f2eee7"/><circle cx="38" cy="19" r="8.4" fill="url(#moteeka-pearl)"/>
+</svg>

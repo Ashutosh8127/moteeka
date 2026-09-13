@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Moteeka — Indian Jewellery</title>
+<meta name="description" content="Jhumka, chandbali, bridal necklace sets, bangles, anklets and nose jewellery. Silver and gold-plated, shipped across India.">
+<link rel="icon" href="/brand/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/brand/favicon.png" sizes="any">
+<link rel="apple-touch-icon" href="/brand/apple-touch-icon.png">
+<meta name="theme-color" content="#221f1b">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Karla:wght@400;500;700&family=Marcellus&display=swap">
+<link rel="stylesheet" href="/assets/css/site.css">
+<script src="/config.js"></script>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="/">
+      <img class="logo" src="/brand/mark.svg" alt="" width="30" height="30">
+      <span class="mark">Moteeka</span>
+      <span class="sub">Silver &amp; Gold-Plated</span>
+    </a>
+    <nav class="cats" id="cats" aria-label="Categories"></nav>
+    <button class="cart-btn" id="cart-open">Cart <span class="count" id="cart-count">0</span></button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <h1>Pieces worth the occasion, at a price that survives one.</h1>
+      <p>
+        Jhumka and chandbali, bridal necklace sets, bangles, anklets and nose jewellery —
+        in oxidised silver, gold plate and cut stone. Fashion jewellery in plated alloy,
+        not precious metal, and priced like it.
+      </p>
+      <div class="meta">
+        <div><span class="n" id="stat-products">—</span><span class="k">Pieces</span></div>
+        <div><span class="n" id="stat-cats">—</span><span class="k">Categories</span></div>
+        <div><span class="n">₹999+</span><span class="k">Free shipping</span></div>
+      </div>
+    </div>
+    <!--
+      Built from real product photographs by `npm run hero`. Re-run it after
+      importing or removing pieces; everything between the markers is generated.
+    -->
+    <div class="hero-art">
+      <!-- hero:start -->
+      <a class="t1" href="/product.html?slug=silver-statement-jhumka" aria-label="Silver Statement Jhumka"><img src="/images/silver-statement-jhumka/01-400.webp" srcset="/images/silver-statement-jhumka/01-160.webp 160w, /images/silver-statement-jhumka/01-400.webp 400w, /images/silver-statement-jhumka/01-800.webp 800w" sizes="(max-width: 860px) 45vw, 220px" alt="" fetchpriority="high" decoding="async"></a>
+      <a class="t2" href="/product.html?slug=emerald-bib-bridal-set" aria-label="Emerald Bib Bridal Set"><img src="/images/emerald-bib-bridal-set/01-400.webp" srcset="/images/emerald-bib-bridal-set/01-160.webp 160w, /images/emerald-bib-bridal-set/01-400.webp 400w, /images/emerald-bib-bridal-set/01-800.webp 800w" sizes="(max-width: 860px) 22vw, 110px" alt="" loading="lazy" decoding="async"></a>
+      <a class="t3" href="/product.html?slug=green-leaf-drops" aria-label="Green Leaf Drop Earrings"><img src="/images/green-leaf-drops/01-400.webp" srcset="/images/green-leaf-drops/01-160.webp 160w, /images/green-leaf-drops/01-400.webp 400w, /images/green-leaf-drops/01-800.webp 800w" sizes="(max-width: 860px) 22vw, 110px" alt="" loading="lazy" decoding="async"></a>
+      <a class="t4" href="/product.html?slug=broad-bridal-bangle" aria-label="Gold-Plated Broad Bridal Bangle"><img src="/images/broad-bridal-bangle/01-400.webp" srcset="/images/broad-bridal-bangle/01-160.webp 160w, /images/broad-bridal-bangle/01-400.webp 400w, /images/broad-bridal-bangle/01-800.webp 800w" sizes="(max-width: 860px) 22vw, 110px" alt="" loading="lazy" decoding="async"></a>
+      <a class="t5" href="/product.html?slug=gold-plated-tassel-anklet" aria-label="Gold-Plated Tassel Anklet"><img src="/images/gold-plated-tassel-anklet/01-400.webp" srcset="/images/gold-plated-tassel-anklet/01-160.webp 160w, /images/gold-plated-tassel-anklet/01-400.webp 400w" sizes="(max-width: 860px) 22vw, 110px" alt="" loading="lazy" decoding="async"></a>
+    <!-- hero:end -->
+    </div>
+  </div>
+</section>
+
+<main class="wrap">
+  <div class="toolbar">
+    <div class="left">
+      <input type="search" id="search" placeholder="Search jhumka, haar, payal…" aria-label="Search products">
+      <select id="sort" aria-label="Sort products">
+        <option value="newest">Newest</option>
+        <option value="price-asc">Price: low to high</option>
+        <option value="price-desc">Price: high to low</option>
+        <option value="name">Name A–Z</option>
+      </select>
+      <!--
+        Built from /api/facets, which has always returned the real price range
+        and was only being used for the two numbers in the hero.
+      -->
+      <select id="price" aria-label="Filter by price"><option value="">Any price</option></select>
+    </div>
+    <span class="result-count" id="count">loading…</span>
+  </div>
+  <div class="grid" id="grid"></div>
+  <nav class="pager" id="pager" aria-label="Pages" hidden></nav>
+</main>
+
+<footer class="site"><div class="wrap" id="footer"></div></footer>
+
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="cart" data-open="false" aria-label="Shopping cart">
+  <header>
+    <h2>Your cart</h2>
+    <button class="btn ghost" id="cart-close" style="padding:6px 13px;font-size:13px">Close</button>
+  </header>
+  <div class="lines" id="cart-lines"></div>
+  <div class="totals" id="cart-totals"></div>
+  <div class="actions">
+    <button class="btn" id="checkout" style="width:100%" disabled>Checkout</button>
+    <!-- The drawer used to offer Checkout or nothing; Close was a small ghost
+         button in the header, which is not where anyone looks for "not yet". -->
+    <button class="btn ghost" id="keep-shopping" style="width:100%;margin-top:9px">Keep shopping</button>
+  </div>
+</aside>
+
+<script type="module" src="/assets/js/index.js"></script>
+<script type="module" src="/assets/js/footer.js"></script>
+</body>
+</html>

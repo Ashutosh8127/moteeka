@@ -1,0 +1,98 @@
+{
+  "id": "p-rhodium-plated-long-earrings",
+  "slug": "green-leaf-drops",
+  "title": "Green Leaf Drop Earrings",
+  "category": "earrings",
+  "tagline": "Round brilliant-cut cubic zirconia, micro-set",
+  "description": "Leaf earrings, round brilliant-cut cubic zirconia, micro-set. Rhodium plate over brass. Cut for parties.",
+  "material": "Copper Alloy",
+  "finish": "Rhodium Plated",
+  "details": {
+    "Jewelry Main Material": "Brass",
+    "Diamond shape": "Round Brilliant Cut",
+    "Earrings Type": "Drop Earrings",
+    "Main Stone": "Cubic zirconia",
+    "Jewelry Type": "Earrings",
+    "Occasion": "Party",
+    "Shape / pattern": "Leaf Shape",
+    "Style": "Trendy",
+    "Inlay technology": "Micro insert"
+  },
+  "images": [
+    {
+      "path": "green-leaf-drops/01.webp",
+      "alt": "Rhodium-Plated Long Earrings",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "green-leaf-drops/02.webp",
+      "alt": "Rhodium-Plated Long Earrings",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "green-leaf-drops/03.webp",
+      "alt": "Rhodium-Plated Long Earrings",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "green-leaf-drops/04.webp",
+      "alt": "Rhodium-Plated Long Earrings",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "green-leaf-drops/05.webp",
+      "alt": "Rhodium-Plated Long Earrings",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "green-leaf-drops/06.webp",
+      "alt": "Rhodium-Plated Long Earrings",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "sku": "GRE-LEA-E1112G",
+      "label": "E1112 Green",
+      "price": 186900,
+      "stock": 10,
+      "swatch": "green-leaf-drops/swatch/e1112-green.webp"
+    }
+  ],
+  "tags": [
+    "earrings",
+    "cubic zirconia",
+    "leaf",
+    "modern",
+    "rhodium-plated",
+    "party"
+  ],
+  "featured": false,
+  "status": "active",
+  "createdAt": "2026-09-12T20:09:01.466Z",
+  "updatedAt": "2026-09-12T21:22:55.182Z"
+}

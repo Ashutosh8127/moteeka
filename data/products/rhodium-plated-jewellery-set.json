@@ -1,0 +1,108 @@
+{
+  "id": "p-rhodium-plated-bridal-necklace-2",
+  "slug": "rhodium-plated-jewellery-set",
+  "title": "Rhodium-Plated Jewellery Set",
+  "category": "necklaces",
+  "tagline": "Marquise-cut cubic zirconia, claw-set",
+  "description": "A flower jewellery set, marquise-cut cubic zirconia, held in claw settings. Plated rhodium and silver over a brass body, in two colourways.",
+  "material": "Copper Alloy",
+  "finish": "Rhodium Plated, Silver Plated",
+  "details": {
+    "Jewelry Sets Type": "Bridal Jewellery Sets",
+    "Jewelry Main Material": "Brass",
+    "Diamond shape": "Marquise Cut",
+    "Main Stone": "Cubic zirconia",
+    "Jewelry Type": "Jewellery Sets",
+    "Shape / pattern": "Flower",
+    "Style": "Trendy",
+    "Inlay technology": "Claw Setting"
+  },
+  "images": [
+    {
+      "path": "rhodium-plated-jewellery-set/01.webp",
+      "alt": "Rhodium-Plated Jewellery Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "rhodium-plated-jewellery-set/02.webp",
+      "alt": "Rhodium-Plated Jewellery Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "rhodium-plated-jewellery-set/03.webp",
+      "alt": "Rhodium-Plated Jewellery Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "rhodium-plated-jewellery-set/04.webp",
+      "alt": "Rhodium-Plated Jewellery Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "rhodium-plated-jewellery-set/05.webp",
+      "alt": "Rhodium-Plated Jewellery Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "rhodium-plated-jewellery-set/06.webp",
+      "alt": "Rhodium-Plated Jewellery Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "sku": "RHO-PLA-GREENT",
+      "label": "Green T0802 LVVV",
+      "price": 856900,
+      "stock": 10,
+      "swatch": "rhodium-plated-jewellery-set/swatch/green-t0802-lvvv.webp"
+    },
+    {
+      "sku": "RHO-PLA-WHITET",
+      "label": "White T0802 Bai",
+      "price": 856900,
+      "stock": 10,
+      "swatch": "rhodium-plated-jewellery-set/swatch/white-t0802-bai.webp"
+    }
+  ],
+  "tags": [
+    "necklaces",
+    "jewellery set",
+    "cubic zirconia",
+    "flower",
+    "modern",
+    "rhodium-plated",
+    "silver-plated",
+    "wedding",
+    "engagement",
+    "anniversary"
+  ],
+  "featured": false,
+  "status": "active",
+  "createdAt": "2026-09-12T20:23:21.716Z",
+  "updatedAt": "2026-09-12T21:22:55.187Z"
+}

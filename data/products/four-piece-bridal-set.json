@@ -1,0 +1,101 @@
+{
+  "id": "p-rhodium-plated-necklace",
+  "slug": "four-piece-bridal-set",
+  "title": "Four-Piece Bridal Set",
+  "category": "necklaces",
+  "tagline": "Pear-cut cubic zirconia, micro-set",
+  "description": "Water drop jewellery set, pear-cut cubic zirconia, micro-set. Rhodium plate over brass.",
+  "material": "Copper Alloy",
+  "finish": "Rhodium Plated",
+  "details": {
+    "Jewelry Sets Type": "Bridal Jewellery Sets",
+    "Jewelry Main Material": "Brass",
+    "Diamond shape": "Pear Cut",
+    "Main Stone": "Cubic zirconia",
+    "Jewelry Type": "Jewellery Sets",
+    "Shape / pattern": "Water Drop",
+    "Style": "Trendy",
+    "Inlay technology": "Micro insert"
+  },
+  "images": [
+    {
+      "path": "four-piece-bridal-set/01.webp",
+      "alt": "Four-Piece Bridal Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "four-piece-bridal-set/02.webp",
+      "alt": "Four-Piece Bridal Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "four-piece-bridal-set/03.webp",
+      "alt": "Four-Piece Bridal Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "four-piece-bridal-set/04.webp",
+      "alt": "Four-Piece Bridal Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "four-piece-bridal-set/05.webp",
+      "alt": "Four-Piece Bridal Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "four-piece-bridal-set/06.webp",
+      "alt": "Four-Piece Bridal Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "sku": "FOU-PIE-SILVER",
+      "label": "Silver T0801 Yin / Adjustable",
+      "price": 907900,
+      "stock": 10,
+      "swatch": "four-piece-bridal-set/swatch/silver-t0801-yin.webp"
+    }
+  ],
+  "tags": [
+    "necklaces",
+    "jewellery set",
+    "cubic zirconia",
+    "water drop",
+    "modern",
+    "rhodium-plated",
+    "wedding",
+    "engagement",
+    "anniversary",
+    "party"
+  ],
+  "featured": false,
+  "status": "active",
+  "createdAt": "2026-09-12T20:15:16.123Z",
+  "updatedAt": "2026-09-12T21:22:55.177Z"
+}

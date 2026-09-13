@@ -1,0 +1,239 @@
+{
+  "id": "p-gold-plated-heart-nose-clip",
+  "slug": "nose-clip-no-piercing",
+  "title": "No-Piercing Nose Clip",
+  "category": "rings",
+  "tagline": "A clip-on nath in eleven shapes, gold or silver",
+  "description": "A U-shaped clip that grips the nostril rim — no piercing, nothing to heal, off at the end of the evening. Eleven shapes: a CZ starburst, a solitaire, a plain star or moon, hearts plain and paved, a flower, a butterfly, a coiled snake, and a paved crescent. Each in silver tone or gold tone.",
+  "material": "Copper",
+  "finish": "Gold or silver plated",
+  "details": {
+    "Jewelry Main Material": "Brass",
+    "Body Jewelry Type": "Plug & Tunnel Jewellery",
+    "Shape / pattern": "Ball",
+    "Style": "Trendy"
+  },
+  "images": [
+    {
+      "path": "nose-clip-no-piercing/01.webp",
+      "alt": "No-Piercing Nose Clip",
+      "widths": [
+        160,
+        400
+      ]
+    },
+    {
+      "path": "nose-clip-no-piercing/02.webp",
+      "alt": "No-Piercing Nose Clip",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "nose-clip-no-piercing/03.webp",
+      "alt": "No-Piercing Nose Clip",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "nose-clip-no-piercing/04.webp",
+      "alt": "No-Piercing Nose Clip",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "nose-clip-no-piercing/05.webp",
+      "alt": "No-Piercing Nose Clip",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "nose-clip-no-piercing/06.webp",
+      "alt": "No-Piercing Nose Clip",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "sku": "NOS-CLI-HEARTS",
+      "label": "CZ Moon, Silver",
+      "price": 68900,
+      "stock": 10,
+      "swatch": "nose-clip-no-piercing/swatch/cz-moon-silver.webp"
+    },
+    {
+      "sku": "NOS-CLI-PLAINM",
+      "label": "CZ Heart, Silver",
+      "price": 68900,
+      "stock": 10,
+      "swatch": "nose-clip-no-piercing/swatch/cz-heart-silver.webp"
+    },
+    {
+      "sku": "NOS-CLI-STARBU",
+      "label": "Solitaire, Gold",
+      "price": 68900,
+      "stock": 10,
+      "swatch": "nose-clip-no-piercing/swatch/solitaire-gold.webp"
+    },
+    {
+      "sku": "NOS-CLI-OPENHE",
+      "label": "CZ Flower, Silver",
+      "price": 68900,
+      "stock": 10,
+      "swatch": "nose-clip-no-piercing/swatch/cz-flower-silver.webp"
+    },
+    {
+      "sku": "NOS-CLI-STARBU-2",
+      "label": "Solitaire, Silver",
+      "price": 68900,
+      "stock": 10,
+      "swatch": "nose-clip-no-piercing/swatch/solitaire-silver.webp"
+    },
+    {
+      "sku": "NOS-CLI-SNAKEC",
+      "label": "Heart Solitaire, Silver",
+      "price": 68900,
+      "stock": 10,
+      "swatch": "nose-clip-no-piercing/swatch/heart-solitaire-silver.webp"
+    },
+    {
+      "sku": "NOS-CLI-OPENHE-2",
+      "label": "CZ Flower, Gold",
+      "price": 68900,
+      "stock": 10,
+      "swatch": "nose-clip-no-piercing/swatch/cz-flower-gold.webp"
+    },
+    {
+      "sku": "NOS-CLI-SNAKEC-2",
+      "label": "Heart Solitaire, Gold",
+      "price": 68900,
+      "stock": 10,
+      "swatch": "nose-clip-no-piercing/swatch/heart-solitaire-gold.webp"
+    },
+    {
+      "sku": "NOS-CLI-CZBUTT",
+      "label": "Snake Coil, Gold",
+      "price": 68900,
+      "stock": 10,
+      "swatch": "nose-clip-no-piercing/swatch/snake-coil-gold.webp"
+    },
+    {
+      "sku": "NOS-CLI-SOLITA",
+      "label": "Plain Star, Silver",
+      "price": 68900,
+      "stock": 10,
+      "swatch": "nose-clip-no-piercing/swatch/plain-star-silver.webp"
+    },
+    {
+      "sku": "NOS-CLI-CZFLOW",
+      "label": "CZ Butterfly, Silver",
+      "price": 68900,
+      "stock": 10,
+      "swatch": "nose-clip-no-piercing/swatch/cz-butterfly-silver.webp"
+    },
+    {
+      "sku": "NOS-CLI-SOLITA-2",
+      "label": "Plain Star, Gold",
+      "price": 68900,
+      "stock": 10,
+      "swatch": "nose-clip-no-piercing/swatch/plain-star-gold.webp"
+    },
+    {
+      "sku": "NOS-CLI-HEARTS-2",
+      "label": "CZ Moon, Gold",
+      "price": 68900,
+      "stock": 10,
+      "swatch": "nose-clip-no-piercing/swatch/cz-moon-gold.webp"
+    },
+    {
+      "sku": "NOS-CLI-CZFLOW-2",
+      "label": "CZ Butterfly, Gold",
+      "price": 68900,
+      "stock": 10,
+      "swatch": "nose-clip-no-piercing/swatch/cz-butterfly-gold.webp"
+    },
+    {
+      "sku": "NOS-CLI-CZHEAR",
+      "label": "Open Heart, Silver",
+      "price": 68900,
+      "stock": 10,
+      "swatch": "nose-clip-no-piercing/swatch/open-heart-silver.webp"
+    },
+    {
+      "sku": "NOS-CLI-CZBUTT-2",
+      "label": "Snake Coil, Silver",
+      "price": 68900,
+      "stock": 10,
+      "swatch": "nose-clip-no-piercing/swatch/snake-coil-silver.webp"
+    },
+    {
+      "sku": "NOS-CLI-PLAINM-2",
+      "label": "CZ Heart, Gold",
+      "price": 68900,
+      "stock": 10,
+      "swatch": "nose-clip-no-piercing/swatch/cz-heart-gold.webp"
+    },
+    {
+      "sku": "NOS-CLI-PLAINS",
+      "label": "Plain Moon, Silver",
+      "price": 68900,
+      "stock": 10,
+      "swatch": "nose-clip-no-piercing/swatch/plain-moon-silver.webp"
+    },
+    {
+      "sku": "NOS-CLI-PLAINS-2",
+      "label": "Plain Moon, Gold",
+      "price": 68900,
+      "stock": 10,
+      "swatch": "nose-clip-no-piercing/swatch/plain-moon-gold.webp"
+    },
+    {
+      "sku": "NOS-CLI-GOLD",
+      "label": "Starburst, Gold",
+      "price": 68900,
+      "stock": 10,
+      "swatch": "nose-clip-no-piercing/swatch/starburst-gold.webp"
+    },
+    {
+      "sku": "NOS-CLI-CZHEAR-2",
+      "label": "Open Heart, Gold",
+      "price": 68900,
+      "stock": 10,
+      "swatch": "nose-clip-no-piercing/swatch/open-heart-gold.webp"
+    },
+    {
+      "sku": "NOS-CLI-SILVER",
+      "label": "Starburst, Silver",
+      "price": 68900,
+      "stock": 10,
+      "swatch": "nose-clip-no-piercing/swatch/starburst-silver.webp"
+    }
+  ],
+  "tags": [
+    "nose pin",
+    "nath",
+    "nose clip",
+    "no piercing",
+    "cz",
+    "clip on"
+  ],
+  "featured": false,
+  "status": "active",
+  "createdAt": "2026-09-12T20:51:22.803Z",
+  "updatedAt": "2026-09-12T21:22:55.184Z"
+}

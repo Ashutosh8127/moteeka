@@ -1,0 +1,101 @@
+{
+  "id": "p-rhodium-plated-bridal-earrings",
+  "slug": "round-tennis-set",
+  "title": "Round Tennis CZ Set",
+  "category": "necklaces",
+  "tagline": "Pear-cut cubic zirconia, claw-set",
+  "description": "A water drop jewellery set, pear-cut cubic zirconia, held in claw settings. Plated rhodium over a brass body.",
+  "material": "Copper Alloy",
+  "finish": "Rhodium Plated",
+  "details": {
+    "Jewelry Sets Type": "Bridal Jewellery Sets",
+    "Jewelry Main Material": "Brass",
+    "Diamond shape": "Pear Cut",
+    "Main Stone": "Cubic zirconia",
+    "Jewelry Type": "Jewellery Sets",
+    "Shape / pattern": "Water Drop",
+    "Style": "Trendy",
+    "Inlay technology": "Claw Setting"
+  },
+  "images": [
+    {
+      "path": "round-tennis-set/01.webp",
+      "alt": "Rhodium-Plated Bridal Earrings",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "round-tennis-set/02.webp",
+      "alt": "Rhodium-Plated Bridal Earrings",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "round-tennis-set/03.webp",
+      "alt": "Rhodium-Plated Bridal Earrings",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "round-tennis-set/04.webp",
+      "alt": "Rhodium-Plated Bridal Earrings",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "round-tennis-set/05.webp",
+      "alt": "Rhodium-Plated Bridal Earrings",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "round-tennis-set/06.webp",
+      "alt": "Rhodium-Plated Bridal Earrings",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "sku": "ROU-TEN-WHITET",
+      "label": "White T1024",
+      "price": 703900,
+      "stock": 10,
+      "swatch": "round-tennis-set/swatch/white-t1024.webp"
+    }
+  ],
+  "tags": [
+    "necklaces",
+    "jewellery set",
+    "cubic zirconia",
+    "water drop",
+    "modern",
+    "rhodium-plated",
+    "wedding",
+    "engagement",
+    "anniversary",
+    "party"
+  ],
+  "featured": false,
+  "status": "active",
+  "createdAt": "2026-09-12T20:13:51.696Z",
+  "updatedAt": "2026-09-12T21:22:55.188Z"
+}

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Checkout — Moteeka</title>
+<link rel="icon" href="/brand/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/brand/favicon.png" sizes="any">
+<link rel="apple-touch-icon" href="/brand/apple-touch-icon.png">
+<meta name="theme-color" content="#221f1b">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Karla:wght@400;500;700&family=Marcellus&display=swap">
+<link rel="stylesheet" href="/assets/css/site.css">
+<script src="/config.js"></script>
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="/">
+      <img class="logo" src="/brand/mark.svg" alt="" width="30" height="30">
+      <span class="mark">Moteeka</span><span class="sub">Silver &amp; Gold-Plated</span></a>
+    <nav class="cats"><a href="/">All pieces</a></nav>
+    <button class="cart-btn" id="cart-open">Cart <span class="count" id="cart-count">0</span></button>
+  </div>
+</header>
+<main class="wrap" style="max-width:760px">
+  <h1 style="font-family:var(--display);font-weight:400;font-size:32px;margin:34px 0 6px">Checkout</h1>
+  <p style="color:var(--ink-2);margin:0 0 26px">
+    Cash on delivery and UPI on dispatch. No card details are taken on this page.
+  </p>
+  <div id="summary" class="totals" style="border:1px solid var(--rule);border-radius:4px;margin-bottom:26px"></div>
+  <form id="form" style="display:grid;gap:14px">
+    <div style="display:grid;gap:14px;grid-template-columns:1fr 1fr">
+      <label>Full name<input name="name" required></label>
+      <label>Phone<input name="phone" required inputmode="tel" pattern="[0-9+ ]{8,15}"></label>
+    </div>
+    <label>Email<input name="email" type="email" required></label>
+    <label>Address<input name="line1" required placeholder="House / street"></label>
+    <label>Landmark or area<input name="line2" placeholder="Optional"></label>
+    <div style="display:grid;gap:14px;grid-template-columns:1fr 1fr 1fr">
+      <label>City<input name="city" required></label>
+      <label>State<input name="state" required></label>
+      <label>PIN code<input name="pincode" required inputmode="numeric" pattern="[0-9]{6}"></label>
+    </div>
+    <div id="error" style="color:#b3261e;font-size:14px"></div>
+    <button class="btn" type="submit" style="justify-self:start;margin-top:6px">Place order</button>
+  </form>
+  <div id="done" hidden style="padding:26px 0"></div>
+</main>
+
+<footer class="site"><div class="wrap" id="footer"></div></footer>
+<style>
+  label { display: grid; gap: 5px; font-size: 13px; color: var(--ink-2); }
+  label input { font: inherit; font-size: 15px; color: var(--ink); background: var(--surface);
+    border: 1px solid var(--rule-strong); border-radius: 4px; padding: 10px 12px; }
+</style>
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="cart" data-open="false" aria-label="Shopping cart">
+  <header>
+    <h2>Your cart</h2>
+    <button class="btn ghost" id="cart-close" style="padding:6px 13px;font-size:13px">Close</button>
+  </header>
+  <div class="lines" id="cart-lines"></div>
+  <div class="totals" id="cart-totals"></div>
+  <div class="actions"><button class="btn" id="checkout" style="width:100%" disabled>Checkout</button></div>
+</aside>
+<script type="module" src="/assets/js/checkout.js"></script>
+<script type="module" src="/assets/js/footer.js"></script>
+</body>
+</html>

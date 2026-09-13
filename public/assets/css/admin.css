@@ -1,0 +1,307 @@
+/*
+ * The admin page. Same palette as the shop so it does not feel like a
+ * different product, but denser and flatter: this is a tool that gets scanned
+ * for the one row that is wrong, not a page that gets read.
+ *
+ * Deliberately no cards-on-cards. Everything is a table or a tile, borders do
+ * the separating, and colour is reserved — it only appears where a number
+ * needs acting on.
+ */
+body.admin { background: var(--bone); }
+.admin .wrap { max-width: 1240px; }
+.admin .muted { color: var(--ink-3); }
+.admin .err { color: #9c2c2c; font-size: 13.5px; margin: 10px 0; }
+
+/* ---------- sign in ---------- */
+.signin { min-height: 100svh; display: grid; place-items: center; padding: 24px; }
+.signin .panel {
+  width: min(460px, 100%); background: var(--surface);
+  border: 1px solid var(--rule); border-radius: 6px; padding: 30px;
+  display: flex; flex-direction: column; gap: 14px; box-shadow: var(--shadow);
+}
+.signin .mono { font-family: var(--mono); font-size: .92em; }
+.signin pre {
+  font-family: var(--mono); font-size: 12px; line-height: 1.7; margin: 0;
+  background: var(--bone); border: 1px solid var(--rule); border-radius: 4px;
+  padding: 12px 14px; overflow-x: auto; color: var(--ink);
+}
+.signin .panel .btn { align-self: flex-start; }
+.signin h1 { font-family: var(--display); font-weight: 400; font-size: 27px; margin: 0; }
+.signin p { margin: 0; font-size: 13.5px; line-height: 1.55; }
+.signin label { display: flex; flex-direction: column; gap: 6px; font-size: 13px; color: var(--ink-2); }
+.signin input[type="password"] {
+  font: inherit; font-family: var(--mono); font-size: 14px; padding: 10px 12px;
+  border: 1px solid var(--rule-strong); border-radius: 4px; background: var(--bone); color: var(--ink);
+}
+.signin .check { flex-direction: row; align-items: center; gap: 9px; }
+.signin .check input { width: 16px; height: 16px; }
+
+/* ---------- chrome ---------- */
+.bar { background: var(--surface); border-bottom: 1px solid var(--rule); position: sticky; top: 0; z-index: 5; }
+.bar .wrap { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; padding-block: 11px; }
+.bar .who { display: flex; align-items: baseline; gap: 9px; font-size: 14px; }
+.bar .who span { font-family: var(--mono); font-size: 11px; }
+.bar .right { margin-left: auto; display: flex; align-items: center; gap: 9px; }
+.btn.small { padding: 7px 14px; font-size: 13px; }
+
+.tabs { display: flex; gap: 3px; }
+.tabs button {
+  font: inherit; font-size: 13.5px; color: var(--ink-2); background: none; border: 0;
+  border-radius: 999px; padding: 6px 14px; cursor: pointer;
+}
+.tabs button:hover { background: var(--surface-2); color: var(--ink); }
+.tabs [aria-current="true"] { background: var(--oxide); color: #fff; }
+
+.admin main { padding-block: 22px 60px; }
+.admin h2 {
+  font-family: var(--mono); font-size: 11px; font-weight: 500; letter-spacing: .13em;
+  text-transform: uppercase; color: var(--ink-3); margin: 30px 0 11px;
+}
+.admin h2:first-child { margin-top: 4px; }
+
+/* ---------- headline tiles ---------- */
+.tiles { display: grid; gap: 1px; background: var(--rule); border: 1px solid var(--rule); border-radius: 5px; overflow: hidden;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
+.tile { background: var(--surface); padding: 15px 17px; }
+.tile .n { font-family: var(--display); font-size: 28px; line-height: 1.1; display: block; }
+.tile .k { font-family: var(--mono); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); }
+.tile .sub { font-size: 12px; color: var(--ink-3); margin-top: 3px; display: block; }
+
+/* ---------- tables ---------- */
+.tw { overflow-x: auto; border: 1px solid var(--rule); border-radius: 5px; background: var(--surface); }
+table.grid2 { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+table.grid2 th, table.grid2 td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--rule); white-space: nowrap; }
+table.grid2 thead th {
+  font-family: var(--mono); font-size: 10px; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--ink-3); font-weight: 500; background: var(--bone); position: sticky; top: 0;
+}
+table.grid2 tbody tr:last-child td { border-bottom: 0; }
+table.grid2 tbody tr:hover { background: var(--bone); }
+table.grid2 td.n, table.grid2 th.n { text-align: right; font-family: var(--mono); font-variant-numeric: tabular-nums; }
+table.grid2 th[data-sort] { cursor: pointer; user-select: none; }
+table.grid2 th[data-sort]:hover { color: var(--ink); }
+table.grid2 th[aria-sort] { color: var(--ink); }
+.piece { display: flex; align-items: center; gap: 10px; }
+.piece img { width: 30px; height: 30px; border-radius: 3px; object-fit: cover; background: var(--surface-2); flex: none; }
+.piece a { color: inherit; text-decoration: none; }
+.piece a:hover { text-decoration: underline; }
+.piece small { display: block; font-family: var(--mono); font-size: 10.5px; color: var(--ink-3); }
+.piece img, .piece .noimg {
+  width: 30px; height: 30px; border-radius: 3px; object-fit: cover;
+  background: var(--surface-2); display: block; flex: none;
+}
+/* A chevron that turns. Without it the row looked like text and nobody
+   discovered that it opened. */
+.piece .chev {
+  font-family: var(--mono); font-size: 15px; line-height: 1; color: var(--ink-3);
+  flex: none; width: 10px; transition: transform .12s ease; display: inline-block;
+}
+tr.open .piece .chev { transform: rotate(90deg); color: var(--oxide); }
+.piece .expand {
+  font: inherit; font-size: 13.5px; color: var(--ink); background: none; border: 0;
+  padding: 0; cursor: pointer; text-align: left; display: block;
+}
+table.grid2 tbody tr[data-row] { cursor: pointer; }
+table.grid2 tbody tr[data-row]:hover .piece .expand { text-decoration: underline; }
+table.grid2 tbody tr.open { background: var(--bone); }
+tr.open .piece .expand { font-weight: 700; }
+.piece small a { color: var(--ink-3); }
+.piece small a:hover { color: var(--oxide); }
+
+.hint { font-size: 12.5px; color: var(--ink-3); margin: -4px 0 11px; }
+
+/* ---------- the reorder panel ---------- */
+tr.detail > td { background: var(--bone); padding: 0 12px 16px; white-space: normal; }
+/*
+ * The pieces table is ten columns and scrolls sideways on a narrow screen. A
+ * panel inside one of its cells inherits that width, so the labels sat on
+ * screen and every figure sat off the right edge — you had to scroll the table
+ * to read the money, which is the one thing the panel is for.
+ *
+ * Sticky to the container's left edge and capped at the viewport, so the panel
+ * stays put and stays readable however far the table beside it is scrolled.
+ */
+.reorder {
+  display: flex; flex-direction: column; gap: 10px; padding-top: 4px;
+  position: sticky; left: 0; max-width: calc(100vw - 44px);
+}
+.discount {
+  background: var(--surface); border: 1px solid var(--rule); border-radius: 5px;
+  padding: 13px 16px 14px; display: flex; flex-direction: column; gap: 10px;
+}
+.discount h5 {
+  font-family: var(--mono); font-size: 10px; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--ink-3); font-weight: 500; margin: 0; display: flex; gap: 9px; align-items: center;
+}
+.discount .fields { display: flex; gap: 12px; align-items: flex-end; flex-wrap: wrap; }
+.discount label { display: flex; flex-direction: column; gap: 5px; font-size: 12px; color: var(--ink-2); }
+.discount input {
+  font: inherit; font-size: 13.5px; padding: 7px 10px; color: var(--ink);
+  border: 1px solid var(--rule-strong); border-radius: 4px; background: var(--bone);
+}
+.discount input[name="pct"] { width: 82px; font-family: var(--mono); }
+.discount input[name="label"] { width: 190px; }
+.discount .effect { font-size: 12.5px; margin: 0; line-height: 1.55; }
+.discount .effect.good { color: var(--ok); }
+.discount .effect.warn { color: var(--warn); }
+.discount .effect.bad { color: #9c2c2c; }
+.reorder .source { display: flex; gap: 14px; align-items: baseline; flex-wrap: wrap; font-size: 13px; }
+.reorder .source a { color: var(--oxide); }
+.reorder .source .muted { font-size: 12.5px; }
+.reorder p.muted { font-size: 12px; margin: 0; }
+table.grid2.sub { font-size: 12.5px; }
+table.grid2.sub thead th { background: var(--surface-2); }
+table.grid2.sub tbody tr:hover { background: var(--surface); }
+/* One click selects a whole SKU — these get pasted into a supplier chat. */
+td.sku { font-family: var(--mono); font-size: 12px; user-select: all; cursor: text; }
+td.sku.their { color: var(--ink-2); }
+
+.cost-toggle {
+  font: inherit; font-family: var(--mono); font-size: 10.5px; letter-spacing: .06em;
+  text-transform: uppercase; color: var(--ink-3); background: none;
+  border: 1px solid var(--rule); border-radius: 3px; padding: 3px 7px; cursor: pointer;
+}
+.cost-toggle:hover { border-color: var(--rule-strong); color: var(--ink); }
+.cost-toggle[aria-expanded="true"] { border-color: var(--oxide); color: var(--oxide); }
+
+/* ---------- the cost stack ---------- */
+.stack-host { background: var(--surface); border: 1px solid var(--rule); border-radius: 5px; }
+.stack-head {
+  display: flex; gap: 10px; align-items: baseline; padding: 11px 18px 0;
+  font-size: 13.5px; font-weight: 700;
+}
+.stack-head .sku { font-family: var(--mono); font-size: 11.5px; font-weight: 400; color: var(--ink-3); user-select: all; }
+.stack {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 4px 34px;
+  padding: 16px 18px 14px; font-size: 12.5px;
+}
+.stack.none { display: block; color: var(--ink-3); padding: 14px 18px; }
+.stack h5 {
+  font-family: var(--mono); font-size: 10px; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--ink-3); font-weight: 500; margin: 0 0 7px;
+}
+.stack .col > h5:not(:first-child) { margin-top: 16px; }
+.stack .col > div {
+  display: flex; justify-content: space-between; gap: 16px; padding: 3.5px 0;
+  font-variant-numeric: tabular-nums;
+}
+.stack .col > div > span:last-child { font-family: var(--mono); flex: none; }
+.stack i { font-style: normal; color: var(--ink-3); font-size: 11px; }
+/* A subtotal is a line you can stop and read; the rest are contributions to it. */
+.stack .sum {
+  border-top: 1px solid var(--rule-strong); margin-top: 5px; padding-top: 6px !important;
+  font-weight: 700;
+}
+/* Border IGST is funded and then reclaimed — it is not a cost, and showing it
+   as one is how you end up pricing 18% above where you need to be. */
+.stack .credit { color: var(--ok); }
+.stack .price { border-bottom: 1px solid var(--rule); padding-bottom: 6px !important; font-weight: 700; }
+.stack .margin { border-top-width: 2px; color: var(--ink); }
+.stack .margin span:last-child { color: var(--ok); }
+.stack .note { grid-column: 1 / -1; margin: 10px 0 0; font-size: 11.5px; line-height: 1.6; }
+
+@media (max-width: 760px) {
+  .stack { grid-template-columns: 1fr; gap: 0; }
+  .stack .col + .col { margin-top: 16px; }
+}
+
+/* Colour only where a number needs acting on. */
+.bad { color: #9c2c2c; }
+.warn { color: var(--warn); }
+.good { color: var(--ok); }
+.dash { color: var(--ink-3); }
+
+.pill {
+  font-family: var(--mono); font-size: 10px; letter-spacing: .08em; text-transform: uppercase;
+  border: 1px solid var(--rule-strong); border-radius: 3px; padding: 2px 7px; color: var(--ink-2);
+}
+.pill.pending { border-color: var(--warn); color: var(--warn); }
+.pill.paid { border-color: var(--ok); color: var(--ok); }
+.pill.shipped { border-color: var(--oxide); color: var(--oxide); }
+.pill.cancelled { border-color: var(--rule-strong); color: var(--ink-3); text-decoration: line-through; }
+.pill.draft { border-style: dashed; }
+
+/* ---------- the daily chart ---------- */
+.chart { display: flex; align-items: flex-end; gap: 2px; height: 96px; padding: 12px;
+  border: 1px solid var(--rule); border-radius: 5px; background: var(--surface); }
+.chart div { flex: 1; background: var(--oxide-soft); border-radius: 2px 2px 0 0; min-height: 2px; position: relative; }
+.chart div[data-had-order="1"] { background: var(--brass); }
+.chart div:hover { outline: 1px solid var(--rule-strong); }
+
+/* ---------- lists that need attention ---------- */
+.notes { display: grid; gap: 1px; background: var(--rule); border: 1px solid var(--rule); border-radius: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); overflow: hidden; }
+.note { background: var(--surface); padding: 14px 16px; font-size: 13px; line-height: 1.55; }
+.note b { display: block; font-size: 13.5px; margin-bottom: 4px; }
+.note .slugs { font-family: var(--mono); font-size: 11.5px; color: var(--ink-2); word-break: break-word; }
+
+/* Editable cells. Deliberately look like fields rather than text — an input
+   you cannot see is a number nobody realises they can change. */
+input.cell {
+  font: inherit; font-family: var(--mono); font-size: 12.5px; text-align: right;
+  width: 68px; padding: 4px 6px; color: var(--ink);
+  border: 1px solid var(--rule); border-radius: 3px; background: var(--bone);
+}
+input.cell:hover { border-color: var(--rule-strong); }
+input.cell:focus { border-color: var(--oxide); background: var(--surface); outline: none; }
+input.cell.saved { border-color: var(--ok); background: rgba(47,107,70,.07); }
+input.cell.failed { border-color: #9c2c2c; background: rgba(156,44,44,.07); }
+td .dash small { display: block; }
+table.grid2.sub td small.dash { font-size: 10.5px; }
+
+.piece-admin { display: grid; gap: 10px; grid-template-columns: 1fr 1fr; }
+@media (max-width: 900px) { .piece-admin { grid-template-columns: 1fr; } }
+.listing {
+  background: var(--surface); border: 1px solid var(--rule); border-radius: 5px;
+  padding: 13px 16px 14px; display: flex; flex-direction: column; gap: 10px;
+}
+.listing h5 {
+  font-family: var(--mono); font-size: 10px; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--ink-3); font-weight: 500; margin: 0;
+}
+.listing .fields { display: flex; gap: 12px; align-items: flex-end; flex-wrap: wrap; }
+.listing label { display: flex; flex-direction: column; gap: 5px; font-size: 12px; color: var(--ink-2); }
+.listing select { font-size: 13.5px; }
+
+.order-bar { display: flex; gap: 9px; align-items: center; flex-wrap: wrap; margin-bottom: 12px; }
+.order-bar input[type="search"] { min-width: 240px; flex: 0 1 320px; }
+.order-bar .muted { font-family: var(--mono); font-size: 11.5px; }
+
+/* ---------- reviews ---------- */
+.rv { padding: 14px 16px; border-bottom: 1px solid var(--rule); display: grid; gap: 6px; }
+.rv:last-child { border-bottom: 0; }
+.rv.pending { background: var(--bone); }
+.rv.rejected { opacity: .55; }
+.rv-head { display: flex; gap: 11px; align-items: baseline; flex-wrap: wrap; font-size: 13px; }
+.rv-head a { color: var(--ink); font-family: var(--mono); font-size: 12px; }
+.rv-stars { color: var(--brass); letter-spacing: .06em; }
+.rv b { font-size: 14px; font-weight: 500; }
+.rv p { margin: 0; font-size: 13.5px; color: var(--ink-2); line-height: 1.6; max-width: 70ch; }
+.rv-act { display: flex; gap: 7px; align-items: center; flex-wrap: wrap; margin-top: 4px; }
+.tabs .dot {
+  display: inline-block; width: 6px; height: 6px; border-radius: 50%;
+  background: var(--warn); vertical-align: middle; margin-left: 2px;
+}
+
+/* ---------- orders ---------- */
+.order { border-bottom: 1px solid var(--rule); }
+.order summary { padding: 11px 14px; cursor: pointer; display: flex; gap: 12px; align-items: center; flex-wrap: wrap; font-size: 13.5px; }
+.order summary::-webkit-details-marker { display: none; }
+.order summary .ref { font-family: var(--mono); font-weight: 500; }
+.order summary .amt { margin-left: auto; font-family: var(--mono); font-variant-numeric: tabular-nums; }
+.order .body { padding: 4px 14px 18px; display: grid; gap: 18px; grid-template-columns: 1fr 1fr; }
+.order .body h4 { font-family: var(--mono); font-size: 10px; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--ink-3); font-weight: 500; margin: 0 0 6px; }
+.order .body p { margin: 0; font-size: 13.5px; line-height: 1.6; }
+.order .lines { grid-column: 1 / -1; }
+.order .lines div { display: flex; justify-content: space-between; gap: 12px; padding: 5px 0; border-bottom: 1px dotted var(--rule); font-size: 13px; }
+.status-row { grid-column: 1 / -1; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.status-row select { font-size: 13px; }
+
+@media (max-width: 760px) {
+  .bar .wrap { gap: 10px; }
+  .bar .right { width: 100%; }
+  .tabs { order: 3; width: 100%; }
+  .order .body { grid-template-columns: 1fr; }
+  .admin main { padding-bottom: 40px; }
+}

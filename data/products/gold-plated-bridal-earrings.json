@@ -1,0 +1,100 @@
+{
+  "id": "p-gold-plated-bridal-earrings",
+  "slug": "gold-plated-bridal-earrings",
+  "title": "Gold-Plated Bridal Earrings",
+  "category": "earrings",
+  "tagline": "Princess-cut cubic zirconia, micro-set",
+  "description": "Square earrings, princess-cut cubic zirconia, micro-set. Gold and silver plate over brass, two colourways to pick from. Cut for anniversaries.",
+  "material": "Copper Alloy",
+  "finish": "Silver Plated, Gold Plated",
+  "details": {
+    "Jewelry Main Material": "Brass",
+    "Diamond shape": "Princess Cut",
+    "Earrings Type": "Drop Earrings",
+    "Main Stone": "Cubic zirconia",
+    "Jewelry Type": "Earrings",
+    "Occasion": "Anniversary",
+    "Shape / pattern": "Square",
+    "Style": "Trendy",
+    "Inlay technology": "Micro insert"
+  },
+  "images": [
+    {
+      "path": "gold-plated-bridal-earrings/01.webp",
+      "alt": "Gold-Plated Bridal Earrings",
+      "widths": [
+        160,
+        400
+      ]
+    },
+    {
+      "path": "gold-plated-bridal-earrings/02.webp",
+      "alt": "Gold-Plated Bridal Earrings",
+      "widths": [
+        160,
+        400
+      ]
+    },
+    {
+      "path": "gold-plated-bridal-earrings/03.webp",
+      "alt": "Gold-Plated Bridal Earrings",
+      "widths": [
+        160,
+        400
+      ]
+    },
+    {
+      "path": "gold-plated-bridal-earrings/04.webp",
+      "alt": "Gold-Plated Bridal Earrings",
+      "widths": [
+        160,
+        400
+      ]
+    },
+    {
+      "path": "gold-plated-bridal-earrings/05.webp",
+      "alt": "Gold-Plated Bridal Earrings",
+      "widths": [
+        160,
+        400
+      ]
+    },
+    {
+      "path": "gold-plated-bridal-earrings/06.webp",
+      "alt": "Gold-Plated Bridal Earrings",
+      "widths": [
+        160,
+        400
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "sku": "EAR-GOL-SILVER",
+      "label": "Silver E0433 Yin",
+      "price": 164900,
+      "stock": 10,
+      "swatch": "gold-plated-bridal-earrings/swatch/silver-e0433-yin.webp"
+    },
+    {
+      "sku": "EAR-GOL-GOLDHU",
+      "label": "Gold E0433 HuangJin",
+      "price": 164900,
+      "stock": 10,
+      "swatch": "gold-plated-bridal-earrings/swatch/gold-e0433-huangjin.webp"
+    }
+  ],
+  "tags": [
+    "earrings",
+    "cubic zirconia",
+    "square",
+    "modern",
+    "gold-plated",
+    "silver-plated",
+    "anniversary"
+  ],
+  "featured": false,
+  "status": "active",
+  "createdAt": "2026-09-12T20:09:43.236Z",
+  "updatedAt": "2026-09-12T21:22:55.179Z"
+}

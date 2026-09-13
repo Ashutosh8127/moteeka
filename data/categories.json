@@ -1,0 +1,38 @@
+[
+  {
+    "slug": "jhumka",
+    "name": "Jhumka & Jhumki",
+    "description": "Bell-shaped drops, the shape the whole craft is known for.",
+    "sortOrder": 1
+  },
+  {
+    "slug": "earrings",
+    "name": "Earrings",
+    "description": "Studs, drops, chandbalis and hoops in oxidised silver.",
+    "sortOrder": 2
+  },
+  {
+    "slug": "necklaces",
+    "name": "Necklaces & Haar",
+    "description": "Chokers, long haar and temple-work pendants.",
+    "sortOrder": 3
+  },
+  {
+    "slug": "bangles",
+    "name": "Bangles & Kada",
+    "description": "Stacking bangles, cuffs and broad kada.",
+    "sortOrder": 4
+  },
+  {
+    "slug": "anklets",
+    "name": "Anklets & Payal",
+    "description": "Ghungroo payal and plain chain anklets.",
+    "sortOrder": 5
+  },
+  {
+    "slug": "rings",
+    "name": "Rings & Nose Pins",
+    "description": "Adjustable rings, thumb rings and nath.",
+    "sortOrder": 6
+  }
+]

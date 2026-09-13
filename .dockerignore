@@ -1,0 +1,16 @@
+node_modules
+.git
+test
+scripts
+prisma
+captured
+intake
+html
+*.log
+# Private. Not needed to serve the shop, and not something to ship in an image.
+data/sourcing.json
+data/orders.json
+# The webhook log accumulates customer names and addresses once orders start.
+data/notifications.json
+# A working file for onboarding, with no role in serving the shop.
+data/import-queue.txt

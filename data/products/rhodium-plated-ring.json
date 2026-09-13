@@ -1,0 +1,101 @@
+{
+  "id": "p-rhodium-plated-piece",
+  "slug": "rhodium-plated-ring",
+  "title": "Rhodium-Plated Ring",
+  "category": "rings",
+  "tagline": "Round-cut cubic zirconia, micro-set",
+  "description": "Flower ring, round-cut cubic zirconia, micro-set. Rhodium plate over brass.",
+  "material": "Brass",
+  "finish": "Rhodium Plated",
+  "details": {
+    "Main Stone": "Cubic zirconia",
+    "Jewelry Type": "Rings",
+    "Rings Type": "Cocktail Ring",
+    "Shape / pattern": "Flower",
+    "Style": "Trendy",
+    "Inlay technology": "Micro insert",
+    "Stone Shape": "Round",
+    "Application": "Wedding"
+  },
+  "images": [
+    {
+      "path": "rhodium-plated-ring/01.webp",
+      "alt": "Rhodium-Plated Ring",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "rhodium-plated-ring/02.webp",
+      "alt": "Rhodium-Plated Ring",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "rhodium-plated-ring/03.webp",
+      "alt": "Rhodium-Plated Ring",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "rhodium-plated-ring/04.webp",
+      "alt": "Rhodium-Plated Ring",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "rhodium-plated-ring/05.webp",
+      "alt": "Rhodium-Plated Ring",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "rhodium-plated-ring/06.webp",
+      "alt": "Rhodium-Plated Ring",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "sku": "RHO-PLA-SILVER",
+      "label": "Silver J0271 / Resizable",
+      "price": 119900,
+      "stock": 10,
+      "swatch": "rhodium-plated-ring/swatch/silver-j0271.webp"
+    }
+  ],
+  "tags": [
+    "rings",
+    "ring",
+    "cubic zirconia",
+    "flower",
+    "modern",
+    "rhodium-plated",
+    "wedding",
+    "engagement",
+    "anniversary",
+    "party"
+  ],
+  "featured": false,
+  "status": "active",
+  "createdAt": "2026-09-12T20:12:40.540Z",
+  "updatedAt": "2026-09-12T21:22:55.187Z"
+}

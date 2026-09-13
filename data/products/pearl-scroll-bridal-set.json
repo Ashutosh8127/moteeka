@@ -1,0 +1,117 @@
+{
+  "id": "p-rhodium-plated-bridal-jewellery-set-2",
+  "slug": "pearl-scroll-bridal-set",
+  "title": "Pearl Scroll Bridal Set",
+  "category": "necklaces",
+  "tagline": "Cubic zirconia, four pieces",
+  "description": "A matching set — four pieces in cubic zirconia. Rhodium plate over copper alloy, in four colourways.",
+  "material": "copper",
+  "finish": "Rhodium Plated",
+  "details": {
+    "Jewelry Sets Type": "4piece jewellery set",
+    "Main Stone": "Cubic zirconia",
+    "Jewelry Type": "Jewellery Sets",
+    "Style": "High quality jewellery set",
+    "Inlay technology": "Handmade"
+  },
+  "images": [
+    {
+      "path": "pearl-scroll-bridal-set/01.webp",
+      "alt": "Pearl Scroll Bridal Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "pearl-scroll-bridal-set/02.webp",
+      "alt": "Pearl Scroll Bridal Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "pearl-scroll-bridal-set/03.webp",
+      "alt": "Pearl Scroll Bridal Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "pearl-scroll-bridal-set/04.webp",
+      "alt": "Pearl Scroll Bridal Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "pearl-scroll-bridal-set/05.webp",
+      "alt": "Pearl Scroll Bridal Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "pearl-scroll-bridal-set/06.webp",
+      "alt": "Pearl Scroll Bridal Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "sku": "PEA-SCR-TURQUO",
+      "label": "Turquoise",
+      "price": 925900,
+      "stock": 10,
+      "swatch": "pearl-scroll-bridal-set/swatch/turquoise.webp"
+    },
+    {
+      "sku": "PEA-SCR-PINK",
+      "label": "Pink",
+      "price": 925900,
+      "stock": 10,
+      "swatch": "pearl-scroll-bridal-set/swatch/pink.webp"
+    },
+    {
+      "sku": "PEA-SCR-WHITE",
+      "label": "White",
+      "price": 925900,
+      "stock": 10,
+      "swatch": "pearl-scroll-bridal-set/swatch/white.webp"
+    },
+    {
+      "sku": "PEA-SCR-BLUE",
+      "label": "Blue",
+      "price": 925900,
+      "stock": 10,
+      "swatch": "pearl-scroll-bridal-set/swatch/blue.webp"
+    }
+  ],
+  "tags": [
+    "necklaces",
+    "jewellery set",
+    "cubic zirconia",
+    "rhodium-plated",
+    "wedding",
+    "engagement",
+    "anniversary",
+    "party"
+  ],
+  "featured": false,
+  "status": "active",
+  "createdAt": "2026-09-12T21:02:36.246Z",
+  "updatedAt": "2026-09-12T21:22:55.185Z"
+}

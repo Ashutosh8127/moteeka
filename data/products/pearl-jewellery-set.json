@@ -1,0 +1,95 @@
+{
+  "id": "p-pearl-jewellery-set",
+  "slug": "pearl-jewellery-set",
+  "title": "Pearl Jewellery Set",
+  "category": "necklaces",
+  "tagline": "Cubic zirconia, micro-set",
+  "description": "A jewellery set, cubic zirconia, micro-set. Copper alloy.",
+  "material": "copper",
+  "finish": "Platinum Plated",
+  "details": {
+    "Jewelry Sets Type": "Bridal Jewellery Sets",
+    "Main Stone": "Cubic zirconia",
+    "Jewelry Type": "Jewellery Sets",
+    "Style": "High quality jewellery set",
+    "Inlay technology": "Micro insert"
+  },
+  "images": [
+    {
+      "path": "pearl-jewellery-set/01.webp",
+      "alt": "Pearl Jewellery Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "pearl-jewellery-set/02.webp",
+      "alt": "Pearl Jewellery Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "pearl-jewellery-set/03.webp",
+      "alt": "Pearl Jewellery Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "pearl-jewellery-set/04.webp",
+      "alt": "Pearl Jewellery Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "pearl-jewellery-set/05.webp",
+      "alt": "Pearl Jewellery Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "pearl-jewellery-set/06.webp",
+      "alt": "Pearl Jewellery Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "sku": "NEC-PEA-WHITEA",
+      "label": "White / Adjustable / TRENDY",
+      "price": 909900,
+      "stock": 10,
+      "swatch": "pearl-jewellery-set/swatch/white.webp"
+    }
+  ],
+  "tags": [
+    "necklaces",
+    "jewellery set",
+    "cubic zirconia",
+    "wedding",
+    "engagement",
+    "anniversary",
+    "party"
+  ],
+  "featured": false,
+  "status": "active",
+  "createdAt": "2026-09-12T21:02:21.567Z",
+  "updatedAt": "2026-09-12T21:22:55.185Z"
+}

@@ -1,0 +1,121 @@
+{
+  "id": "p-jhumka-ethnic-retro",
+  "slug": "ethnic-retro-carved-jhumka",
+  "title": "Ethnic Retro Carved Pearl Jhumka",
+  "category": "jhumka",
+  "tagline": "Carved disc rimmed in pearls, over a pearl-tasselled bell",
+  "description": "A carved sector disc edged with a full ring of pearls, hung over a small jhumka bell that finishes in pearl tassels. The carving is deep enough that the oxidised finish sits dark in the pattern and stays bright on the raised work. Comes in antique gold and oxidised silver — the silver reads cooler and the gold warmer against the same pearls.",
+  "material": "Brass alloy, oxidised silver plating",
+  "finish": "Antique oxidised",
+  "details": {
+    "Drop length": "4.5 cm",
+    "Closure": "Push back",
+    "Weight per pair": "18 g",
+    "Top": "Carved sector disc with pearl rim",
+    "Drop": "Bell with pearl tassel fringe",
+    "Stones": "Faux pearl"
+  },
+  "variants": [
+    {
+      "sku": "JHK-ERC-OXS",
+      "label": "Oxidised silver",
+      "price": 64900,
+      "compareAt": 99900,
+      "stock": 40,
+      "weightGrams": 18
+    },
+    {
+      "sku": "JHK-ERC-GLD",
+      "label": "Antique gold tone",
+      "price": 69900,
+      "compareAt": 99900,
+      "stock": 25,
+      "weightGrams": 18
+    }
+  ],
+  "tags": [
+    "jhumka",
+    "oxidised",
+    "pearl",
+    "ethnic",
+    "bestseller"
+  ],
+  "featured": true,
+  "status": "active",
+  "images": [
+    {
+      "path": "ethnic-retro-carved-jhumka/01.webp",
+      "alt": "Ethnic Retro Carved Pearl Jhumka — view 1 of 8",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "ethnic-retro-carved-jhumka/02.webp",
+      "alt": "Ethnic Retro Carved Pearl Jhumka — view 2 of 8",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "ethnic-retro-carved-jhumka/03.webp",
+      "alt": "Ethnic Retro Carved Pearl Jhumka — view 3 of 8",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "ethnic-retro-carved-jhumka/04.webp",
+      "alt": "Ethnic Retro Carved Pearl Jhumka — view 4 of 8",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "ethnic-retro-carved-jhumka/05.webp",
+      "alt": "Ethnic Retro Carved Pearl Jhumka — view 5 of 8",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "ethnic-retro-carved-jhumka/06.webp",
+      "alt": "Ethnic Retro Carved Pearl Jhumka — view 6 of 8",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "ethnic-retro-carved-jhumka/07.webp",
+      "alt": "Ethnic Retro Carved Pearl Jhumka — view 7 of 8",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "ethnic-retro-carved-jhumka/08.webp",
+      "alt": "Ethnic Retro Carved Pearl Jhumka — view 8 of 8",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    }
+  ],
+  "createdAt": "2026-09-12T14:57:02.779Z",
+  "updatedAt": "2026-09-12T21:22:55.176Z"
+}

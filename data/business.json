@@ -1,0 +1,20 @@
+{
+  "_note": "Fill every FILL_ME in. The Consumer Protection (E-Commerce) Rules 2020 require a seller to publish its legal name, address, customer-care contact and a grievance officer. The privacy and contact pages render from this file, and the server warns on startup while anything is unfilled.",
+  "tradingName": "Moteeka",
+  "legalName": "FILL_ME — the registered name, e.g. Moteeka Jewellery Pvt Ltd or your own name if a sole proprietorship",
+  "address": "FILL_ME — full postal address including PIN code",
+  "email": "moteeka.contact@gmail.com",
+  "phone": "FILL_ME — customer care number, with +91",
+  "hours": "Monday to Saturday, 10am to 6pm IST",
+  "_deliveryNote": "How long a customer waits, stated everywhere it is stated: the product page, the footer and the delivery fold all read these two numbers. The Consumer Protection (E-Commerce) Rules 2020 require the delivery timeline to be published, and a timeline a buyer finds out about only after ordering is where disputes and chargebacks come from.",
+  "deliveryMinDays": 15,
+  "deliveryMaxDays": 25,
+  "gstin": "",
+  "grievanceOfficer": {
+    "name": "FILL_ME",
+    "designation": "Grievance Officer",
+    "email": "moteeka.contact@gmail.com",
+    "phone": ""
+  },
+  "policyUpdated": "FILL_ME — the date you publish, e.g. 2026-09-13"
+}

@@ -1,0 +1,101 @@
+{
+  "id": "p-rhodium-plated-earrings",
+  "slug": "green-water-drop-set",
+  "title": "Light Green Water-Drop Set",
+  "category": "necklaces",
+  "tagline": "Marquise-cut cubic zirconia, claw-set",
+  "description": "Water drop jewellery set, marquise-cut cubic zirconia, held in claw settings. Rhodium and silver plate over brass.",
+  "material": "Copper Alloy",
+  "finish": "Rhodium Plated, Silver Plated",
+  "details": {
+    "Jewelry Sets Type": "Bridal Jewellery Sets",
+    "Jewelry Main Material": "Brass",
+    "Diamond shape": "Marquise Cut",
+    "Main Stone": "Cubic zirconia",
+    "Jewelry Type": "Jewellery Sets",
+    "Shape / pattern": "Water Drop",
+    "Style": "Trendy",
+    "Inlay technology": "Claw Setting"
+  },
+  "images": [
+    {
+      "path": "green-water-drop-set/01.webp",
+      "alt": "Rhodium-Plated Earrings",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "green-water-drop-set/02.webp",
+      "alt": "Rhodium-Plated Earrings",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "green-water-drop-set/03.webp",
+      "alt": "Rhodium-Plated Earrings",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "green-water-drop-set/04.webp",
+      "alt": "Rhodium-Plated Earrings",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "green-water-drop-set/05.webp",
+      "alt": "Rhodium-Plated Earrings",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "green-water-drop-set/06.webp",
+      "alt": "Rhodium-Plated Earrings",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "sku": "GRE-WAT-GREENT",
+      "label": "Green T0773 LVVV",
+      "price": 294900,
+      "stock": 10,
+      "swatch": "green-water-drop-set/swatch/green-t0773-lvvv.webp"
+    }
+  ],
+  "tags": [
+    "necklaces",
+    "jewellery set",
+    "cubic zirconia",
+    "water drop",
+    "modern",
+    "rhodium-plated",
+    "silver-plated",
+    "wedding",
+    "engagement",
+    "anniversary"
+  ],
+  "featured": false,
+  "status": "active",
+  "createdAt": "2026-09-12T20:14:09.529Z",
+  "updatedAt": "2026-09-12T21:22:55.183Z"
+}

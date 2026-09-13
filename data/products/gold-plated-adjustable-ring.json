@@ -1,0 +1,113 @@
+{
+  "id": "p-gold-plated-adjustable-piece",
+  "slug": "gold-plated-adjustable-ring",
+  "title": "Gold-Plated Adjustable Ring",
+  "category": "rings",
+  "tagline": "Round brilliant-cut cubic zirconia, claw-set",
+  "description": "Geometric ring, round brilliant-cut cubic zirconia, held in claw settings. Gold, rhodium and silver plate over brass, two colourways to pick from. Adjustable, so it fits most. 14 g.",
+  "material": "Copper Alloy",
+  "finish": "Rhodium Plated, 18K Gold Plated, Silver Plated, Gold Plated",
+  "details": {
+    "Jewelry Main Material": "Brass",
+    "Main Stone": "Cubic zirconia",
+    "Jewelry Type": "Rings",
+    "Rings Type": "Wedding Bands or Rings",
+    "Shape / pattern": "Geometric",
+    "Style": "Trendy",
+    "Inlay technology": "Claw Setting",
+    "Rings Material": "Cubic Zirconia",
+    "Metal Color": "Silver Plated, Gold Plated",
+    "Main Stone Color": "Sparkling White",
+    "Weight": "14 g",
+    "Setting Type": "Pave Setting",
+    "Diamond shape": "Round Brilliant Cut"
+  },
+  "images": [
+    {
+      "path": "gold-plated-adjustable-ring/01.webp",
+      "alt": "Gold-Plated Adjustable Ring",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "gold-plated-adjustable-ring/02.webp",
+      "alt": "Gold-Plated Adjustable Ring",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "gold-plated-adjustable-ring/03.webp",
+      "alt": "Gold-Plated Adjustable Ring",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "gold-plated-adjustable-ring/04.webp",
+      "alt": "Gold-Plated Adjustable Ring",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "gold-plated-adjustable-ring/05.webp",
+      "alt": "Gold-Plated Adjustable Ring",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "gold-plated-adjustable-ring/06.webp",
+      "alt": "Gold-Plated Adjustable Ring",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "sku": "GOL-PLA-SILVER",
+      "label": "Silver J0180 Yin",
+      "price": 147900,
+      "stock": 10,
+      "swatch": "gold-plated-adjustable-ring/swatch/silver-j0180-yin.webp"
+    },
+    {
+      "sku": "GOL-PLA-GOLDJ0",
+      "label": "Gold J0180 HuangJin",
+      "price": 147900,
+      "stock": 10,
+      "swatch": "gold-plated-adjustable-ring/swatch/gold-j0180-huangjin.webp"
+    }
+  ],
+  "tags": [
+    "rings",
+    "ring",
+    "cubic zirconia",
+    "geometric",
+    "modern",
+    "gold-plated",
+    "rhodium-plated",
+    "silver-plated",
+    "wedding",
+    "engagement"
+  ],
+  "featured": false,
+  "status": "active",
+  "createdAt": "2026-09-12T20:11:55.317Z",
+  "updatedAt": "2026-09-12T21:22:55.178Z"
+}

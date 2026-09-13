@@ -1,0 +1,104 @@
+{
+  "id": "p-gold-plated-anklet",
+  "slug": "gold-plated-butterfly-anklet",
+  "title": "Gold-Plated Butterfly Anklet",
+  "category": "anklets",
+  "tagline": "Princess-cut rhinestones, micro-set",
+  "description": "A bow anklet in princess-cut rhinestones, micro-set. Finished in gold and silver plate, two colourways. Meant for parties.",
+  "material": "Rhinestone",
+  "finish": "Silver Plated, Gold Plated",
+  "details": {
+    "Diamond shape": "Princess Cut",
+    "Main Stone": "Rhinestone",
+    "Occasion": "Party",
+    "Shape / pattern": "Bow",
+    "Style": "Trendy",
+    "Inlay technology": "Micro insert"
+  },
+  "images": [
+    {
+      "path": "gold-plated-butterfly-anklet/01.webp",
+      "alt": "Gold-Plated Butterfly Anklet",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "gold-plated-butterfly-anklet/02.webp",
+      "alt": "Gold-Plated Butterfly Anklet",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "gold-plated-butterfly-anklet/03.webp",
+      "alt": "Gold-Plated Butterfly Anklet",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "gold-plated-butterfly-anklet/04.webp",
+      "alt": "Gold-Plated Butterfly Anklet",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "gold-plated-butterfly-anklet/05.webp",
+      "alt": "Gold-Plated Butterfly Anklet",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "gold-plated-butterfly-anklet/06.webp",
+      "alt": "Gold-Plated Butterfly Anklet",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "sku": "GOL-PLA-GOLD",
+      "label": "Gold",
+      "price": 70900,
+      "stock": 10,
+      "swatch": "gold-plated-butterfly-anklet/swatch/gold.webp"
+    },
+    {
+      "sku": "GOL-PLA-SILVER",
+      "label": "Silver",
+      "price": 70900,
+      "stock": 10,
+      "swatch": "gold-plated-butterfly-anklet/swatch/silver.webp"
+    }
+  ],
+  "tags": [
+    "anklets",
+    "anklet",
+    "rhinestones",
+    "bow",
+    "modern",
+    "gold-plated",
+    "silver-plated",
+    "party"
+  ],
+  "featured": false,
+  "status": "active",
+  "createdAt": "2026-09-12T20:10:32.066Z",
+  "updatedAt": "2026-09-13T09:43:26.123Z"
+}

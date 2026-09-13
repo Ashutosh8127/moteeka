@@ -1,0 +1,15 @@
+rules_version = '2';
+
+// The storefront never talks to Firestore directly — the Express API does,
+// with server credentials. So nothing here is readable by a browser.
+//
+// That is the point: supplier and cost data live in data/sourcing.json and
+// never reach the database at all, and orders carry customer addresses. One
+// permissive rule would put both in front of anyone with the project id.
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

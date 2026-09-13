@@ -1,0 +1,129 @@
+{
+  "id": "p-gold-plated-openable-bangle",
+  "slug": "gold-plated-openable-bangle",
+  "title": "Gold-Plated Openable Bangle",
+  "category": "bangles",
+  "tagline": "A slim openable bangle in five cast patterns",
+  "description": "A single slim bangle that opens on a hinge and clicks shut, so it goes on over the knuckle rather than being forced past it. Five patterns, all cast and plated the same way: diagonal ribbing with mirror-cut facets, a row of faceted hex beads, textured mesh panels, round melon beads, and a woven rope braid. Wear one on its own or stack two or three against a broader kada.",
+  "material": "Zinc Alloy",
+  "finish": "24K gold plating",
+  "details": {
+    "Jewelry Main Material": "Alloy",
+    "Bracelets or Bangles Type": "Bangles",
+    "Jewelry Type": "Bracelets, Bangles",
+    "Occasion": "Wedding",
+    "Shape / pattern": "Geometric",
+    "Style": "Trendy"
+  },
+  "images": [
+    {
+      "path": "gold-plated-openable-bangle/01.webp",
+      "alt": "Gold-Plated Openable Bangle",
+      "widths": [
+        160,
+        400,
+        800,
+        1200
+      ]
+    },
+    {
+      "path": "gold-plated-openable-bangle/02.webp",
+      "alt": "Gold-Plated Openable Bangle",
+      "widths": [
+        160,
+        400,
+        800,
+        1200
+      ]
+    },
+    {
+      "path": "gold-plated-openable-bangle/03.webp",
+      "alt": "Gold-Plated Openable Bangle",
+      "widths": [
+        160,
+        400,
+        800,
+        1200
+      ]
+    },
+    {
+      "path": "gold-plated-openable-bangle/04.webp",
+      "alt": "Gold-Plated Openable Bangle",
+      "widths": [
+        160,
+        400,
+        800,
+        1200
+      ]
+    },
+    {
+      "path": "gold-plated-openable-bangle/05.webp",
+      "alt": "Gold-Plated Openable Bangle",
+      "widths": [
+        160,
+        400,
+        800,
+        1200
+      ]
+    },
+    {
+      "path": "gold-plated-openable-bangle/06.webp",
+      "alt": "Gold-Plated Openable Bangle",
+      "widths": [
+        160,
+        400,
+        800,
+        1200
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "sku": "GOL-PLA-WOVENR",
+      "label": "Woven Rope",
+      "price": 107900,
+      "stock": 10,
+      "swatch": "gold-plated-openable-bangle/swatch/woven-rope.webp"
+    },
+    {
+      "sku": "GOL-PLA-HEXBEA",
+      "label": "Hex Bead",
+      "price": 107900,
+      "stock": 10,
+      "swatch": "gold-plated-openable-bangle/swatch/hex-bead.webp"
+    },
+    {
+      "sku": "GOL-PLA-MELONB",
+      "label": "Melon Bead",
+      "price": 107900,
+      "stock": 10,
+      "swatch": "gold-plated-openable-bangle/swatch/melon-bead.webp"
+    },
+    {
+      "sku": "GOL-PLA-MESHPA",
+      "label": "Mesh Panel",
+      "price": 107900,
+      "stock": 10,
+      "swatch": "gold-plated-openable-bangle/swatch/mesh-panel.webp"
+    },
+    {
+      "sku": "GOL-PLA-RIBBED",
+      "label": "Ribbed Twist",
+      "price": 107900,
+      "stock": 10,
+      "swatch": "gold-plated-openable-bangle/swatch/ribbed-twist.webp"
+    }
+  ],
+  "tags": [
+    "bangles",
+    "kada",
+    "gold plated",
+    "openable",
+    "stackable",
+    "wedding"
+  ],
+  "featured": false,
+  "status": "active",
+  "createdAt": "2026-09-12T16:35:39.315Z",
+  "updatedAt": "2026-09-12T21:22:55.181Z"
+}

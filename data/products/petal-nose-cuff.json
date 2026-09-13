@@ -1,0 +1,236 @@
+{
+  "id": "p-gold-plated-petal-nose-cuff",
+  "slug": "petal-nose-cuff",
+  "title": "Petal Nose Cuff",
+  "category": "rings",
+  "tagline": "Cubic zirconia, 22 colourways",
+  "description": "Flower nose cuff, cubic zirconia. Gold and silver plate over alloy, 22 colourways.",
+  "material": "Alloy",
+  "finish": "Gold or silver plated",
+  "details": {
+    "Main Stone": "Cubic zirconia",
+    "Body Jewelry Type": "Nose Bones & Screws",
+    "Shape / pattern": "Flower",
+    "Style": "Punk",
+    "Inlay technology": "inlaid zircon",
+    "Jewelry Type": "Body Jewellery",
+    "Piercing": "Nose",
+    "Application": "daily wear"
+  },
+  "images": [
+    {
+      "path": "petal-nose-cuff/01.webp",
+      "alt": "Petal Nose Cuff",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "petal-nose-cuff/02.webp",
+      "alt": "Petal Nose Cuff",
+      "widths": [
+        160,
+        400,
+        800,
+        1200
+      ]
+    },
+    {
+      "path": "petal-nose-cuff/03.webp",
+      "alt": "Petal Nose Cuff",
+      "widths": [
+        160,
+        400
+      ]
+    },
+    {
+      "path": "petal-nose-cuff/04.webp",
+      "alt": "Petal Nose Cuff",
+      "widths": [
+        160,
+        400,
+        800,
+        1200
+      ]
+    },
+    {
+      "path": "petal-nose-cuff/05.webp",
+      "alt": "Petal Nose Cuff",
+      "widths": [
+        160,
+        400,
+        800,
+        1200
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "sku": "PET-NOS-1CZSTO",
+      "label": "1 CZ stone / Gold",
+      "price": 64900,
+      "stock": 10,
+      "swatch": "petal-nose-cuff/swatch/1-cz-stone.webp"
+    },
+    {
+      "sku": "PET-NOS-HEART2",
+      "label": "heart 2 / Silver",
+      "price": 64900,
+      "stock": 10,
+      "swatch": "petal-nose-cuff/swatch/heart-2.webp"
+    },
+    {
+      "sku": "PET-NOS-1CZSTO-2",
+      "label": "1 CZ stone / Silver",
+      "price": 64900,
+      "stock": 10,
+      "swatch": "petal-nose-cuff/swatch/1-cz-stone.webp"
+    },
+    {
+      "sku": "PET-NOS-CROWNG",
+      "label": "crown / Gold",
+      "price": 66900,
+      "stock": 10,
+      "swatch": "petal-nose-cuff/swatch/crown.webp"
+    },
+    {
+      "sku": "PET-NOS-HEART2-2",
+      "label": "heart 2 / Gold",
+      "price": 64900,
+      "stock": 10,
+      "swatch": "petal-nose-cuff/swatch/heart-2.webp"
+    },
+    {
+      "sku": "PET-NOS-CZPAVE",
+      "label": "CZ paved heart shape / Gold",
+      "price": 66900,
+      "stock": 10,
+      "swatch": "petal-nose-cuff/swatch/cz-paved-heart-shape.webp"
+    },
+    {
+      "sku": "PET-NOS-STARFI",
+      "label": "starfish / Gold",
+      "price": 66900,
+      "stock": 10,
+      "swatch": "petal-nose-cuff/swatch/starfish.webp"
+    },
+    {
+      "sku": "PET-NOS-CZPAVE-2",
+      "label": "CZ paved heart shape / Silver",
+      "price": 66900,
+      "stock": 10,
+      "swatch": "petal-nose-cuff/swatch/cz-paved-heart-shape.webp"
+    },
+    {
+      "sku": "PET-NOS-HEARTG",
+      "label": "heart / Gold",
+      "price": 62900,
+      "stock": 10,
+      "swatch": "petal-nose-cuff/swatch/heart.webp"
+    },
+    {
+      "sku": "PET-NOS-MOON2S",
+      "label": "moon 2 / Silver",
+      "price": 66900,
+      "stock": 10,
+      "swatch": "petal-nose-cuff/swatch/moon-2.webp"
+    },
+    {
+      "sku": "PET-NOS-STARFI-2",
+      "label": "starfish / Silver",
+      "price": 66900,
+      "stock": 10,
+      "swatch": "petal-nose-cuff/swatch/starfish.webp"
+    },
+    {
+      "sku": "PET-NOS-CROWNS",
+      "label": "crown / Silver",
+      "price": 66900,
+      "stock": 10,
+      "swatch": "petal-nose-cuff/swatch/crown.webp"
+    },
+    {
+      "sku": "PET-NOS-UNIQUE",
+      "label": "Unique Shape / Silver",
+      "price": 63900,
+      "stock": 10,
+      "swatch": "petal-nose-cuff/swatch/unique-shape.webp"
+    },
+    {
+      "sku": "PET-NOS-MOONGO",
+      "label": "moon / Gold",
+      "price": 62900,
+      "stock": 10,
+      "swatch": "petal-nose-cuff/swatch/moon.webp"
+    },
+    {
+      "sku": "PET-NOS-FLOWER",
+      "label": "flower / Gold",
+      "price": 64900,
+      "stock": 10,
+      "swatch": "petal-nose-cuff/swatch/flower.webp"
+    },
+    {
+      "sku": "PET-NOS-PENTAG",
+      "label": "pentagram / Gold",
+      "price": 62900,
+      "stock": 10,
+      "swatch": "petal-nose-cuff/swatch/pentagram.webp"
+    },
+    {
+      "sku": "PET-NOS-FLOWER-2",
+      "label": "flower / Silver",
+      "price": 64900,
+      "stock": 10,
+      "swatch": "petal-nose-cuff/swatch/flower.webp"
+    },
+    {
+      "sku": "PET-NOS-HEARTS",
+      "label": "heart / Silver",
+      "price": 62900,
+      "stock": 10,
+      "swatch": "petal-nose-cuff/swatch/heart.webp"
+    },
+    {
+      "sku": "PET-NOS-PENTAG-2",
+      "label": "pentagram / Silver",
+      "price": 62900,
+      "stock": 10,
+      "swatch": "petal-nose-cuff/swatch/pentagram.webp"
+    },
+    {
+      "sku": "PET-NOS-MOONSI",
+      "label": "moon / Silver",
+      "price": 59900,
+      "stock": 10,
+      "swatch": "petal-nose-cuff/swatch/moon.webp"
+    },
+    {
+      "sku": "PET-NOS-UNIQUE-2",
+      "label": "Unique Shape / Gold",
+      "price": 63900,
+      "stock": 10,
+      "swatch": "petal-nose-cuff/swatch/unique-shape.webp"
+    },
+    {
+      "sku": "PET-NOS-MOON2G",
+      "label": "moon 2 / Gold",
+      "price": 66900,
+      "stock": 10,
+      "swatch": "petal-nose-cuff/swatch/moon-2.webp"
+    }
+  ],
+  "tags": [
+    "nose pin",
+    "nath",
+    "nose cuff",
+    "no piercing",
+    "cz"
+  ],
+  "featured": false,
+  "status": "active",
+  "createdAt": "2026-09-12T20:50:36.160Z",
+  "updatedAt": "2026-09-12T21:22:55.185Z"
+}

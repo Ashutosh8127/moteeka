@@ -1,0 +1,103 @@
+{
+  "id": "p-gold-plated-hollow-bangle",
+  "slug": "hollow-mesh-bangle",
+  "title": "Hollow Mesh Bangle",
+  "category": "bangles",
+  "tagline": "Three colourways",
+  "description": "Geometric bangle. Gold plate over alloy, in three colourways. Made for weddings.",
+  "material": "Zinc Alloy",
+  "finish": "24K Gold Plated",
+  "details": {
+    "Jewelry Main Material": "Alloy",
+    "Bracelets or Bangles Type": "Cuff Bracelets",
+    "Jewelry Type": "Bracelets, Bangles",
+    "Occasion": "Wedding",
+    "Shape / pattern": "Geometric",
+    "Style": "Trendy"
+  },
+  "images": [
+    {
+      "path": "hollow-mesh-bangle/01.webp",
+      "alt": "Hollow Mesh Bangle",
+      "widths": [
+        160,
+        400
+      ]
+    },
+    {
+      "path": "hollow-mesh-bangle/02.webp",
+      "alt": "Hollow Mesh Bangle",
+      "widths": [
+        160,
+        400
+      ]
+    },
+    {
+      "path": "hollow-mesh-bangle/03.webp",
+      "alt": "Hollow Mesh Bangle",
+      "widths": [
+        160,
+        400
+      ]
+    },
+    {
+      "path": "hollow-mesh-bangle/04.webp",
+      "alt": "Hollow Mesh Bangle",
+      "widths": [
+        160,
+        400
+      ]
+    },
+    {
+      "path": "hollow-mesh-bangle/05.webp",
+      "alt": "Hollow Mesh Bangle",
+      "widths": [
+        160,
+        400
+      ]
+    },
+    {
+      "path": "hollow-mesh-bangle/06.webp",
+      "alt": "Hollow Mesh Bangle",
+      "widths": [
+        160,
+        400
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "sku": "HOL-MES-SLIMME",
+      "label": "Slim Mesh",
+      "price": 104900,
+      "stock": 10,
+      "swatch": "hollow-mesh-bangle/swatch/slim-mesh.webp"
+    },
+    {
+      "sku": "HOL-MES-BAMBOO",
+      "label": "Bamboo Segment",
+      "price": 104900,
+      "stock": 10,
+      "swatch": "hollow-mesh-bangle/swatch/bamboo-segment.webp"
+    },
+    {
+      "sku": "HOL-MES-BROADJ",
+      "label": "Broad Jaali",
+      "price": 104900,
+      "stock": 10,
+      "swatch": "hollow-mesh-bangle/swatch/broad-jaali.webp"
+    }
+  ],
+  "tags": [
+    "bangles",
+    "bangle",
+    "geometric",
+    "modern",
+    "gold-plated",
+    "wedding"
+  ],
+  "featured": false,
+  "status": "active",
+  "createdAt": "2026-09-12T20:08:39.506Z",
+  "updatedAt": "2026-09-12T21:22:55.183Z"
+}

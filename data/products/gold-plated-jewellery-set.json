@@ -1,0 +1,467 @@
+{
+  "id": "p-gold-plated-jewellery-set",
+  "slug": "gold-plated-jewellery-set",
+  "title": "Gold-Plated Jewellery Set",
+  "category": "necklaces",
+  "tagline": "Claw-set, necklace and earrings",
+  "description": "A matching set — necklace and earrings. Gold and silver plate over alloy, 53 colourways.",
+  "material": "Zinc Alloy",
+  "finish": "Silver Plated, Gold Plated",
+  "details": {
+    "Jewelry Sets Type": "Necklace and Earring Sets",
+    "Jewelry Main Material": "Alloy",
+    "Main Stone": "Alloy",
+    "Jewelry Type": "Jewellery Sets",
+    "Shape / pattern": "stars/sun and moon/clouds/universe",
+    "Style": "Trendy",
+    "Inlay technology": "Claw Setting"
+  },
+  "images": [
+    {
+      "path": "gold-plated-jewellery-set/01.webp",
+      "alt": "Gold-Plated Jewellery Set",
+      "widths": [
+        160,
+        400,
+        800,
+        1200
+      ]
+    },
+    {
+      "path": "gold-plated-jewellery-set/02.webp",
+      "alt": "Gold-Plated Jewellery Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "gold-plated-jewellery-set/03.webp",
+      "alt": "Gold-Plated Jewellery Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "gold-plated-jewellery-set/04.webp",
+      "alt": "Gold-Plated Jewellery Set",
+      "widths": [
+        160,
+        400,
+        800,
+        1200
+      ]
+    },
+    {
+      "path": "gold-plated-jewellery-set/05.webp",
+      "alt": "Gold-Plated Jewellery Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "gold-plated-jewellery-set/06.webp",
+      "alt": "Gold-Plated Jewellery Set",
+      "widths": [
+        160,
+        400,
+        800,
+        1200
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "sku": "NEC-GOL-RED893",
+      "label": "Red 8935",
+      "price": 118900,
+      "stock": 10,
+      "swatch": "gold-plated-jewellery-set/swatch/red-8935.webp"
+    },
+    {
+      "sku": "NEC-GOL-BLUE80",
+      "label": "Blue 8098",
+      "price": 79900,
+      "stock": 10,
+      "swatch": "gold-plated-jewellery-set/swatch/blue-8098.webp"
+    },
+    {
+      "sku": "NEC-GOL-PINK82",
+      "label": "Pink 8205",
+      "price": 96900,
+      "stock": 10,
+      "swatch": "gold-plated-jewellery-set/swatch/pink-8205.webp"
+    },
+    {
+      "sku": "NEC-GOL-BLACK4",
+      "label": "Black 4067",
+      "price": 115900,
+      "stock": 10,
+      "swatch": "gold-plated-jewellery-set/swatch/black-4067.webp"
+    },
+    {
+      "sku": "NEC-GOL-BLACK9",
+      "label": "Black 9102",
+      "price": 98900,
+      "stock": 10,
+      "swatch": "gold-plated-jewellery-set/swatch/black-9102.webp"
+    },
+    {
+      "sku": "NEC-GOL-BLACK8",
+      "label": "Black 8056",
+      "price": 101900,
+      "stock": 10,
+      "swatch": "gold-plated-jewellery-set/swatch/black-8056.webp"
+    },
+    {
+      "sku": "NEC-GOL-PURPLE",
+      "label": "Purple 8177",
+      "price": 98900,
+      "stock": 10,
+      "swatch": "gold-plated-jewellery-set/swatch/purple-8177.webp"
+    },
+    {
+      "sku": "NEC-GOL-SILVER",
+      "label": "Silver 8230",
+      "price": 93900,
+      "stock": 10,
+      "swatch": "gold-plated-jewellery-set/swatch/silver-8230.webp"
+    },
+    {
+      "sku": "NEC-GOL-BLUE82",
+      "label": "Blue 8260",
+      "price": 96900,
+      "stock": 10,
+      "swatch": "gold-plated-jewellery-set/swatch/blue-8260.webp"
+    },
+    {
+      "sku": "NEC-GOL-GOLD80",
+      "label": "Gold 8098",
+      "price": 79900,
+      "stock": 10,
+      "swatch": "gold-plated-jewellery-set/swatch/gold-8098.webp"
+    },
+    {
+      "sku": "NEC-GOL-WHITE8",
+      "label": "White 8056",
+      "price": 101900,
+      "stock": 10,
+      "swatch": "gold-plated-jewellery-set/swatch/white-8056.webp"
+    },
+    {
+      "sku": "NEC-GOL-RED820",
+      "label": "Red 8205",
+      "price": 96900,
+      "stock": 10,
+      "swatch": "gold-plated-jewellery-set/swatch/red-8205.webp"
+    },
+    {
+      "sku": "NEC-GOL-WHITE8-2",
+      "label": "White 8177",
+      "price": 98900,
+      "stock": 10,
+      "swatch": "gold-plated-jewellery-set/swatch/white-8177.webp"
+    },
+    {
+      "sku": "NEC-GOL-PURPLE-2",
+      "label": "Purple 1699",
+      "price": 98900,
+      "stock": 10,
+      "swatch": "gold-plated-jewellery-set/swatch/purple-1699.webp"
+    },
+    {
+      "sku": "NEC-GOL-CLEAR8",
+      "label": "Clear 8205",
+      "price": 96900,
+      "stock": 10,
+      "swatch": "gold-plated-jewellery-set/swatch/clear-8205.webp"
+    },
+    {
+      "sku": "NEC-GOL-WHITE2",
+      "label": "White 2909",
+      "price": 81900,
+      "stock": 10,
+      "swatch": "gold-plated-jewellery-set/swatch/white-2909.webp"
+    },
+    {
+      "sku": "NEC-GOL-SILVER-2",
+      "label": "Silver 8233",
+      "price": 93900,
+      "stock": 10,
+      "swatch": "gold-plated-jewellery-set/swatch/silver-8233.webp"
+    },
+    {
+      "sku": "NEC-GOL-GREEN4",
+      "label": "Green 4067",
+      "price": 115900,
+      "stock": 10,
+      "swatch": "gold-plated-jewellery-set/swatch/green-4067.webp"
+    },
+    {
+      "sku": "NEC-GOL-WHITE9",
+      "label": "White 9102",
+      "price": 98900,
+      "stock": 10,
+      "swatch": "gold-plated-jewellery-set/swatch/white-9102.webp"
+    },
+    {
+      "sku": "NEC-GOL-BLACK8-2",
+      "label": "Black 8098",
+      "price": 79900,
+      "stock": 10,
+      "swatch": "gold-plated-jewellery-set/swatch/black-8098.webp"
+    },
+    {
+      "sku": "NEC-GOL-CLEAR8-2",
+      "label": "Clear 8177",
+      "price": 98900,
+      "stock": 10,
+      "swatch": "gold-plated-jewellery-set/swatch/clear-8177.webp"
+    },
+    {
+      "sku": "NEC-GOL-GREEN8",
+      "label": "Green 8205",
+      "price": 96900,
+      "stock": 10,
+      "swatch": "gold-plated-jewellery-set/swatch/green-8205.webp"
+    },
+    {
+      "sku": "NEC-GOL-WHITE5",
+      "label": "White 5047",
+      "price": 98900,
+      "stock": 10,
+      "swatch": "gold-plated-jewellery-set/swatch/white-5047.webp"
+    },
+    {
+      "sku": "NEC-GOL-SILVER-3",
+      "label": "Silver 8460",
+      "price": 90900,
+      "stock": 10,
+      "swatch": "gold-plated-jewellery-set/swatch/silver-8460.webp"
+    },
+    {
+      "sku": "NEC-GOL-RED805",
+      "label": "Red 8056",
+      "price": 101900,
+      "stock": 10,
+      "swatch": "gold-plated-jewellery-set/swatch/red-8056.webp"
+    },
+    {
+      "sku": "NEC-GOL-SILVER-4",
+      "label": "Silver 8098",
+      "price": 79900,
+      "stock": 10,
+      "swatch": "gold-plated-jewellery-set/swatch/silver-8098.webp"
+    },
+    {
+      "sku": "NEC-GOL-BLACK1",
+      "label": "Black 1699",
+      "price": 98900,
+      "stock": 10,
+      "swatch": "gold-plated-jewellery-set/swatch/black-1699.webp"
+    },
+    {
+      "sku": "NEC-GOL-RED817",
+      "label": "Red 8177",
+      "price": 98900,
+      "stock": 10,
+      "swatch": "gold-plated-jewellery-set/swatch/red-8177.webp"
+    },
+    {
+      "sku": "NEC-GOL-SILVER-5",
+      "label": "Silver 8228",
+      "price": 96900,
+      "stock": 10,
+      "swatch": "gold-plated-jewellery-set/swatch/silver-8228.webp"
+    },
+    {
+      "sku": "NEC-GOL-WHITE8-3",
+      "label": "White 8073",
+      "price": 104900,
+      "stock": 10,
+      "swatch": "gold-plated-jewellery-set/swatch/white-8073.webp"
+    },
+    {
+      "sku": "NEC-GOL-GREEN8-2",
+      "label": "Green 8177",
+      "price": 98900,
+      "stock": 10,
+      "swatch": "gold-plated-jewellery-set/swatch/green-8177.webp"
+    },
+    {
+      "sku": "NEC-GOL-WHITE8-4",
+      "label": "White 8247",
+      "price": 81900,
+      "stock": 10,
+      "swatch": "gold-plated-jewellery-set/swatch/white-8247.webp"
+    },
+    {
+      "sku": "NEC-GOL-WHITE4",
+      "label": "White 4067",
+      "price": 115900,
+      "stock": 10,
+      "swatch": "gold-plated-jewellery-set/swatch/white-4067.webp"
+    },
+    {
+      "sku": "NEC-GOL-RED910",
+      "label": "Red 9102",
+      "price": 98900,
+      "stock": 10,
+      "swatch": "gold-plated-jewellery-set/swatch/red-9102.webp"
+    },
+    {
+      "sku": "NEC-GOL-PINK80",
+      "label": "Pink 8098",
+      "price": 79900,
+      "stock": 10,
+      "swatch": "gold-plated-jewellery-set/swatch/pink-8098.webp"
+    },
+    {
+      "sku": "NEC-GOL-BLUE80-2",
+      "label": "Blue 8056",
+      "price": 101900,
+      "stock": 10,
+      "swatch": "gold-plated-jewellery-set/swatch/blue-8056.webp"
+    },
+    {
+      "sku": "NEC-GOL-BLUE82-2",
+      "label": "Blue 8205",
+      "price": 96900,
+      "stock": 10,
+      "swatch": "gold-plated-jewellery-set/swatch/blue-8205.webp"
+    },
+    {
+      "sku": "NEC-GOL-WHITE8-5",
+      "label": "White 8257",
+      "price": 101900,
+      "stock": 10,
+      "swatch": "gold-plated-jewellery-set/swatch/white-8257.webp"
+    },
+    {
+      "sku": "NEC-GOL-GOLD84",
+      "label": "Gold 8460",
+      "price": 90900,
+      "stock": 10,
+      "swatch": "gold-plated-jewellery-set/swatch/gold-8460.webp"
+    },
+    {
+      "sku": "NEC-GOL-RED809",
+      "label": "Red 8098",
+      "price": 79900,
+      "stock": 10,
+      "swatch": "gold-plated-jewellery-set/swatch/red-8098.webp"
+    },
+    {
+      "sku": "NEC-GOL-SILVER-6",
+      "label": "Silver 1699",
+      "price": 98900,
+      "stock": 10,
+      "swatch": "gold-plated-jewellery-set/swatch/silver-1699.webp"
+    },
+    {
+      "sku": "NEC-GOL-BLUE81",
+      "label": "Blue 8177",
+      "price": 98900,
+      "stock": 10,
+      "swatch": "gold-plated-jewellery-set/swatch/blue-8177.webp"
+    },
+    {
+      "sku": "NEC-GOL-GOLD80-2",
+      "label": "Gold 8073",
+      "price": 104900,
+      "stock": 10,
+      "swatch": "gold-plated-jewellery-set/swatch/gold-8073.webp"
+    },
+    {
+      "sku": "NEC-GOL-GREEN8-3",
+      "label": "Green 8014",
+      "price": 104900,
+      "stock": 10,
+      "swatch": "gold-plated-jewellery-set/swatch/green-8014.webp"
+    },
+    {
+      "sku": "NEC-GOL-SILVER-7",
+      "label": "Silver 8186",
+      "price": 115900,
+      "stock": 10,
+      "swatch": "gold-plated-jewellery-set/swatch/silver-8186.webp"
+    },
+    {
+      "sku": "NEC-GOL-SILVER-8",
+      "label": "Silver 8229",
+      "price": 101900,
+      "stock": 10,
+      "swatch": "gold-plated-jewellery-set/swatch/silver-8229.webp"
+    },
+    {
+      "sku": "NEC-GOL-RED406",
+      "label": "Red 4067",
+      "price": 115900,
+      "stock": 10,
+      "swatch": "gold-plated-jewellery-set/swatch/red-4067.webp"
+    },
+    {
+      "sku": "NEC-GOL-BLUE91",
+      "label": "Blue 9102",
+      "price": 98900,
+      "stock": 10,
+      "swatch": "gold-plated-jewellery-set/swatch/blue-9102.webp"
+    },
+    {
+      "sku": "NEC-GOL-SILVER-9",
+      "label": "Silver 8378",
+      "price": 98900,
+      "stock": 10,
+      "swatch": "gold-plated-jewellery-set/swatch/silver-8378.webp"
+    },
+    {
+      "sku": "NEC-GOL-WHITE8-6",
+      "label": "White 8161",
+      "price": 96900,
+      "stock": 10,
+      "swatch": "gold-plated-jewellery-set/swatch/white-8161.webp"
+    },
+    {
+      "sku": "NEC-GOL-WHITE8-7",
+      "label": "White 8205",
+      "price": 96900,
+      "stock": 10,
+      "swatch": "gold-plated-jewellery-set/swatch/white-8205.webp"
+    },
+    {
+      "sku": "NEC-GOL-BLACK8-3",
+      "label": "Black 8260",
+      "price": 96900,
+      "stock": 10,
+      "swatch": "gold-plated-jewellery-set/swatch/black-8260.webp"
+    },
+    {
+      "sku": "NEC-GOL-GOLD16",
+      "label": "Gold 1699",
+      "price": 98900,
+      "stock": 10,
+      "swatch": "gold-plated-jewellery-set/swatch/gold-1699.webp"
+    }
+  ],
+  "tags": [
+    "necklaces",
+    "jewellery set",
+    "stars/sun and moon/clouds/universe",
+    "modern",
+    "gold-plated",
+    "silver-plated",
+    "wedding",
+    "engagement",
+    "anniversary",
+    "party"
+  ],
+  "featured": false,
+  "status": "active",
+  "createdAt": "2026-09-12T21:02:59.587Z",
+  "updatedAt": "2026-09-12T21:22:55.180Z"
+}

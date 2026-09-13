@@ -1,0 +1,115 @@
+{
+  "id": "p-bridal-jewellery-set",
+  "slug": "emerald-bib-bridal-set",
+  "title": "Emerald Bib Bridal Set",
+  "category": "necklaces",
+  "tagline": "Cubic zirconia, micro-set",
+  "description": "A set of necklace, earrings, ring and bracelet in cubic zirconia, micro-set. Copper alloy, three colourways to pick from.",
+  "material": "copper",
+  "finish": "Platinum Plated",
+  "details": {
+    "Jewelry Sets Type": "Necklace/Earrings/Ring/Bracelet",
+    "Main Stone": "Cubic zirconia",
+    "Jewelry Type": "Jewellery Sets",
+    "Style": "High quality jewellery set",
+    "Inlay technology": "Micro insert"
+  },
+  "images": [
+    {
+      "path": "emerald-bib-bridal-set/01.webp",
+      "alt": "Emerald Bib Bridal Set",
+      "widths": [
+        160,
+        400,
+        800,
+        1200
+      ]
+    },
+    {
+      "path": "emerald-bib-bridal-set/02.webp",
+      "alt": "Emerald Bib Bridal Set",
+      "widths": [
+        160,
+        400,
+        800,
+        1200
+      ]
+    },
+    {
+      "path": "emerald-bib-bridal-set/03.webp",
+      "alt": "Emerald Bib Bridal Set",
+      "widths": [
+        160,
+        400,
+        800,
+        1200
+      ]
+    },
+    {
+      "path": "emerald-bib-bridal-set/04.webp",
+      "alt": "Emerald Bib Bridal Set",
+      "widths": [
+        160,
+        400,
+        800,
+        1200
+      ]
+    },
+    {
+      "path": "emerald-bib-bridal-set/05.webp",
+      "alt": "Emerald Bib Bridal Set",
+      "widths": [
+        160,
+        400,
+        800,
+        1200
+      ]
+    },
+    {
+      "path": "emerald-bib-bridal-set/06.webp",
+      "alt": "Emerald Bib Bridal Set",
+      "widths": [
+        160,
+        400,
+        800,
+        1200
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "sku": "EME-BIB-RED",
+      "label": "Red",
+      "price": 1044900,
+      "stock": 10,
+      "swatch": "emerald-bib-bridal-set/swatch/red.webp"
+    },
+    {
+      "sku": "EME-BIB-GREEN",
+      "label": "Green",
+      "price": 1044900,
+      "stock": 10,
+      "swatch": "emerald-bib-bridal-set/swatch/green.webp"
+    },
+    {
+      "sku": "EME-BIB-BLUE",
+      "label": "Blue",
+      "price": 1044900,
+      "stock": 10,
+      "swatch": "emerald-bib-bridal-set/swatch/blue.webp"
+    }
+  ],
+  "tags": [
+    "necklaces",
+    "jewellery set",
+    "cubic zirconia",
+    "wedding",
+    "engagement",
+    "anniversary",
+    "party"
+  ],
+  "featured": false,
+  "status": "active",
+  "createdAt": "2026-09-12T21:00:51.201Z",
+  "updatedAt": "2026-09-12T21:22:55.175Z"
+}

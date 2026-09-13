@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Shop admin — Moteeka</title>
+<link rel="icon" href="/brand/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/brand/favicon.png" sizes="any">
+<link rel="apple-touch-icon" href="/brand/apple-touch-icon.png">
+<meta name="theme-color" content="#221f1b">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Karla:wght@400;500;700&family=Marcellus&display=swap">
+<link rel="stylesheet" href="/assets/css/site.css">
+<link rel="stylesheet" href="/assets/css/admin.css">
+</head>
+<body class="admin">
+
+<!--
+  Shown when the server has no ADMIN_TOKEN. The admin API answers 404 then, so
+  a sign-in form here could never succeed — offering one sends you looking for
+  a broken page instead of a missing variable.
+-->
+<section class="signin" id="setup" hidden>
+  <div class="panel">
+    <h1>Admin is switched off</h1>
+    <p class="muted">The server is running without an <span class="mono">ADMIN_TOKEN</span>, so the
+    admin API answers 404 on every route. That is the default: an unset secret closes the door
+    rather than leaving it open.</p>
+    <p class="muted">To turn it on, put a token in <span class="mono">.env</span> and restart:</p>
+    <pre id="setup-cmd">echo "ADMIN_TOKEN=$(openssl rand -hex 24)" &gt;&gt; .env
+npm run dev</pre>
+    <button class="btn ghost small" id="copy-cmd">Copy</button>
+    <button class="btn small" id="setup-retry">I have restarted — try again</button>
+  </div>
+</section>
+
+<!-- Sign in. No account, no password reset: one shared token, see src/lib/admin-auth.ts -->
+<section class="signin" id="signin" hidden>
+  <form id="signin-form" class="panel">
+    <h1>Shop admin</h1>
+    <p class="muted">This page shows what each piece costs and earns, and who ordered what. It is
+    not part of the shop.</p>
+    <label>Admin token
+      <input type="password" id="token" autocomplete="current-password" required
+        placeholder="the value of ADMIN_TOKEN" spellcheck="false">
+    </label>
+    <label class="check">
+      <input type="checkbox" id="remember">
+      <span>Stay signed in on this device</span>
+    </label>
+    <button class="btn" type="submit">Sign in</button>
+    <p class="err" id="signin-error" role="alert"></p>
+  </form>
+</section>
+
+<div id="app" hidden>
+  <header class="bar">
+    <div class="wrap">
+      <div class="who"><b>Shop admin</b><span class="muted" id="driver"></span></div>
+      <nav class="tabs" id="tabs" aria-label="Sections">
+        <button data-tab="overview" aria-current="true">Overview</button>
+        <button data-tab="pieces">Pieces</button>
+        <button data-tab="orders">Orders</button>
+        <button data-tab="reviews">Reviews <span class="dot" id="pending-dot" hidden></span></button>
+      </nav>
+      <div class="right">
+        <select id="range" aria-label="Date range">
+          <option value="7">7 days</option>
+          <option value="30" selected>30 days</option>
+          <option value="90">90 days</option>
+        </select>
+        <button class="btn ghost small" id="signout">Sign out</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <p class="err" id="error" role="alert" hidden></p>
+    <section id="tab-overview"></section>
+    <section id="tab-pieces" hidden></section>
+    <section id="tab-orders" hidden></section>
+    <section id="tab-reviews" hidden></section>
+  </main>
+</div>
+
+<script type="module" src="/assets/js/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+{
+  "id": "p-jewellery-set",
+  "slug": "jewellery-set",
+  "title": "Jewellery Set",
+  "category": "necklaces",
+  "tagline": "Cubic zirconia, micro-set",
+  "description": "A matching set — necklace, earrings, ring and bracelet in cubic zirconia, micro-set. Copper alloy, three colourways to pick from.",
+  "material": "copper",
+  "finish": "Platinum Plated",
+  "details": {
+    "Jewelry Sets Type": "Necklace/Earrings/Ring/Bracelet",
+    "Main Stone": "Cubic zirconia",
+    "Jewelry Type": "Jewellery Sets",
+    "Style": "High quality jewellery set",
+    "Inlay technology": "Micro insert"
+  },
+  "images": [
+    {
+      "path": "jewellery-set/01.webp",
+      "alt": "Jewellery Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "jewellery-set/02.webp",
+      "alt": "Jewellery Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "jewellery-set/03.webp",
+      "alt": "Jewellery Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "jewellery-set/04.webp",
+      "alt": "Jewellery Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "jewellery-set/05.webp",
+      "alt": "Jewellery Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    },
+    {
+      "path": "jewellery-set/06.webp",
+      "alt": "Jewellery Set",
+      "widths": [
+        160,
+        400,
+        800
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "sku": "NEC-JEW-PURPLE",
+      "label": "Purple",
+      "price": 880900,
+      "stock": 10,
+      "swatch": "jewellery-set/swatch/purple.webp"
+    },
+    {
+      "sku": "NEC-JEW-PINK",
+      "label": "Pink",
+      "price": 880900,
+      "stock": 10,
+      "swatch": "jewellery-set/swatch/pink.webp"
+    },
+    {
+      "sku": "NEC-JEW-BLUE",
+      "label": "Blue",
+      "price": 880900,
+      "stock": 10,
+      "swatch": "jewellery-set/swatch/blue.webp"
+    }
+  ],
+  "tags": [
+    "necklaces",
+    "jewellery set",
+    "cubic zirconia",
+    "wedding",
+    "engagement",
+    "anniversary",
+    "party"
+  ],
+  "featured": false,
+  "status": "active",
+  "createdAt": "2026-09-12T21:01:58.854Z",
+  "updatedAt": "2026-09-12T21:22:55.183Z"
+}
