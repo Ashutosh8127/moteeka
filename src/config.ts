@@ -20,6 +20,33 @@ export const config = {
    */
   metaPixelId: process.env.META_PIXEL_ID ?? '',
   /**
+   * Firebase Analytics, which on the web is Google Analytics 4.
+   *
+   * The whole web config as one JSON string — `firebase apps:sdkconfig WEB`
+   * prints it. Unset means the SDK is never fetched, no Google Analytics
+   * cookie is set and no request leaves the browser, which is the same rule
+   * the Meta Pixel follows above.
+   *
+   * None of these values is secret. The web apiKey identifies the project to
+   * Google; it authorises nothing, and firestore.rules is what actually stands
+   * between a project id and your data. It is an environment variable so the
+   * whole thing can be switched off, not because it needs hiding.
+   */
+  firebaseWebConfig: (() => {
+    const raw = process.env.FIREBASE_WEB_CONFIG?.trim();
+    if (!raw) return null;
+    try {
+      const c = JSON.parse(raw) as Record<string, string>;
+      // Without a measurementId there is no Analytics property behind this and
+      // the SDK would load, cost the visitor a download, and measure nothing.
+      return c.measurementId ? c : null;
+    } catch {
+      console.warn('  FIREBASE_WEB_CONFIG is set but is not JSON — analytics is off');
+      return null;
+    }
+  })(),
+
+  /**
    * First-party analytics — page and product counters, kept on your own disk.
    * On by default: it sets no cookies, loads nothing third-party and stores
    * nothing about a person. ANALYTICS=off stops collection entirely.

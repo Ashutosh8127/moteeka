@@ -59,7 +59,19 @@ export async function fillBusiness() {
    */
   const pixelOn = Boolean(globalThis.__SHOP?.pixelId);
   for (const el of document.querySelectorAll('[data-when="pixel"]')) el.hidden = !pixelOn;
-  for (const el of document.querySelectorAll('[data-when="no-pixel"]')) el.hidden = pixelOn;
+
+  const gaOn = Boolean(globalThis.__SHOP?.firebase?.measurementId);
+  for (const el of document.querySelectorAll('[data-when="ga"]')) el.hidden = !gaOn;
+
+  /*
+   * "No trackers" has to mean no trackers. It was written against the pixel
+   * alone, so turning Google Analytics on would have left the policy claiming
+   * there was no Google Analytics — on the same page, a paragraph below the
+   * one describing it.
+   */
+  for (const el of document.querySelectorAll('[data-when="no-tracking"]')) {
+    el.hidden = pixelOn || gaOn;
+  }
   const statsOn = globalThis.__SHOP?.analytics !== false;
   for (const el of document.querySelectorAll('[data-when="stats"]')) el.hidden = !statsOn;
 }

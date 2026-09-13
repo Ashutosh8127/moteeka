@@ -46,6 +46,9 @@ const STANDARD = new Set([
 
 export function track(name, params = {}) {
   if (debug) console.log('[analytics]', name, params);
+  // Both tags hang off this one call, so adding the second did not mean
+  // editing twenty call sites — or missing one of them.
+  sendGa(name, params);
   if (!cfg.pixelId || !window.fbq) return;
   window.fbq(STANDARD.has(name) ? 'track' : 'trackCustom', name, params);
 }
@@ -66,6 +69,104 @@ const optedOut = navigator.globalPrivacyControl === true
   || navigator.doNotTrack === '1' || window.doNotTrack === '1';
 
 const on = cfg.analytics !== false && !optedOut;
+
+/* ------------------------------------------ Firebase Analytics (GA4) -- */
+
+/**
+ * Firebase Analytics, which on the web is Google Analytics 4 under a different
+ * name. Off unless FIREBASE_WEB_CONFIG is set on the server, so a shop that
+ * has not turned it on loads no SDK and sets no Google cookie.
+ *
+ * It honours Global Privacy Control and Do Not Track, which the Meta Pixel
+ * above does not. That is inconsistent and deliberately so: this one was added
+ * knowing the signal exists, and a browser saying "do not track me" is not
+ * something to read past because the other tag does.
+ *
+ * Loaded lazily, on the first event rather than on boot. The two modules are
+ * about 45 kB and nothing on the page waits for them — a storefront should not
+ * spend a phone's first connection on measurement.
+ */
+const fb = cfg.firebase ?? null;
+let firebasePending = null;
+
+function firebaseAnalytics() {
+  if (!fb?.measurementId || optedOut) return null;
+  firebasePending ??= (async () => {
+    const base = 'https://www.gstatic.com/firebasejs/11.0.2';
+    const [{ initializeApp }, analytics] = await Promise.all([
+      import(`${base}/firebase-app.js`),
+      import(`${base}/firebase-analytics.js`),
+    ]);
+    // isSupported() is false in a private window and in some in-app browsers;
+    // calling getAnalytics() there throws rather than returning null.
+    if (!(await analytics.isSupported())) return null;
+    return { a: analytics.getAnalytics(initializeApp(fb)), log: analytics.logEvent };
+  })().catch((e) => {
+    if (debug) console.warn('[ga] did not load', e);
+    return null;
+  });
+  return firebasePending;
+}
+
+/*
+ * A page view on every page, which otherwise would not happen.
+ *
+ * The Meta Pixel gets one free from fbq('init'); Firebase logs page_view when
+ * getAnalytics() is created, and nothing creates it until the first track()
+ * call — which on the home page, the contact page and the checkout never
+ * comes. Analytics that records product views and no sessions is worse than
+ * none, because the numbers look real.
+ *
+ * Deferred to after load, and then a beat longer. A measurement tag has no
+ * business competing with the first photograph for a phone's connection.
+ */
+if (fb?.measurementId && !optedOut) {
+  const begin = () => setTimeout(() => { firebaseAnalytics(); }, 1200);
+  if (document.readyState === 'complete') begin();
+  else addEventListener('load', begin, { once: true });
+}
+
+/** Meta's event names on the left, the GA4 recommended ones on the right. */
+const GA_NAME = {
+  PageView: 'page_view',
+  ViewContent: 'view_item',
+  AddToCart: 'add_to_cart',
+  InitiateCheckout: 'begin_checkout',
+  Search: 'search',
+  Lead: 'generate_lead',
+  Purchase: 'purchase',
+};
+
+/**
+ * Meta wants `content_ids` and `contents`; GA4 wants `items` with `item_id`.
+ * Same events, different shapes — translated here so no call site has to know
+ * that two tags are listening.
+ */
+function gaParams(p) {
+  const out = {};
+  const contents = Array.isArray(p.contents) ? p.contents : null;
+  const ids = Array.isArray(p.content_ids) ? p.content_ids : null;
+  const items = contents
+    ? contents.map((c) => ({ item_id: c.id, quantity: c.quantity ?? 1, item_name: p.content_name }))
+    : ids?.map((id) => ({ item_id: id, quantity: 1, item_name: p.content_name }));
+  if (items?.length) out.items = items;
+  if (typeof p.value === 'number') out.value = p.value;
+  if (p.currency) out.currency = p.currency;
+  if (p.search_string) out.search_term = p.search_string;
+  if (p.reference) out.transaction_id = p.reference;
+  return out;
+}
+
+function sendGa(name, params) {
+  const pending = firebaseAnalytics();
+  if (!pending) return;
+  // GA4 names must be snake_case; anything not mapped is sent under its own
+  // name so a custom event still arrives rather than being silently dropped.
+  const event = GA_NAME[name] ?? name.replace(/([a-z0-9])([A-Z])/g, '$1_$2').toLowerCase();
+  void pending.then((f) => { if (f) f.log(f.a, event, gaParams(params)); });
+}
+
+
 
 /**
  * A visit, not a person. This id never leaves the browser — it is not sent

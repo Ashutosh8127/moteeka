@@ -55,7 +55,18 @@
 
   <h2>Third parties</h2>
   <p>Typefaces are loaded from <b>Google Fonts</b>. That request tells Google your IP address and
-  which page you are on. It is the only third-party request the site makes as standard.</p>
+  which page you are on.</p>
+  <p data-when="no-tracking" hidden>It is the only third-party request the site makes.</p>
+  <div data-when="ga" hidden>
+    <p>This site also runs <b>Google Analytics</b>, through Firebase. It records which pages you
+    open, which pieces you look at and when something is added to a basket, so we can see what the
+    shop is doing. It sets cookies in your browser and the data is held by Google, not by us, under
+    Google&rsquo;s own terms. It does not receive your name, address, phone number or email — those
+    are only ever sent when you place an order, and they go to us.</p>
+    <p>If your browser sends <span class="mono">Global Privacy Control</span> or
+    <span class="mono">Do Not Track</span>, this is not loaded at all. Any tracker-blocking
+    extension will also stop it, and the shop works normally either way.</p>
+  </div>
   <div data-when="pixel" hidden>
     <p>This site also runs the <b>Meta Pixel</b>. It reports to Meta (Facebook, Instagram) when you
     view a product, choose a colourway, add something to the basket or start checkout, so that our
@@ -63,8 +74,8 @@
     it in your Meta account under <i>Ads settings</i>, or block it with any tracker-blocking
     extension — the shop works normally either way.</p>
   </div>
-  <p data-when="no-pixel" hidden>No advertising trackers run on this site. No Meta Pixel, no Google
-  Analytics, no advertising cookies.</p>
+  <p data-when="no-tracking" hidden>No advertising or analytics trackers run on this site. No Meta
+  Pixel, no Google Analytics, no advertising cookies.</p>
   <p data-when="stats" hidden>The page counts described above are <b>our own</b>: they are collected
   by this site, stored on this site, and shared with no one. If your browser sends
   <span class="mono">Global Privacy Control</span> or <span class="mono">Do Not Track</span>, nothing

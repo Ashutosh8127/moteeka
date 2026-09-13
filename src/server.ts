@@ -110,6 +110,8 @@ app.get('/config.js', (_req, res) => {
   res.setHeader('Cache-Control', 'no-cache');
   res.send(`window.__SHOP=${JSON.stringify({
     pixelId: config.metaPixelId,
+    // Null unless FIREBASE_WEB_CONFIG is set, so the client never loads the SDK.
+    firebase: config.firebaseWebConfig,
     analytics: config.analytics,
     // The product page states these, the cart charges them and the footer
     // repeats them. Three hardcoded copies is three chances to disagree.
