@@ -266,6 +266,16 @@ async function boot() {
     for (const c of facets.categories) nav.appendChild(mk(c.slug, c.name));
 
     /*
+     * Below 900px the categories scroll sideways, so the one you are actually
+     * on can start off-screen — you arrive at Rings and the strip still reads
+     * "All, Jhumka, Earrings" with no sign of where you are. `block: nearest`
+     * matters: without it this scrolls the page vertically as well, and the
+     * shop opens halfway down its own header.
+     */
+    nav.querySelector('[aria-current="true"]')
+      ?.scrollIntoView({ inline: 'center', block: 'nearest' });
+
+    /*
      * Price bands from the catalogue's own range rather than a fixed list, so
      * the options are always ones that return something. Round numbers people
      * think in — nobody shops "under ₹1,347".

@@ -85,8 +85,7 @@ a { color: inherit; }
 /* The line under the name is a qualifier, not a headline — it must never wrap
    into a three-line stack beside a one-line wordmark. */
 .brand .sub { white-space: nowrap; }
-@media (max-width: 560px) { .brand .sub { display: none; } }
-@media (max-width: 420px) { .brand .logo { display: none; } }
+@media (max-width: 620px) { .brand .sub { display: none; } }
 
 /*
  * `hidden` is only `display: none` in the browser's own stylesheet, so any
@@ -139,6 +138,45 @@ nav.cats a, nav.cats button {
 }
 nav.cats a:hover, nav.cats button:hover { background: var(--surface-2); color: var(--ink); }
 nav.cats [aria-current="true"] { background: var(--oxide); color: #fff; }
+
+/*
+ * The header is two rows at every width, and that is arithmetic rather than
+ * taste. Seven category chips need about 810px; the brand with its qualifier
+ * takes 300 and the cart 90, which is roughly 1240px of a line that `.wrap`
+ * caps at 1156 even on a wide screen. A single row never fitted — it wrapped
+ * the nav into two ragged lines on desktop, and on a phone it collapsed the
+ * nav into a column of two-line chips about 800px tall with the cart pushed
+ * off the right edge entirely.
+ *
+ * Brand and cart on the first row, categories on the second. Below 900px the
+ * categories scroll sideways instead of wrapping, because six of them stacked
+ * three deep is a header that pushes the shop itself off the first screen.
+ */
+header.site .wrap { flex-wrap: wrap; gap: 14px 18px; }
+.brand { order: 1; flex: 1 1 auto; min-width: 0; }
+.cart-btn { order: 2; flex: none; }
+nav.cats { order: 3; flex: 1 0 100%; }
+
+@media (max-width: 900px) {
+  header.site .wrap { gap: 12px 14px; padding-block: 13px; }
+  nav.cats {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scrollbar-width: none;
+    /* Bleed to the window edges, so a chip scrolling away runs off the screen
+       rather than stopping short at the container's padding. */
+    margin: 0 -22px -3px;
+    padding: 0 22px 3px;
+  }
+  nav.cats::-webkit-scrollbar { display: none; }
+  nav.cats a, nav.cats button { flex: none; white-space: nowrap; }
+}
+
+@media (max-width: 420px) {
+  .brand .mark { font-size: 21px; letter-spacing: .14em; }
+  .brand .logo { height: 31px; width: 11px; top: 4px; }
+}
 
 .cart-btn {
   font: inherit; font-size: 13.5px; display: inline-flex; align-items: center; gap: 8px;
