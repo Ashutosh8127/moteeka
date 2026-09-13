@@ -34,7 +34,8 @@
     "swatch:crop": "node scripts/crop-swatch.ts",
     "cost": "node scripts/cost.ts",
     "price": "node scripts/price.ts",
-    "onboard:batch": "node scripts/onboard-batch.ts"
+    "onboard:batch": "node scripts/onboard-batch.ts",
+    "posts": "node scripts/social-posts.ts"
   },
   "dependencies": {
     "@google-cloud/firestore": "^9.1.0",
