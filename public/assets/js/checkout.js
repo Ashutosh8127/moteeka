@@ -77,7 +77,9 @@ $('#form').addEventListener('submit', async (e) => {
     done.innerHTML = `
       <h2 style="font-family:var(--display);font-weight:400;font-size:26px;margin:0 0 8px">Order placed</h2>
       <p style="color:var(--ink-2)">Reference <b style="font-family:var(--mono)">${escapeHtml(order.reference)}</b> — ${inr(order.total)}.
-      We will call ${escapeHtml(order.customer.phone)} to confirm before dispatch. Nothing has been charged.</p>
+      Nothing has been charged. Our team will contact <b>${escapeHtml(order.customer.phone)}</b> to confirm
+      the order and your address, and will then send payment details. We dispatch once payment is received,
+      and you can cancel at no cost before you pay.</p>
       <!--
         There are no accounts here, so this link is the customer's only way back
         to the order. Said plainly and put first: a reference on a screen someone
@@ -95,6 +97,16 @@ $('#form').addEventListener('submit', async (e) => {
     btn.disabled = false;
   }
 });
+
+/*
+ * The delivery window is quoted in four places and comes from one: whatever
+ * data/business.json says. A checkout that promises sooner than the product
+ * page is where a dispute starts.
+ */
+const win = $('#delivery-window');
+if (win && window.__SHOP?.deliveryMinDays) {
+  win.textContent = `${window.__SHOP.deliveryMinDays}\u2013${window.__SHOP.deliveryMaxDays} days`;
+}
 
 countPage();
 summary();

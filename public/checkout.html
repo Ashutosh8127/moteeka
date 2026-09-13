@@ -26,8 +26,29 @@
 </header>
 <main class="wrap" style="max-width:760px">
   <h1 style="font-family:var(--display);font-weight:400;font-size:32px;margin:34px 0 6px">Checkout</h1>
-  <p style="color:var(--ink-2);margin:0 0 26px">
-    Cash on delivery and UPI on dispatch. No card details are taken on this page.
+  <!--
+    What actually happens after this form is submitted.
+
+    The line that used to sit here said "cash on delivery and UPI on dispatch",
+    which is not how this shop works and is the opposite of what the admin page
+    tells the operator. Every other page — contact, privacy, the product page —
+    already said payment is arranged by phone before anything ships; this one
+    page disagreed with all of them, on the screen where it matters most.
+
+    The steps are numbered because the thing a customer needs to know is the
+    order of events, not a paragraph about it: no money now, a call next,
+    payment details after that.
+  -->
+  <ol class="how">
+    <li><b>You place the order.</b> Nothing is charged and no payment details
+      are asked for on this page.</li>
+    <li><b>We contact you to confirm.</b> Our team calls or messages the number
+      you give below to verify the order and your address.</li>
+    <li><b>We send payment details.</b> Once payment is received we dispatch,
+      and delivery takes <span id="delivery-window">15–25 days</span>.</li>
+  </ol>
+  <p style="color:var(--ink-3);font-size:13.5px;margin:0 0 26px">
+    You can cancel at no cost any time before you pay.
   </p>
   <div id="summary" class="totals" style="border:1px solid var(--rule);border-radius:4px;margin-bottom:26px"></div>
   <form id="form" style="display:grid;gap:14px">
