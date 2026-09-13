@@ -100,12 +100,12 @@ const html = tiles.map((p, i) => {
     + ` alt="" ${i === 0 ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async"></a>`;
 }).join('\n');
 
-const file = join(ROOT, 'public', 'index.html');
+const file = join(ROOT, 'views', 'index.html');
 const page = readFileSync(file, 'utf8');
 const from = page.indexOf(START);
 const to = page.indexOf(END);
 if (from === -1 || to === -1) {
-  console.error(`\n  ${START} / ${END} markers not found in public/index.html\n`);
+  console.error(`\n  ${START} / ${END} markers not found in views/index.html\n`);
   process.exit(1);
 }
 

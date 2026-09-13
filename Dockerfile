@@ -9,6 +9,7 @@ RUN npm ci --omit=dev
 
 COPY src ./src
 COPY public ./public
+COPY views ./views
 COPY data ./data
 
 # Cloud Run and most hosts set PORT; src/config.ts reads it.

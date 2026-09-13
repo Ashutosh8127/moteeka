@@ -63,9 +63,19 @@ function tags(s: ShareInput, siteName: string): string {
   return lines.map((l) => `  ${l}`).join('\n');
 }
 
+/*
+ * The two pages whose <head> is built per request live here rather than in
+ * public/, and that placement is load-bearing on a CDN-fronted host. Vercel
+ * serves public/** straight off its edge, ahead of the function — so a
+ * public/index.html would be handed to WhatsApp's crawler with the generic
+ * <head> still in it, and the share card would be silently wrong. A file the
+ * CDN cannot see is a file only this function can answer for.
+ */
+const VIEWS = 'views';
+
 /** Reads the page off disk each time; it is a few kilobytes and edits show up. */
 export function renderPage(file: string, share: ShareInput): string {
-  const html = readFileSync(join(ROOT, 'public', file), 'utf8');
+  const html = readFileSync(join(ROOT, VIEWS, file), 'utf8');
   const head = tags(share, business().tradingName || 'Moteeka');
   return html
     .replace(/<title>.*?<\/title>/, `<title>${esc(share.title)}</title>`)

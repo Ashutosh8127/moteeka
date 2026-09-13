@@ -1,4 +1,5 @@
 import type { Category, ListQuery, Order, Page, Product } from '../types.ts';
+import { firestoreOptions } from '../lib/firestore-options.ts';
 
 /**
  * Everything the API asks of storage.
@@ -83,10 +84,7 @@ export async function openRepo(driver: RepoDriver, root: string): Promise<Repo> 
       import('@google-cloud/firestore'),
       import('./firestore-repo.ts'),
     ]);
-    const db = new Firestore({
-      projectId: process.env.GOOGLE_CLOUD_PROJECT || process.env.FIRESTORE_PROJECT_ID,
-      ignoreUndefinedProperties: true,
-    });
+    const db = new Firestore(firestoreOptions());
     return new FirestoreRepo(db);
   }
   throw new Error(

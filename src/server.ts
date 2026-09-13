@@ -44,7 +44,7 @@ const shared = async (req: express.Request, res: express.Response, next: express
          * frame for a piece that is not live — a soft 404 that a search engine
          * indexes and a customer reads as a broken site rather than a gone one.
          */
-        res.status(404).type('html').sendFile(join(ROOT, 'public', '404.html'));
+        res.status(404).type('html').sendFile(join(ROOT, 'views', '404.html'));
         return;
       }
       const rating = rate(await reviews().forProduct(product.slug).catch(() => []));
@@ -147,7 +147,7 @@ app.use('/api', (_req, res) => {
  */
 app.use((req, res, next) => {
   if (req.method !== 'GET' || req.path.startsWith('/api')) { next(); return; }
-  res.status(404).type('html').sendFile(join(ROOT, 'public', '404.html'));
+  res.status(404).type('html').sendFile(join(ROOT, 'views', '404.html'));
 });
 
 app.use((err: unknown, _req: express.Request, res: express.Response, _next: express.NextFunction) => {
@@ -187,8 +187,8 @@ app.listen(config.port, () => {
   }
 
   if (demoData.present) {
-    // console.log(`\n  DEMO DATA PRESENT — ${demoData.reviews} fabricated review(s), ${demoData.days} day(s) of traffic`);
-    // console.log(`  The storefront is showing a banner. npm run demo -- --clear when you are done.`);
+    console.log(`\n  DEMO DATA PRESENT — ${demoData.reviews} fabricated review(s), ${demoData.days} day(s) of traffic`);
+    console.log(`  The storefront is showing a banner. npm run demo -- --clear when you are done.`);
   }
 
   const gaps = unfilled();

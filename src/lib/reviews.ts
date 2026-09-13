@@ -1,6 +1,7 @@
 import { join } from 'node:path';
 import { ROOT, config } from '../config.ts';
 import { JsonStore } from './json-store.ts';
+import { firestoreOptions } from './firestore-options.ts';
 
 /**
  * Ratings, from people who actually bought the piece.
@@ -88,10 +89,7 @@ class FirestoreReviews implements ReviewStore {
   private async collection() {
     if (!this.db) {
       const { Firestore } = await import('@google-cloud/firestore');
-      this.db = new Firestore({
-        projectId: process.env.GOOGLE_CLOUD_PROJECT || process.env.FIRESTORE_PROJECT_ID,
-        ignoreUndefinedProperties: true,
-      });
+      this.db = new Firestore(firestoreOptions());
     }
     return (this.db as {
       collection: (n: string) => {
