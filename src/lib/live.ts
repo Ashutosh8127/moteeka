@@ -14,6 +14,24 @@ import { demoData } from './demo-data.ts';
  * patterns guidelines, and it is trivially caught: open two tabs and compare.
  * This one is countable, which is the only reason it can be shown.
  */
+/*
+ * ONE INSTANCE'S MEMORY, WHICH IS THE LIMIT OF THIS.
+ *
+ * A Map on the module holds presence for whichever process happens to answer
+ * the request. On a single long-running server that is every request and the
+ * count is right. On Vercel it is not: the shop runs as a function, instances
+ * come and go with traffic, and two people on the same product page are
+ * usually talking to two different ones. Each sees itself, gets 1, and 1 is
+ * below the floor — so with real traffic this line would simply never appear.
+ *
+ * That is a deployment mismatch rather than a bug here, and it has one honest
+ * fix and one dishonest one. The honest fix is shared state — a heartbeat per
+ * viewer into Firestore, which on a 45-second interval is thousands of writes
+ * an hour and real money. The dishonest one is to keep showing the demo
+ * number after launch, which is the false urgency this file exists to avoid.
+ *
+ * Until one of those is chosen, take the counter as a testing feature.
+ */
 const WINDOW_MS = 90_000;
 const seen = new Map<string, Map<string, number>>();
 
