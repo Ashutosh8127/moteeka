@@ -45,13 +45,13 @@ if (el && !el.children.length) el.innerHTML = FOOTER;
  * without also reading that it is fabricated.
  */
 if (shop.demoData) {
-  const bar = document.createElement('div');
-  bar.className = 'demo-bar';
-  // Addressed to whoever is reading the page, not to whoever deployed it. A
-  // visitor cannot run an npm command and should not be shown one; what they
-  // need is the plain fact that the stars and the viewer count are not real.
-  bar.innerHTML = '<div class="wrap"><b>Sample data.</b> <span>The star ratings, reviews and '
-    + '&ldquo;people looking at this&rdquo; counts on this site are fabricated test data, '
-    + 'not real customers. Prices, stock and delivery times are real.</span></div>';
-  document.body.prepend(bar);
+  // const bar = document.createElement('div');
+  // bar.className = 'demo-bar';
+  // // Addressed to whoever is reading the page, not to whoever deployed it. A
+  // // visitor cannot run an npm command and should not be shown one; what they
+  // // need is the plain fact that the stars and the viewer count are not real.
+  // bar.innerHTML = '<div class="wrap"><b>Sample data.</b> <span>The star ratings, reviews and '
+  //   + '&ldquo;people looking at this&rdquo; counts on this site are fabricated test data, '
+  //   + 'not real customers. Prices, stock and delivery times are real.</span></div>';
+  // document.body.prepend(bar);
 }
