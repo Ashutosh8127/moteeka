@@ -1,6 +1,7 @@
 import { join } from 'node:path';
 import { ROOT, config } from '../config.ts';
 import { JsonStore } from './json-store.ts';
+import { firestoreOptions } from './firestore-options.ts';
 
 /**
  * Private sourcing notes — where a piece comes from and who supplies it.
@@ -128,10 +129,7 @@ class FirestoreSourcing implements SourcingStore {
   private async collection() {
     if (!this.db) {
       const { Firestore } = await import('@google-cloud/firestore');
-      this.db = new Firestore({
-        projectId: process.env.GOOGLE_CLOUD_PROJECT || process.env.FIRESTORE_PROJECT_ID,
-        ignoreUndefinedProperties: true,
-      }) as never;
+      this.db = new Firestore(firestoreOptions()) as never;
     }
     return (this.db as unknown as {
       collection: (n: string) => {

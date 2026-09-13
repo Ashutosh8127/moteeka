@@ -24,11 +24,17 @@ export class JsonStore<T> {
   }
 
   read(): T {
-    if (!existsSync(this.file)) {
-      const seed = this.fallback();
-      this.write(seed);
-      return seed;
-    }
+    /*
+     * A missing file reads as the fallback and is NOT created.
+     *
+     * Seeding on read looks harmless and is not. A thirty-day report used to
+     * leave thirty empty analytics files behind, and on a host with a
+     * read-only filesystem — Vercel mounts /var/task read-only — merely
+     * reading a file that is gitignored, and so absent from the deployment,
+     * threw EROFS and took the page down. The file appears on the first real
+     * write, which is `update()`, and that is where it belongs.
+     */
+    if (!existsSync(this.file)) return this.fallback();
     // Editing data/*.json by hand is a normal way to run this shop, so a cache
     // that never notices the file changed is a trap rather than an optimisation.
     const mtime = statSync(this.file).mtimeMs;

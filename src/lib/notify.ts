@@ -64,8 +64,21 @@ export function payload(o: Order, base: string) {
 }
 
 function record(d: Delivery) {
-  // Kept short. This is an operational trail, not an archive.
-  log.update((all) => [d, ...all].slice(0, 500));
+  try {
+    // Kept short. This is an operational trail, not an archive.
+    log.update((all) => [d, ...all].slice(0, 500));
+  } catch (e) {
+    /*
+     * A serverless host mounts its code read-only, so there is nowhere to keep
+     * this. Losing the trail is a nuisance; throwing here is not — record() is
+     * reached from announceOrder(), which is deliberately never awaited into
+     * the response, so an exception becomes an unhandled rejection and can take
+     * the process down after the customer has already been told the order was
+     * placed. The webhook itself has already been sent by this point.
+     */
+    const why = e instanceof Error ? e.message : String(e);
+    console.warn(`  order ${d.reference}: webhook ${d.ok ? 'sent' : 'failed'}, not logged — ${why}`);
+  }
 }
 
 /**
