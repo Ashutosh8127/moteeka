@@ -88,19 +88,44 @@ function card(p) {
 const escapeHtml = (s) =>
   String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
-function skeletons(n = 8) {
+/*
+ * Card-shaped placeholders, drawn before the request goes out.
+ *
+ * The measurements match the real card — the square shot, the 12px gap to the
+ * title, a line each for tagline and price — so when the catalogue lands the
+ * cards fill in where the boxes already were instead of shoving the page
+ * around. A skeleton of the wrong height is worse than none: it moves the
+ * content out from under whoever was about to tap it.
+ *
+ * Marked aria-hidden because there is nothing here to read. The status line
+ * is what tells a screen reader the grid is busy.
+ */
+function skeletons(n = PER_PAGE) {
   grid.innerHTML = '';
   for (let i = 0; i < n; i++) {
     const d = document.createElement('div');
-    d.innerHTML = '<div class="shot skeleton" style="aspect-ratio:1"></div>' +
-      '<div class="skeleton" style="height:15px;margin-top:12px;width:72%"></div>' +
-      '<div class="skeleton" style="height:12px;margin-top:8px;width:48%"></div>';
+    d.className = 'card-sk';
+    d.setAttribute('aria-hidden', 'true');
+    d.innerHTML = '<div class="shot skeleton" style="aspect-ratio:1"></div>'
+      + '<div class="skeleton" style="height:15px;margin:13px 0 6px;width:76%"></div>'
+      + '<div class="skeleton" style="height:11px;margin-bottom:11px;width:92%"></div>'
+      + '<div class="skeleton" style="height:11px;width:34%"></div>';
     grid.appendChild(d);
+  }
+  // "loading…" is a word where a number belongs. A bar of the same size says
+  // the count is coming without pretending to be one.
+  const c = $('#count');
+  if (c) {
+    c.innerHTML = '<span class="skeleton" style="display:inline-block;width:86px;height:11px"></span>';
+    c.setAttribute('aria-busy', 'true');
   }
 }
 
 async function load({ keepScroll = false } = {}) {
-  skeletons();
+  // However many cards are on screen already, so paging does not change the
+  // height of the grid under the reader's thumb.
+  const showing = grid.querySelectorAll('.card, .card-sk').length;
+  skeletons(showing || PER_PAGE);
   try {
     const page = await api.products({
       category: state.category, search: state.search, sort: state.sort,
@@ -138,12 +163,14 @@ async function load({ keepScroll = false } = {}) {
     $('#count').textContent = page.total === 0 ? 'no pieces'
       : page.pages > 1 ? `${first}–${last} of ${page.total}`
       : `${page.total} piece${page.total === 1 ? '' : 's'}`;
+    $('#count').removeAttribute('aria-busy');
 
     pager(page);
     if (!keepScroll) document.querySelector('.toolbar')?.scrollIntoView({ block: 'start' });
   } catch (e) {
     grid.innerHTML = `<p class="empty">Could not load the catalogue: ${escapeHtml(e.message)}</p>`;
     $('#count').textContent = '';
+    $('#count').removeAttribute('aria-busy');
     $('#pager').hidden = true;
   }
 }

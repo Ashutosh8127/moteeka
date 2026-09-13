@@ -76,9 +76,18 @@
       -->
       <select id="price" aria-label="Filter by price"><option value="">Any price</option></select>
     </div>
-    <span class="result-count" id="count">loading…</span>
+    <span class="result-count" id="count" aria-busy="true"><span class="skeleton" style="display:inline-block;width:86px;height:11px"></span></span>
   </div>
-  <div class="grid" id="grid"></div>
+  <!-- Placeholders for the paint before assets/js/index.js has run; it
+       replaces them with the catalogue on its first render. -->
+  <div class="grid" id="grid">
+    <div class="card-sk" aria-hidden="true"><div class="shot skeleton" style="aspect-ratio:1"></div><div class="skeleton" style="height:15px;margin:13px 0 6px;width:76%"></div><div class="skeleton" style="height:11px;margin-bottom:11px;width:92%"></div><div class="skeleton" style="height:11px;width:34%"></div></div>
+    <div class="card-sk" aria-hidden="true"><div class="shot skeleton" style="aspect-ratio:1"></div><div class="skeleton" style="height:15px;margin:13px 0 6px;width:76%"></div><div class="skeleton" style="height:11px;margin-bottom:11px;width:92%"></div><div class="skeleton" style="height:11px;width:34%"></div></div>
+    <div class="card-sk" aria-hidden="true"><div class="shot skeleton" style="aspect-ratio:1"></div><div class="skeleton" style="height:15px;margin:13px 0 6px;width:76%"></div><div class="skeleton" style="height:11px;margin-bottom:11px;width:92%"></div><div class="skeleton" style="height:11px;width:34%"></div></div>
+    <div class="card-sk" aria-hidden="true"><div class="shot skeleton" style="aspect-ratio:1"></div><div class="skeleton" style="height:15px;margin:13px 0 6px;width:76%"></div><div class="skeleton" style="height:11px;margin-bottom:11px;width:92%"></div><div class="skeleton" style="height:11px;width:34%"></div></div>
+    <div class="card-sk" aria-hidden="true"><div class="shot skeleton" style="aspect-ratio:1"></div><div class="skeleton" style="height:15px;margin:13px 0 6px;width:76%"></div><div class="skeleton" style="height:11px;margin-bottom:11px;width:92%"></div><div class="skeleton" style="height:11px;width:34%"></div></div>
+    <div class="card-sk" aria-hidden="true"><div class="shot skeleton" style="aspect-ratio:1"></div><div class="skeleton" style="height:15px;margin:13px 0 6px;width:76%"></div><div class="skeleton" style="height:11px;margin-bottom:11px;width:92%"></div><div class="skeleton" style="height:11px;width:34%"></div></div>
+  </div>
   <nav class="pager" id="pager" aria-label="Pages" hidden></nav>
 </main>
 
