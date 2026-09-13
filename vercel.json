@@ -1,5 +1,7 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
+  "_comment": "bom1 is Mumbai. The default is iad1 (Washington DC), which put every Firestore query on a round trip across the planet and back: the database is in asia-south1, also Mumbai. Requests were arriving at the bom1 edge, crossing to a function in Virginia, querying Mumbai, and coming back. Keep this in step with the Firestore location.",
+  "regions": ["bom1"],
   "functions": {
     "src/server.ts": {
       "includeFiles": "{views,data}/**"

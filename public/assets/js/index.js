@@ -294,7 +294,6 @@ async function boot() {
     t = setTimeout(filtered(() => { state.search = value; }), 220);
   });
   $('#sort').addEventListener('change', filtered((e) => { state.sort = e.target.value; }));
-  $('#checkout').addEventListener('click', () => { location.href = '/checkout.html'; });
 
   $('#pager').addEventListener('click', (e) => {
     const b = e.target.closest('button[data-page]');

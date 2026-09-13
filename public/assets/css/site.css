@@ -735,6 +735,14 @@ footer ul { list-style: none; padding: 0; margin: 0; }
    Aligned to the top, so the amount sits on the same baseline as the name
    rather than floating halfway down a taller block. */
 .line .line-main { min-width: 0; display: flex; flex-direction: column; gap: 5px; }
+/* A cart line before its quote has come back. Same three columns and the same
+   56px thumbnail as a real one, so the drawer does not jump when it lands. */
+.btn.done { background: var(--ok); border-color: var(--ok); color: #fff; }
+.btn.done::before { content: "✓ "; }
+
+.line.pending { align-items: flex-start; }
+.line.pending .line-main { gap: 7px; padding-top: 3px; }
+.line.pending .line-side { display: flex; justify-content: flex-end; }
 .line .line-side { display: flex; flex-direction: column; align-items: flex-end; gap: 8px; }
 .line .nm { font-size: 14px; line-height: 1.3; }
 .line .vl { font-family: var(--mono); font-size: 11px; color: var(--ink-3); }

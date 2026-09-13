@@ -288,17 +288,22 @@ function render() {
 
   // Straight to checkout. The same add, then a navigation — not a second path
   // through pricing, which is where a "buy now" usually goes wrong.
-  $('#buy-now').addEventListener('click', () => {
+  $('#buy-now').addEventListener('click', (e) => {
     if (!selected || selected.stock === 0) return;
     cart.add(selected.sku, Number(qty.value) || 1);
+    // A navigation on a cold function can take a second. Without this the
+    // button looks ignored and gets pressed again.
+    e.currentTarget.textContent = 'Taking you there…';
+    e.currentTarget.disabled = true;
     count('add', { slug: product.slug });
     location.href = '/checkout.html';
   });
 
-  $('#add').addEventListener('click', () => {
+  $('#add').addEventListener('click', (e) => {
     if (!selected || selected.stock === 0) return;
     const quantity = Number(qty.value) || 1;
     cart.add(selected.sku, quantity);
+    confirmed(e.currentTarget);
     count('add', { slug: product.slug });
     track('AddToCart', {
       content_type: 'product',
@@ -309,6 +314,27 @@ function render() {
       contents: [{ id: selected.sku, quantity }],
     });
   });
+}
+
+/*
+ * Say so on the button itself.
+ *
+ * The drawer opens and then waits on a quote, so for a second or so the only
+ * thing on screen that knows the click landed is the drawer's placeholder
+ * lines — and on a phone the button is under the reader's thumb, not the
+ * drawer. Confirming in place is what stops a second, unwanted tap.
+ */
+function confirmed(button, word = 'Added') {
+  if (!button || button.dataset.busy) return;
+  const was = button.textContent;
+  button.dataset.busy = '1';
+  button.textContent = word;
+  button.classList.add('done');
+  setTimeout(() => {
+    button.textContent = was;
+    button.classList.remove('done');
+    delete button.dataset.busy;
+  }, 1400);
 }
 
 function select(sku, { silent = false, keepHero = false } = {}) {

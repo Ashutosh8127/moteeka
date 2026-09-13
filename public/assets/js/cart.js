@@ -44,6 +44,23 @@ export function open() { $('#cart')?.setAttribute('data-open', 'true'); $('#scri
 export function close() { $('#cart')?.setAttribute('data-open', 'false'); $('#scrim')?.setAttribute('data-open', 'false'); }
 
 let quoting = false;
+let queued = false;
+
+/** Line-shaped placeholders, so the drawer has something in it immediately. */
+function pending(n) {
+  const box = $('#cart-lines');
+  if (!box || box.querySelector('.line')) return;   // never replace real lines
+  box.innerHTML = Array.from({ length: Math.max(1, n) }, () => `
+    <div class="line pending" aria-hidden="true">
+      <div class="skeleton" style="width:56px;height:56px;border-radius:3px"></div>
+      <div class="line-main">
+        <div class="skeleton" style="height:13px;width:68%"></div>
+        <div class="skeleton" style="height:11px;width:44%"></div>
+      </div>
+      <div class="line-side"><div class="skeleton" style="height:13px;width:52px"></div></div>
+    </div>`).join('');
+}
+
 export async function render() {
   const badge = $('#cart-count');
   if (badge) badge.textContent = String(count());
@@ -60,7 +77,19 @@ export async function render() {
     return;
   }
 
-  if (quoting) return;
+  /*
+   * A quote takes a round trip. Show the shape of the cart now rather than
+   * leaving the drawer empty until it lands — adding something and seeing
+   * nothing happen reads as a broken button.
+   */
+  pending(current.length);
+
+  /*
+   * Two clicks on the stepper used to mean the second render was dropped and
+   * never retried: the drawer kept the old total and Checkout stayed disabled.
+   * Remember that one is owed and run it when the first finishes.
+   */
+  if (quoting) { queued = true; return; }
   quoting = true;
   try {
     const q = await api.quote(current);
@@ -133,6 +162,7 @@ export async function render() {
     totals.innerHTML = '';
   } finally {
     quoting = false;
+    if (queued) { queued = false; void render(); }
   }
 }
 
@@ -160,6 +190,15 @@ document.addEventListener('click', (e) => {
 
   const rm = e.target.closest('.rm');
   if (rm) { remove(rm.dataset.sku); return; }
+  /*
+   * The drawer is on every page, so its buttons are wired here rather than in
+   * any one page's script. This was in index.js, which means the Checkout
+   * button in the drawer did nothing at all on a product page — the single
+   * most likely place for somebody to press it.
+   */
+  const go = e.target.closest('#checkout');
+  if (go && !go.hasAttribute('disabled')) { location.href = '/checkout.html'; return; }
+
   if (e.target.closest('#keep-shopping')) { close(); return; }
   if (e.target.closest('#cart-open')) open();
   if (e.target.closest('#cart-close') || e.target.id === 'scrim') close();
