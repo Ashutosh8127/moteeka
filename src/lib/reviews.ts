@@ -57,6 +57,18 @@ export interface ReviewStore {
    * the stars vanish from the page and nothing reports an error.
    */
   repoint(from: string, to: string): Promise<number>;
+  /**
+   * Every product's rating in a single stored object, or null if it has not
+   * been built yet.
+   *
+   * The listing needs a star count per card. Deriving that from the reviews
+   * themselves means a document read per review, and a shop with a few hundred
+   * of them cannot pay it on a schedule — that is what exhausted the daily
+   * quota and took the API down. A driver that can answer in one read should;
+   * one that already has the reviews in memory need not bother.
+   */
+  summary?(): Promise<Record<string, Rating> | null>;
+  saveSummary?(map: Record<string, Rating>): Promise<void>;
 }
 
 class JsonReviews implements ReviewStore {
@@ -112,6 +124,36 @@ class FirestoreReviews implements ReviewStore {
     return snap.docs.map((d) => d.data() as Review);
   }
   async add(r: Review) { await (await this.collection()).doc(r.id).set(r); }
+
+  /*
+   * One document, in its own collection so no query over `reviews` can pick it
+   * up. Reading it is a single billed read whatever the shop's review count;
+   * it is rebuilt whenever a review is written, which is rare and already a
+   * write.
+   */
+  private async summaryDoc() {
+    const db = (await this.collection()) as unknown;
+    void db;
+    return (this.db as {
+      collection: (n: string) => {
+        doc: (id: string) => {
+          get: () => Promise<{ exists: boolean; data: () => unknown }>;
+          set: (v: unknown) => Promise<unknown>;
+        };
+      };
+    }).collection('ratings').doc('summary');
+  }
+
+  async summary() {
+    const snap = await (await this.summaryDoc()).get();
+    if (!snap.exists) return null;
+    const d = snap.data() as { bySlug?: Record<string, Rating> };
+    return d?.bySlug ?? null;
+  }
+
+  async saveSummary(bySlug: Record<string, Rating>) {
+    await (await this.summaryDoc()).set({ bySlug, updatedAt: new Date().toISOString() });
+  }
   async setStatus(id: string, status: Review['status']) {
     const doc = (await this.collection()).doc(id);
     const snap = await doc.get();
@@ -160,14 +202,63 @@ export function reviews(): ReviewStore {
  * the listing needs no extra reads at all; this is the version that can ship
  * while the shop is down.
  */
-const RATINGS_TTL_MS = 60_000;
+/*
+ * Five minutes, not one.
+ *
+ * With the catalogue cached, this read is the largest thing left: every fill
+ * costs a document read per review, and a shop with a few hundred of them pays
+ * that whole cost again each time the cache lapses. A star average built from
+ * two hundred reviews does not visibly move in five minutes, and posting or
+ * publishing one clears this anyway — so the only thing the extra staleness
+ * buys anybody is a rounding difference nobody can see.
+ *
+ * The durable fix is to keep the count and the average on the product document
+ * and update them when a review is published, which makes a listing cost no
+ * review reads at all. This is the version that fits in the outage.
+ */
+const RATINGS_TTL_MS = Number(process.env.RATINGS_TTL_MS ?? 300_000);
 let ratingsCache: { at: number; map: Map<string, Rating> } | null = null;
 
 export async function allRatings(): Promise<Map<string, Rating>> {
   if (ratingsCache && Date.now() - ratingsCache.at < RATINGS_TTL_MS) return ratingsCache.map;
-  const map = ratingsBySlug(await reviews().all().catch(() => []));
+
+  const store = reviews();
+  let map: Map<string, Rating> | null = null;
+
+  /*
+   * One read if the driver can do it. The stored object is derived data and
+   * rebuilding it is cheap, so a missing one is not an error — it is built
+   * here, saved, and every later request pays a single read for it.
+   */
+  if (store.summary) {
+    try {
+      const saved = await store.summary();
+      if (saved) map = new Map(Object.entries(saved));
+    } catch { /* fall through and compute it the expensive way */ }
+  }
+
+  if (!map) {
+    map = ratingsBySlug(await store.all().catch(() => []));
+    if (store.saveSummary) {
+      // Not awaited into the caller's request: a page should not wait on a
+      // cache being warmed, and a failure here costs one recompute later.
+      void store.saveSummary(Object.fromEntries(map)).catch(() => {});
+    }
+  }
+
   ratingsCache = { at: Date.now(), map };
   return map;
+}
+
+/**
+ * Rebuild the stored summary from the reviews. Called after a review is
+ * written — rare, and already a write — so the listing never has to.
+ */
+export async function refreshRatings(): Promise<void> {
+  const store = reviews();
+  const map = ratingsBySlug(await store.all().catch(() => []));
+  ratingsCache = { at: Date.now(), map };
+  if (store.saveSummary) await store.saveSummary(Object.fromEntries(map)).catch(() => {});
 }
 
 /** Called after a review is written, so a new one is not hidden for a minute. */
