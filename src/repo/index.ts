@@ -85,7 +85,19 @@ export async function openRepo(driver: RepoDriver, root: string): Promise<Repo> 
       import('./firestore-repo.ts'),
     ]);
     const db = new Firestore(firestoreOptions());
-    return new FirestoreRepo(db);
+    /*
+     * Wrapped, because every read here is billed and the catalogue changes
+     * when you change it. The JSON driver is not wrapped: it already answers
+     * from memory, and a cache there would break the "edit data/*.json by
+     * hand and reload" workflow the rest of this project is built around.
+     *
+     * CATALOGUE_TTL_MS=0 turns it off, for when you are watching a price
+     * change land and do not want to wonder whether you are seeing a copy.
+     */
+    const { CachedRepo } = await import('./cached-repo.ts');
+    const ttl = Number(process.env.CATALOGUE_TTL_MS ?? 60_000);
+    const repo = new FirestoreRepo(db);
+    return Number.isFinite(ttl) && ttl > 0 ? new CachedRepo(repo, ttl) : repo;
   }
   throw new Error(
     `repo driver "${driver}" is not wired up yet.\n` +
