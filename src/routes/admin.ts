@@ -8,7 +8,7 @@ import { analytics, totals } from '../lib/analytics.ts';
 import { allSourcing } from '../lib/sourcing.ts';
 import { costs, marginAt } from '../lib/landed-cost.ts';
 import { isLive, priceAfter, type Discount } from '../lib/discount.ts';
-import { reviews, type Review } from '../lib/reviews.ts';
+import { forgetRatings, reviews, type Review } from '../lib/reviews.ts';
 import { deliveries, notified } from '../lib/notify.ts';
 
 /**
@@ -355,6 +355,8 @@ export function adminRoutes(repo: Repo): Router {
       throw badRequest(`status must be one of ${REVIEW_STATUS.join(', ')}`);
     }
     const updated = await reviews().setStatus(String(req.params.id), status);
+    // Publishing or hiding a review must show on the shop now, not in a minute.
+    forgetRatings();
     if (!updated) throw notFound('review');
     res.json(updated);
   }));

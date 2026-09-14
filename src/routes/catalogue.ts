@@ -5,7 +5,7 @@ import { badRequest, int, notFound, rupeesToPaise, str, wrap } from '../lib/http
 import { displayDetails } from '../lib/describe.ts';
 import { withDiscount } from '../lib/discount.ts';
 import { recentViews } from '../lib/analytics.ts';
-import { rate, ratingsBySlug, reviews } from '../lib/reviews.ts';
+import { allRatings, rate, reviews } from '../lib/reviews.ts';
 import { here, liveCount, LIVE_FLOOR } from '../lib/live.ts';
 
 /** Under this many real views in the window, the page says nothing. */
@@ -34,7 +34,7 @@ export function catalogueRoutes(repo: Repo): Router {
      * rather than per card — fifty-four cards is fifty-four passes over the
      * same review file otherwise.
      */
-    const ratings = ratingsBySlug(await reviews().all().catch(() => []));
+    const ratings = await allRatings();
 
     // The card price and the product-page price are the same number because
     // they come out of the same function, not because both were remembered.

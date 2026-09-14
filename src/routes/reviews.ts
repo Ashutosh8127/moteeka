@@ -2,7 +2,7 @@ import { Router } from 'express';
 import { randomUUID } from 'node:crypto';
 import type { Repo } from '../repo/index.ts';
 import { badRequest, conflict, int, notFound, str, wrap } from '../lib/http.ts';
-import { rate, reviews, type Review } from '../lib/reviews.ts';
+import { forgetRatings, rate, reviews, type Review } from '../lib/reviews.ts';
 
 /**
  * Reviews you can stand behind.
@@ -85,6 +85,9 @@ export function reviewRoutes(repo: Repo): Router {
       status: 'pending',
     };
     await reviews().add(review);
+    // The listing serves ratings from a one-minute cache; without this a
+    // brand-new review is invisible for up to a minute after it is left.
+    forgetRatings();
 
     // 202, not 201: it exists, and it is not live yet. Saying so here is what
     // stops somebody refreshing the page looking for their own words.

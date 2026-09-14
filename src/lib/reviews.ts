@@ -142,6 +142,39 @@ export function reviews(): ReviewStore {
  * The grid asks for fifty-four of these at once; calling `forProduct` per card
  * would re-read and re-filter the same list fifty-four times.
  */
+/*
+ * The rating for every product, computed once a minute rather than once a
+ * request.
+ *
+ * The catalogue listing needs a star count for each card, and the only way to
+ * get one was to read the whole reviews collection. On Firestore that is a
+ * document read per review, per request: with 226 reviews seeded, the free
+ * tier's 50,000 daily reads bought about two hundred page loads before the
+ * shop started answering RESOURCE_EXHAUSTED. Ratings move by one review at a
+ * time, so a minute of staleness costs nothing and this is the same treatment
+ * recentViews() already had.
+ *
+ * Per instance, not shared — a serverless host runs several and each keeps its
+ * own. That is still the difference between 226 reads a request and 226 a
+ * minute. The real fix is to keep a running count on the product document so
+ * the listing needs no extra reads at all; this is the version that can ship
+ * while the shop is down.
+ */
+const RATINGS_TTL_MS = 60_000;
+let ratingsCache: { at: number; map: Map<string, Rating> } | null = null;
+
+export async function allRatings(): Promise<Map<string, Rating>> {
+  if (ratingsCache && Date.now() - ratingsCache.at < RATINGS_TTL_MS) return ratingsCache.map;
+  const map = ratingsBySlug(await reviews().all().catch(() => []));
+  ratingsCache = { at: Date.now(), map };
+  return map;
+}
+
+/** Called after a review is written, so a new one is not hidden for a minute. */
+export function forgetRatings(): void {
+  ratingsCache = null;
+}
+
 export function ratingsBySlug(all: Review[]): Map<string, Rating> {
   const grouped = new Map<string, Review[]>();
   for (const r of all) {
