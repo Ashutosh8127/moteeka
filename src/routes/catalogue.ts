@@ -81,7 +81,14 @@ export function catalogueRoutes(repo: Repo): Router {
     const views = (await recentViews(VIEW_WINDOW_DAYS).catch(() => null))?.get(product.slug) ?? 0;
     // null until somebody has actually bought this and left a rating that was
     // approved. The page renders no stars at all rather than an empty five.
-    const rating = rate(await reviews().forProduct(product.slug).catch(() => []));
+    /*
+     * From the shop-wide summary, not a query for this product's reviews.
+     * The rating on a product page is the same number the listing shows and
+     * it was being recomputed here from the documents themselves — a read per
+     * review, on every product view, for a figure already sitting in a
+     * document the listing had loaded anyway.
+     */
+    const rating = (await allRatings()).get(product.slug) ?? null;
 
     res.json({
       ...withDiscount(product),

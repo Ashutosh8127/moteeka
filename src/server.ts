@@ -13,6 +13,7 @@ import { business, unfilled } from './lib/business.ts';
 import { demoData, refuseDemoDataInProduction } from './lib/demo-data.ts';
 import { homeShare, origin, productShare, renderPage } from './lib/share.ts';
 import { rate, reviews } from './lib/reviews.ts';
+import { browsing, events, writing } from './lib/rate-limit.ts';
 
 refuseDemoDataInProduction();
 
@@ -128,8 +129,70 @@ app.get('/config.js', (_req, res) => {
   })};`);
 });
 
+/*
+ * Catalogue reads only. An order lookup is one person's address and a cart
+ * quote is one person's basket; neither may sit in a shared cache, and the
+ * admin API is behind a token whose responses must never be stored anywhere.
+ */
+const CACHEABLE = /^\/(products|categories|facets)(\/|$)/;
+
 app.get('/api/health', (_req, res) => {
   res.json({ ok: true, driver: config.driver, currency: config.currency });
+});
+
+/*
+ * What a stranger is allowed to cost you.
+ *
+ * These routes are public because a shop has to be readable, and every call
+ * that misses a cache is a Firestore read — so an open endpoint is somebody
+ * else's ability to spend your daily quota, or your money once you are paying.
+ * Two defences, in this order because only the first one scales:
+ *
+ *   1. The catalogue answers with Cache-Control below, so a repeated GET is
+ *      served by the CDN and never reaches this process or the database.
+ *   2. A per-IP budget for what the cache cannot absorb — writes, and requests
+ *      crafted to miss the edge every time.
+ */
+app.use('/api', (req, res, next) => {
+  /*
+   * Cacheable at the edge, not in the browser. `max-age=0` keeps a person's
+   * own view current — their cart and the stock they are looking at — while
+   * `s-maxage` lets the CDN answer everyone else from one origin request.
+   * stale-while-revalidate means a flood after expiry is served from the old
+   * copy while a single request refreshes it, rather than all of them landing
+   * on Firestore at once.
+   *
+   * GET only. A POST is an order or an event and must always arrive.
+   */
+  if (req.method === 'GET' && CACHEABLE.test(req.path)) {
+    res.setHeader('Cache-Control', 'public, max-age=0, s-maxage=60, stale-while-revalidate=600');
+  } else {
+    res.setHeader('Cache-Control', 'no-store');
+  }
+  next();
+});
+
+/*
+ * Built once, not per request: the counters live inside these closures, and a
+ * limiter rebuilt on every call would have nothing to remember.
+ *
+ * Chosen by what the request does rather than where it is mounted. A review is
+ * posted to /api/products/:slug/reviews, which sits under the same prefix as
+ * browsing the catalogue — matching on the path alone would have given writes
+ * the generous read budget, which is the opposite of the intent.
+ */
+const browseLimit = browsing();
+const eventLimit = events();
+const writeLimit = writing();
+
+app.use('/api', (req, res, next) => {
+  // Admin carries its own defence: a timing-safe token and a lockout after
+  // eight failures. Counting its requests here would only lock out the one
+  // person entitled to make them.
+  if (req.path === '/admin' || req.path.startsWith('/admin/')) { next(); return; }
+  if (req.method === 'GET') { browseLimit(req, res, next); return; }
+  if (req.path === '/events') { eventLimit(req, res, next); return; }
+  writeLimit(req, res, next);
 });
 
 app.use('/api', catalogueRoutes(repo));
